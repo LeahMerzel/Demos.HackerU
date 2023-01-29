@@ -100,7 +100,16 @@ Lib2 ---> Build ----> bin (Lib2.dll)
 ProjMain should use Lib1 and Lib2
 ----
 What Steps Require to use class libra
-1) 
+1) Right Click Console
+2) Add Class Library Project
+3) Write your code (Add Classes / Methods )
+4) Build Class Library to check it
+5) go to main and Add the project from dependencies
+6) using of the class library namspace
+----------------------------------------------------
+
+
+
 
 
 

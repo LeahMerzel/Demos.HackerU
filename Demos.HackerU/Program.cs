@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 using Demos.HackerU.Testing;
 using Lib1;
 
@@ -49,6 +50,14 @@ namespace Demos.HackerU
             Console.WriteLine($"Test 2:{isEqual2}");
             bool isEqual3 = CommonTypesStrings.CheckLowerUpperEquals("", "");
             Console.WriteLine($"Test 3:{isEqual3}");
+
+
+       //Create new Class lib Project name it HomeWorks
+       // - Add new Class Name it Hw1
+       // - Add the method CheckLowerUpperEquals
+       // - Run It From Prgram Main
+
+
 
 
         }

@@ -1,6 +1,6 @@
 ﻿namespace Lib1
 {
-    public class Test
+    public class ClassLib
     {
         /// <summary>
         /// 
