@@ -13,12 +13,16 @@ namespace Demos.HackerU.CommonTypes
             //--Basic C# Types
             TestTypes();
             
-            Console.WriteLine();
+            Console.WriteLine("-----");
             //--Test Array Type
             TestArray();
-           
-            Console.WriteLine();
-           
+
+            Console.WriteLine("-----");
+
+            TestReadToArray();
+
+            Console.WriteLine("-----");
+
             //--Test Dynamic Array Type
             TestDynamicArray();
 
@@ -33,19 +37,22 @@ namespace Demos.HackerU.CommonTypes
             arrNumbers.RemoveAt(1);//remove 100
 
             int val = 100;
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 10; i++)
             {
                 val += 5;
                 arrNumbers.Add(val);
             }
 
+            Console.WriteLine("List:");
             for (int i = 0; i < arrNumbers.Count; i++)
             {
                 Console.WriteLine(arrNumbers[i]);
             }
-
+          
+            Console.WriteLine("Removing Last Item....");
             arrNumbers.RemoveAt(arrNumbers.Count -1);
-           
+
+            Console.WriteLine("List:");
             for (int i = 0; i < arrNumbers.Count; i++)
             {
                 Console.WriteLine(arrNumbers[i]);
