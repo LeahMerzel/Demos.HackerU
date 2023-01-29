@@ -8,6 +8,10 @@
         /// </summary>
         public static void Run()
         {
+            //TestString();
+            //Lab1();
+            //Lab2();
+
             bool isEqual =   CheckLowerUpperEquals("abC", "ABc");
             Console.WriteLine("abC == ABc -->" + isEqual);
         }

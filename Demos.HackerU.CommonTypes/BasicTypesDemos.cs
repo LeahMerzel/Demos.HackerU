@@ -10,15 +10,16 @@ namespace Demos.HackerU.CommonTypes
     {
         public static void Run()
         {
-            //Basic Numerics Types
-            TestNumerics();
+            //--Basic C# Types
+            TestTypes();
+            
             Console.WriteLine();
-            //Arrays
+            //--Test Array Type
             TestArray();
+           
             Console.WriteLine();
-            //Read Numbers To Array
-            //TestReadToArray();
-            Console.WriteLine();
+           
+            //--Test Dynamic Array Type
             TestDynamicArray();
 
         }
@@ -44,12 +45,11 @@ namespace Demos.HackerU.CommonTypes
             }
 
             arrNumbers.RemoveAt(arrNumbers.Count -1);
+           
             for (int i = 0; i < arrNumbers.Count; i++)
             {
                 Console.WriteLine(arrNumbers[i]);
             }
-
-
 
         }
 
@@ -102,7 +102,7 @@ namespace Demos.HackerU.CommonTypes
 
         }
 
-        private static void TestNumerics()
+        private static void TestTypes()
         {
             int x = 10;
             int y = 100;

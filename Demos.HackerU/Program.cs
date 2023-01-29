@@ -10,11 +10,11 @@ namespace Demos.HackerU
         static void Main(string[] args)
         {
 
-           StringsDemos.Run();
+            //StringsDemos.Run();
            
             Console.WriteLine("-------------");
            
-            BasicTypes.Run();
+            BasicTypesDemos.Run();
 
 
 
