@@ -105,7 +105,7 @@ namespace Demos.HackerU
             {
                 Console.WriteLine("Empty Value");
             }
-            
+
             else if (user == "user123" && pass == "Pa$$w0rd")
             {
                 Console.WriteLine("login OK...");
@@ -133,12 +133,44 @@ namespace Demos.HackerU
             Console.Write("Enter Password:");
             string passInput = Console.ReadLine();
 
-            if (userInput == userOk  && passInput == passOk)
+            if (userInput == userOk && passInput == passOk)
             {
                 isValid = true;
             }
             return isValid;
         }
+
+        /// <summary>
+        /// HW1
+        /// check if two strings are 
+        /// equals ignoring casesensetive
+        /// </summary>
+        /// <example>
+        /// AaB == aAb
+        /// </example>
+        /// <param name="val1">string 1</param>
+        /// <param name="val2">string 2</param>
+        /// <returns>is equal or not</returns>
+        public static bool CheckLowerUpperEquals(string val1, string val2)
+        {
+            bool isValid = false;
+
+            if ((val1 == null) && (val2 == null))
+            {
+                isValid = true;
+            }
+            //Logic
+
+            if ( (val1!=null && val2!=null) &&
+                 (val1.ToUpper() == val2.ToUpper()))
+            {
+                isValid = true;
+            }
+             return isValid;
+        }
+
+
+
 
 
 

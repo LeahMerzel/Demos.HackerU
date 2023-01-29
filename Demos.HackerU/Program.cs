@@ -3,7 +3,7 @@ using Demos.HackerU.Testing;
 
 namespace Demos.HackerU
 {
-    //--Lavel 2 : Class
+    //Class
     internal class Program
     {
         static void Main(string[] args)
@@ -30,7 +30,7 @@ namespace Demos.HackerU
             //----------------------------------------------------
             //02 - Strings
             //----------------------------------------------------
-            CommonTypesStrings.TestString();
+            //CommonTypesStrings.TestString();
             //CommonTypesStrings.Lab1();
             //CommonTypesStrings.Lab2("abc","def");
             //-----------
@@ -42,6 +42,12 @@ namespace Demos.HackerU
             //-----------------------------------------------------
             // bool isLoggedIn = CommonTypesStrings.Lab5_Login("user", "12345");
             // Console.WriteLine($"is Logged In : {isLoggedIn}");
+            bool isEqual1 = CommonTypesStrings.CheckLowerUpperEquals("Abc", "aBC");
+            Console.WriteLine($"Test 1:{isEqual1}");
+            bool isEqual2 = CommonTypesStrings.CheckLowerUpperEquals(null,"abc");
+            Console.WriteLine($"Test 2:{isEqual2}");
+            bool isEqual3 = CommonTypesStrings.CheckLowerUpperEquals("", "");
+            Console.WriteLine($"Test 3:{isEqual3}");
 
 
         }
@@ -81,6 +87,11 @@ namespace Demos.HackerU
 
             Console.ReadKey();
         }
+
+
+
+
+
       
     }
 }
