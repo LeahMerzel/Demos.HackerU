@@ -15,6 +15,67 @@ namespace Demos.HackerU.CommonTypes
             Console.WriteLine();
             //Arrays
             TestArray();
+            Console.WriteLine();
+            //Read Numbers To Array
+            TestReadToArray();
+            Console.WriteLine();
+            TestDynamicArray();
+
+        }
+
+        private static void TestDynamicArray()
+        {
+            int[] arr = new int[5];
+
+            //Read From User 
+            //Insert to Array each number
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("input num");
+                string numText = Console.ReadLine();
+                //Convert string to int
+                int num = int.Parse(numText);
+                arr[i] = num;
+            }
+
+            //Calculate AVG+Print Array
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+                Console.Write($"[{i}]={arr[i]} | ");
+            }
+            Console.WriteLine();
+            int avg = sum / arr.Length;
+            Console.WriteLine("AVG=" + avg);
+        }
+
+        private static void TestReadToArray()
+        {
+            int[] arr = new int[5];
+
+            //Read From User 
+            //Insert to Array each number
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("input num");
+                string numText =  Console.ReadLine();
+                //Convert string to int
+                int num = int.Parse(numText);
+                arr[i] = num;
+            }
+
+            //Calculate AVG+Print Array
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+                Console.Write($"[{i}]={arr[i]} | ");
+            }
+            Console.WriteLine();
+            int avg = sum / arr.Length;
+            Console.WriteLine("AVG="+avg);
+
 
         }
 
@@ -28,7 +89,7 @@ namespace Demos.HackerU.CommonTypes
             for (int i = 2; i < numbers.Length; i++)
             {
                 numbers[i] = numbers[i - 1] + 5;
-;            }
+            }
 
             for (int i = 0; i < numbers.Length; i++)
             {
