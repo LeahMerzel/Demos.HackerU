@@ -17,7 +17,7 @@ namespace Demos.HackerU.CommonTypes
             TestArray();
             Console.WriteLine();
             //Read Numbers To Array
-            TestReadToArray();
+            //TestReadToArray();
             Console.WriteLine();
             TestDynamicArray();
 
@@ -25,29 +25,32 @@ namespace Demos.HackerU.CommonTypes
 
         private static void TestDynamicArray()
         {
-            int[] arr = new int[5];
+            var arrNumbers = new List<int>();
+            arrNumbers.Add(10);
+            arrNumbers.Add(100);
+            arrNumbers.Add(454);
+            arrNumbers.RemoveAt(1);//remove 100
 
-            //Read From User 
-            //Insert to Array each number
-            for (int i = 0; i < arr.Length; i++)
+            int val = 100;
+            for (int i = 0; i < 100; i++)
             {
-                Console.WriteLine("input num");
-                string numText = Console.ReadLine();
-                //Convert string to int
-                int num = int.Parse(numText);
-                arr[i] = num;
+                val += 5;
+                arrNumbers.Add(val);
             }
 
-            //Calculate AVG+Print Array
-            int sum = 0;
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arrNumbers.Count; i++)
             {
-                sum += arr[i];
-                Console.Write($"[{i}]={arr[i]} | ");
+                Console.WriteLine(arrNumbers[i]);
             }
-            Console.WriteLine();
-            int avg = sum / arr.Length;
-            Console.WriteLine("AVG=" + avg);
+
+            arrNumbers.RemoveAt(arrNumbers.Count -1);
+            for (int i = 0; i < arrNumbers.Count; i++)
+            {
+                Console.WriteLine(arrNumbers[i]);
+            }
+
+
+
         }
 
         private static void TestReadToArray()
