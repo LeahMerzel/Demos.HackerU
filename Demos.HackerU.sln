@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib1", "Lib1\Lib1.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib2", "Lib2\Lib2.csproj", "{435A8484-83FD-4BE3-BAF8-B9712FE3104F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.HackerU.CommonTypes", "Demos.HackerU.CommonTypes\Demos.HackerU.CommonTypes.csproj", "{C16CF0BD-9ADF-458E-80A6-93440052F322}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{435A8484-83FD-4BE3-BAF8-B9712FE3104F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{435A8484-83FD-4BE3-BAF8-B9712FE3104F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{435A8484-83FD-4BE3-BAF8-B9712FE3104F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16CF0BD-9ADF-458E-80A6-93440052F322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16CF0BD-9ADF-458E-80A6-93440052F322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16CF0BD-9ADF-458E-80A6-93440052F322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16CF0BD-9ADF-458E-80A6-93440052F322}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
