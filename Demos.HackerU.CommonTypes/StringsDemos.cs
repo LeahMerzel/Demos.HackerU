@@ -9,7 +9,7 @@
         public static void Run()
         {
             bool isEqual =   CheckLowerUpperEquals("abC", "ABc");
-
+        
         }
 
 
