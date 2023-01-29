@@ -11,8 +11,13 @@ namespace Demos.HackerU
         {
 
            StringsDemos.Run();
-          
            
+            Console.WriteLine("-------------");
+           
+            BasicTypes.Run();
+
+
+
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
         }

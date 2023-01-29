@@ -35,11 +35,22 @@ namespace Demos.HackerU.CommonTypes
             bool isEquals = (d1 == d2);
             Console.WriteLine($"isEquals d1=d2 ---> {isEquals}");
 
+            DateTime dt = DateTime.Now;
+            Console.WriteLine(dt);
 
+            string dt2 = DateTime.Now.ToShortDateString();
+            Console.WriteLine(dt2);
 
+            string dt3 = DateTime.Now.ToLongDateString();
+            Console.WriteLine(dt3);
 
+            DateTime dt4 = DateTime.Now.AddHours(48);
+            Console.WriteLine(dt4);
 
-
+            //Var Value
+            var y2 = 10;//y2 is int
+            var b2 = true;
+            Console.WriteLine("y2 is int" + y2);
 
 
 
