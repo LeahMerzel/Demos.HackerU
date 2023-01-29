@@ -51,6 +51,8 @@ namespace Demos.HackerU
             bool isEqual3 = CommonTypesStrings.CheckLowerUpperEquals("", "");
             Console.WriteLine($"Test 3:{isEqual3}");
 
+            Lib1.ClassLib.FuncA();
+
 
        //Create new Class lib Project name it HomeWorks
        // - Add new Class Name it Hw1
