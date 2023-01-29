@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.CommonTypes
 {
-    public class BasicTypes
+    public class BasicTypesDemos
     {
         public static void Run()
         {

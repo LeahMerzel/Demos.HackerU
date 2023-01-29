@@ -8,9 +8,18 @@
         /// </summary>
         public static void Run()
         {
-            //TestString();
-            //Lab1();
-            //Lab2();
+            TestString();
+            Lab1();
+            Lab2("abc", "def");
+
+            string res = Lab3("ABC", "DEF");
+            Console.WriteLine(res);
+
+            bool isLoggedIn = Lab4_Login("user123", "Pa$$w0rd");
+            Console.WriteLine($"is Logged In : {isLoggedIn}");
+           
+            isLoggedIn = Lab5_Login("user", "12345");
+            Console.WriteLine($"is Logged In : {isLoggedIn}");
 
             bool isEqual =   CheckLowerUpperEquals("abC", "ABc");
             Console.WriteLine("abC == ABc -->" + isEqual);
