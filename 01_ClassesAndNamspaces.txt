@@ -85,6 +85,22 @@ Run The Application:
          ----Class (C# Code)
             -----Function (C# Code)
 ------------------------------
+Build: Cntl+ Shit +B : Generate bin folder
+Run: F5 : Build+Run The Application
+
+Check Error
+------------------------------
+How to Build 1 Main Console Application
+And Many Other Project Calld By the Console
+
+ProjMain ---> Build ----> bin(ProjMain.Exe) 
+Lib1 ---> Build ----> bin (Lib1.dll)
+Lib2 ---> Build ----> bin (Lib2.dll)
+
+ProjMain should use Lib1 and Lib2
+----
+What Steps Require to use class libra
+1) 
 
 
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using Demos.HackerU.Testing;
+using Lib1;
 
 namespace Demos.HackerU
 {
@@ -16,7 +17,7 @@ namespace Demos.HackerU
             //--02: Strings 
             Program.Strings();
 
-
+            ClassLib.FuncA();
 
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
