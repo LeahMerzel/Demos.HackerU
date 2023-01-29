@@ -10,7 +10,30 @@ namespace Demos.HackerU.CommonTypes
     {
         public static void Run()
         {
+            //Basic Numerics Types
             TestNumerics();
+            Console.WriteLine();
+            //Arrays
+            TestArray();
+
+        }
+
+        private static void TestArray()
+        {
+            //Static Array
+            int[] numbers = new int[10];
+            numbers[0] = -3;
+            numbers[1] = 10;
+
+            for (int i = 2; i < numbers.Length; i++)
+            {
+                numbers[i] = numbers[i - 1] + 5;
+;            }
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine($"{i}-->{numbers[i]}");
+            }
 
 
         }
