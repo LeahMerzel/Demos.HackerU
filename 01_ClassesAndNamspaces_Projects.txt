@@ -97,8 +97,7 @@ ProjMain ---> Build ----> bin(ProjMain.Exe)
 Lib1 ---> Build ----> bin (Lib1.dll)
 Lib2 ---> Build ----> bin (Lib2.dll)
 
-ProjMain should use Lib1 and Lib2
-----
+-------------------------------------------------
 What Steps Require to use class libra
 1) Right Click Console Project
 2) Add Class Library Project
