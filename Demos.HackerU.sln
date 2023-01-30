@@ -14,7 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassWork", "ClassWork", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{B7CB4032-3EAC-4211-9478-A993E8448A2D}"
 	ProjectSection(SolutionItems) = preProject
-		Demos.HackerU.HomeWorks\CSHARP_HW_02.pdf = Demos.HackerU.HomeWorks\CSHARP_HW_02.pdf
 		HW_01.txt = HW_01.txt
 		HW_02.txt = HW_02.txt
 	EndProjectSection

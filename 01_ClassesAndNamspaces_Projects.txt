@@ -98,7 +98,7 @@ Lib1 ---> Build ----> bin (Lib1.dll)
 Lib2 ---> Build ----> bin (Lib2.dll)
 
 -------------------------------------------------
-What Steps Require to use class libra
+What Steps Require to use class library project:
 1) Right Click Console Project
 2) Add Class Library Project
 3) Write your code (Add Classes / Methods )
