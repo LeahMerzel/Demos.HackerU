@@ -36,10 +36,10 @@ Hw 02:
  23 distance rom  22  1
  
  -----  
-5. write a method that read from user string values dynamically (use List) untill
-  it user input "exit"
-  the method will 
-  print all strings in the list as uppercase from last to first
+5. write a method that read from user string values dynamically (use List<string>) untill
+  the user input the "exit" word 
+  
+  the method will print all strings in the list as uppercase from last to first
   print how many strings in the list
  -----
  6. write a method  that get list of numbers and print all numbers sorted (search google)
