@@ -1,4 +1,4 @@
-Practices:
+Hw 02:
 --------------------------------------------------------------------------
 1. Write a method that get array of strings and return the longest string 
 2. Write a method that get array of numbers and return a string of all numbers seperated with uderscore (example:2_3_4)
