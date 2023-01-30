@@ -3,8 +3,8 @@ Hw 02:
 1. Write a method that get array of strings and return the longest string 
 2. Write a method that get array of numbers and return a string of all numbers seperated with uderscore (example:2_3_4)
 3. Write a method that read 2 numbers from the user and operator string (+/-/*/)
-   the method name it Calculate will print the result of the operation:
-   int Calculate(int num1,int num2, string operator)
+    name it Calculate and it will print the result of the operation:
+    int Calculate(int num1,int num2, string operator)
 4. Write a method name it DitanceFromAvg 
   that get 2 parameters array of numbers (numbers) and a number (distanceAvg):
   List<int> DitanceFromAvg(int[] numbers,distanceAvg)
