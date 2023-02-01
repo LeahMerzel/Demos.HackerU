@@ -15,11 +15,11 @@ namespace Demos.HackerU
            
             Console.WriteLine("-------------");
            
-          //  BasicTypesDemos.Run();
+           BasicTypesDemos.Run();
 
 
 
-            HW2.Run();
+          //  HW2.Run();
 
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();

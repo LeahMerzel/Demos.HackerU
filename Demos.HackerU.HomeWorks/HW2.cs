@@ -23,7 +23,7 @@ namespace Demos.HackerU.HomeWorks
             for (int i = 0; i < 10; i++)
             {
                 nums[i] = i * 5;
-                Debug.WriteLine(i.ToString() +"----->"+nums[i].ToString());   
+               // Debug.WriteLine(i.ToString() +"----->"+nums[i].ToString());   
             }
 
             //-- Call JoinAll with All pArameters

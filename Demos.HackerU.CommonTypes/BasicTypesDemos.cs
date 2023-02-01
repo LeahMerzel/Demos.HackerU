@@ -147,6 +147,24 @@ namespace Demos.HackerU.CommonTypes
             Console.WriteLine("y2 is int" + y2);
 
 
+            char c1 = 'A';
+            char c2 = '#';
+            char c3 = '1';
+
+            string s = "ABC@!12";
+            for (int i = 0; i < s.Length; i++)
+            {
+                char currentChar = s[i];
+                Console.WriteLine(currentChar);
+
+            }
+
+            //s[0] = 'X'; Not Allowed
+            char cs = s[1];//B
+
+
+
+
 
         }
     }
