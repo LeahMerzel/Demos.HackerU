@@ -12,6 +12,11 @@ namespace Demos.HackerU.HomeWorks
 
         public static void Run()
         {
+
+
+           
+
+
            #region --Question 4-- 
 
             //--1 Inittializing Array of 10 Size
@@ -29,6 +34,10 @@ namespace Demos.HackerU.HomeWorks
             //-- Call JoinAll with All pArameters
             string joinText = JoinAll(nums);
             Console.WriteLine(joinText);
+
+
+            List<int> lNumbers = GetListFromRowText("1_2_3_XXX_100_34535");
+
             #endregion
 
 
@@ -58,6 +67,34 @@ namespace Demos.HackerU.HomeWorks
            
             return joinText;
         }
+
+        /// <summary>
+        /// 1_xxxx_100
+        /// </summary>
+        /// <param name="row"></param>
+        /// <returns></returns>
+        public static List<int> GetListFromRowText(string row)
+        {
+            List<int> returnNumbers = new List<int>();
+            string[] numbers = row.Split("_");//1_2_3
+            foreach (string numberText in numbers)
+            {
+                //int number = int.Parse(numberText);
+                int number;
+                bool isConvertedOk = int.TryParse(numberText, out number);
+                if (isConvertedOk)
+                {
+                    returnNumbers.Add(number);
+                }
+            }
+
+            return returnNumbers;
+
+        }
+
+
+
+
 
 
     }

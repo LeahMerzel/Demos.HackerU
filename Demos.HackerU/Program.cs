@@ -17,9 +17,9 @@ namespace Demos.HackerU
 
             // BasicTypesDemos.Run();
 
-            ArraysAndLoops.Run();
+          //  ArraysAndLoops.Run();
 
-          //  HW2.Run();
+           HW2.Run();
 
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();

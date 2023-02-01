@@ -85,6 +85,7 @@ namespace Demos.HackerU.CommonTypes
 
         private static bool MainMenu()
         {
+
             Console.Clear();
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1) Operation 1");
