@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Demos.HackerU.CommonTypes
 {
@@ -184,8 +185,24 @@ namespace Demos.HackerU.CommonTypes
                bool basicBool = b.Value;
             }
 
+            int? a = 42;
+            //If there is value (not null) 
+            //1.convert int? a to int valueOfA
+            //2.go into if 
+            if (a is int valueOfA)
+            {
+                Console.WriteLine($"a is {valueOfA}");
+            }
+            else//a ==null
+            {
+                Console.WriteLine("a does not have a value");
+            }
+            // Output:
+            // a is 42
 
-
+            int? intNullVal = 28;
+            int val = intNullVal ?? -1;
+            Console.WriteLine($"b is {val}");  // output: b is 28
 
 
 
