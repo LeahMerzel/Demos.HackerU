@@ -13,11 +13,11 @@ namespace Demos.HackerU
 
             //StringsDemos.Run();
            
-            Console.WriteLine("-------------");
-           
-           BasicTypesDemos.Run();
+           //   Console.WriteLine("-------------");
 
+            // BasicTypesDemos.Run();
 
+            ArraysAndLoops.Run();
 
           //  HW2.Run();
 
