@@ -163,14 +163,12 @@ namespace Demos.HackerU.CommonTypes
             //s[0] = 'X'; Not Allowed
             char cs = s[1];//B
 
-
-            //nullable
+            //nullable types
             //? enable to write
             //basic types with null
             string s1 = "";
             string s2 = null;
             //****Not Allowed***** 
-            //string s2 = null;
             //int val = null;
             //bool b1 =  null;
             int? i1 = 10;
@@ -205,7 +203,28 @@ namespace Demos.HackerU.CommonTypes
             Console.WriteLine($"b is {val}");  // output: b is 28
 
 
+            object o1 = 10;
+            object o2 = "ABC";
+            object o3 = new int[10];
+            //Casting
+            int num = (int)o1;
 
+
+            if (o1 is int xVal)
+            {
+                Console.WriteLine($"o1 is {xVal}");
+            }
+
+
+            object[] objects = new object[3];
+           
+            objects[0] = 1;
+            objects[1] = "sdfsdf";
+            objects[2] = true;
+            if ((bool)objects[2] == true)
+            {
+
+            }
 
 
 
