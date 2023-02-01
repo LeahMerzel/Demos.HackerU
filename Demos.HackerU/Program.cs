@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
 using Demos.HackerU.CommonTypes;
+using Demos.HackerU.HomeWorks;
 
 namespace Demos.HackerU
 {
@@ -14,9 +15,11 @@ namespace Demos.HackerU
            
             Console.WriteLine("-------------");
            
-            BasicTypesDemos.Run();
+          //  BasicTypesDemos.Run();
 
 
+
+            HW2.Run();
 
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
