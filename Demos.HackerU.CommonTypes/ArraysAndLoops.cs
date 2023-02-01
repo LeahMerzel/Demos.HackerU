@@ -15,7 +15,9 @@ namespace Demos.HackerU.CommonTypes
 
         public static void Run()
         {
-            ListIterations();
+            //ListIterations();
+
+            ShowMenu();
         }
 
         public static void ListIterations()
@@ -70,5 +72,51 @@ namespace Demos.HackerU.CommonTypes
         }
 
 
+        public static void ShowMenu()
+        {
+            bool isContinue = true;
+            while (isContinue)
+            {
+                isContinue = MainMenu();
+            }
+
+        }
+
+
+        private static bool MainMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Choose an option:");
+            Console.WriteLine("1) Operation 1");
+            Console.WriteLine("2) Operation 2");
+            Console.WriteLine("3) Exit");
+            Console.Write("\r\nSelect an option: ");
+
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Operattion1();
+                    return true;
+                case "2":
+                    Operation2();
+                    return true;
+                case "3":
+                    return false;
+                default:
+                    return true;
+            }
+        }
+
+        private static void Operation2()
+        {
+            Console.WriteLine("Operation 2 Executing....");
+            Console.ReadKey();
+        }
+
+        private static void Operattion1()
+        {
+            Console.WriteLine("Operation 1 Executing....");
+            Console.ReadKey();
+        }
     }
 }
