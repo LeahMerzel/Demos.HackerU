@@ -163,6 +163,35 @@ namespace Demos.HackerU.CommonTypes
             char cs = s[1];//B
 
 
+            //nullable
+            //? enable to write
+            //basic types with null
+            string s1 = "";
+            string s2 = null;
+            //****Not Allowed***** 
+            //string s2 = null;
+            //int val = null;
+            //bool b1 =  null;
+            int? i1 = 10;
+            i1 = null;
+
+            bool? b = null;
+            b = true;
+            //Check if null or note
+            if (b.HasValue)
+            {
+               //Take Basic Type behind using Value 
+               bool basicBool = b.Value;
+            }
+
+
+
+
+
+
+
+
+
 
 
 
