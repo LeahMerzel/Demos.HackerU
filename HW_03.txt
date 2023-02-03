@@ -27,11 +27,11 @@ Q1) Create a new  method name it DrawRectangleBorder
     ********** 
     **********    
     **********
-    hight:3 X width:10
+    height:3 X width:10
     Area = 30
 
     validation:
-        if height or with are less the 2 print a msg 
+        if height or width are less the 2 print a msg 
         and read again new parameters from user
 
  ----------------------------------------------------------------
