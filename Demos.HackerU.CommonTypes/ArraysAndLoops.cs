@@ -10,9 +10,6 @@ namespace Demos.HackerU.CommonTypes
     public class ArraysAndLoops
     {
 
-     
-
-
         public static void Run()
         {
             //ListIterations();
@@ -96,7 +93,7 @@ namespace Demos.HackerU.CommonTypes
             switch (Console.ReadLine())
             {
                 case "1":
-                    Operattion1();
+                    Operation1();
                     return true;
                 case "2":
                     Operation2();
@@ -114,7 +111,7 @@ namespace Demos.HackerU.CommonTypes
             Console.ReadKey();
         }
 
-        private static void Operattion1()
+        private static void Operation1()
         {
             Console.WriteLine("Operation 1 Executing....");
             Console.ReadKey();

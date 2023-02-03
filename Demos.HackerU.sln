@@ -16,11 +16,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{B7
 	ProjectSection(SolutionItems) = preProject
 		HW_01.txt = HW_01.txt
 		HW_02.txt = HW_02.txt
+		HW_03.txt = HW_03.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.CommonTypes", "Demos.HackerU.CommonTypes\Demos.HackerU.CommonTypes.csproj", "{C16CF0BD-9ADF-458E-80A6-93440052F322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.HackerU.HomeWorks", "Demos.HackerU.HomeWorks\Demos.HackerU.HomeWorks.csproj", "{24549533-2758-4C4D-B424-EF4A3734A709}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.HomeWorks", "Demos.HackerU.HomeWorks\Demos.HackerU.HomeWorks.csproj", "{24549533-2758-4C4D-B424-EF4A3734A709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

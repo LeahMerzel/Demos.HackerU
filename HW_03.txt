@@ -1,0 +1,134 @@
+﻿
+Q1) Create a new  method name it DrawRectangleBorder 
+   the method will print a rectangle on the console
+   the method will read 4 parmeters from the user 
+       
+    1 int h: the height of the rectngle 
+    2 int w: the width of the rectngle
+    3 char tav: a chrecter to draw the rectangle
+    4 bool isFull: is rectangle full or bordered only   
+
+    Example 1:
+    for h=3 w=10 tav='*' isFull=false 
+    the method will print:
+
+    ********** 
+    *        *
+    **********
+    hight:3 X width:10
+    size = 26
+    
+    Example 2:
+    for h=4 w=10 tav='*' isFull=true 
+    the method will print:
+    
+    ********** 
+    **********    
+    **********
+    hight:3 X width:10
+    Area = 30
+
+    validation:
+        if height or with are less the 2 print a msg 
+        and read again new parameters from user
+ ----------------------------------------------------------------
+ Q2) Create new method name it CreateList()
+     the method will:
+    1) initialize new List of object type : List<object> studentsgrades
+       this list holds both names (srings) and grades(int)
+       
+       read from user names and grades into the array
+       Example:
+index:         0             1           2             3    ..
+values:  "Israel Isreali"    95     "Moshe Moshienu"  100   ..
+     
+     2) after finishing reading the data into the list print the data:
+       2.1) print all names with grades:
+            "Israel Isreali"    95
+            "Moshe Moshienu"    100
+       2.2) print average of all grades
+       2.3) print student that have the best grade
+
+  validation: grade must be between 0-100
+----------------------------------------------------------------------
+Q3) Create new method name it CountriesNamesManager 
+  
+   1) The method will initialize a dynamic List name it CountriesList
+      List<string> CountriesList
+   2) create switch case menu that do the following operations
+    2.1) Add new Country: 
+         -read from user a new country name 
+         -add only if its not allready exsist
+    2.2) Remove country from list by name:
+         - read from user country name to be removed
+         - remove if allready exsist
+    2.3) Find coutry by prefix text: 
+         - read prefix of country
+         - list all countries start with that prefix
+    2.4) Show All Countries List   
+-----------------------------------------------------------
+שאלת רשות:
+Write a method name it StudentGradesManager() 
+1) the method will initialize 3 List with 3 items in each one of them
+  1.1) List<string> IdsList 
+        this list hold Ids of Students
+  
+  1.1) List<string> NamesList 
+       this list hold students names 
+  
+  1.2) List<int>    GradesList
+       this list hold students grades
+
+Content Example:
+  IdList       NamesList:          Grade 
+  1234567      Dani Shovevani      95
+  4345345      Gabi Gabot          100
+  2343434      Uri Buri            88
+  
+ noticed: 
+ IdsList[0] 
+ NamesList[0]
+ GradesList[0]
+ are all describe a single student
+
+2) after List Created 
+   use switchcase menue that support the following operations :
+1) Add New Student to lists:
+    - read student id 
+    - read student name
+    - grade will be zero    
+2) Update Grade for user :  
+      - read id of student
+      - read new grade to be updated
+     the operation will update a grade for the user 
+     according the index of the Ids found
+3) Show All Grades 
+      - print all id names and grades for each student
+      
+4) Remove Student:
+   -read id of student
+    it will remove from all lists the student info 
+
+5) Print User Grade by Name
+  - Read student name
+  it will print its id its name and it grade
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
