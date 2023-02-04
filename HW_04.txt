@@ -23,25 +23,25 @@ Content Example:
 
 2) after List Created 
    use switchcase menue that support the following operations :
-1) Add New Student to lists:
+  1) Add New Student to lists:
     - read student id 
     - read student name
     - grade will be zero    
-2) Update Grade for user :  
+  2) Update Grade for user :  
       - read id of student
       - read new grade to be updated (read input grade again if not between 0-100)
      the operation will update a grade for the user 
      according the index of the Ids found
-3) Show All Grades 
+  3) Show All Grades 
       - print all id names and grades for each student
       
-4) Remove Student:
-   -read id of student
-    it will remove from all lists the student info 
+  4) Remove Student:
+     -read id of student
+      it will remove from all lists the student info 
 
-5) Print User Grade by Name
-  - Read student name
-  it will print its id its name and it grade
+  5) Print User Grade by Name
+    - Read student name
+      it will print its id its name and it grade
 
 
 
