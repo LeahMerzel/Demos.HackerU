@@ -1,5 +1,4 @@
-﻿שאלת רשות לא חובה 
-Write a method name it StudentGradesManager() 
+﻿Write a method name it StudentGradesManager() 
 1) the method will initialize 3 List with 3 items in each one of them
   1.1) List<string> IdsList 
         this list hold Ids of Students
