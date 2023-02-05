@@ -75,8 +75,14 @@ namespace Demos.HackerU.CommonTypes
             employeesTypes.Add(Employee.Developer);
 
             //2)
-            Employee e1 = Employee.Developer;
-            TestMethod(e1);
+            TestMethod(employeesTypes[1]);
+
+            //3 Get Enums As Array of Strings
+            string[] names =  Enum.GetNames(typeof(Employee));
+            foreach (string name in names)
+            {
+                Console.Write(name + "|");
+            }
 
 
 
