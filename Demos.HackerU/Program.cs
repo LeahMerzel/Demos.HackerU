@@ -17,7 +17,8 @@ namespace Demos.HackerU
 
             //ArraysAndLoops.Run();
 
-            ConvertTypes.Run();
+            //ConvertTypes.Run();
+            EnumsDemos.Run();
 
             //HW2.Run();
 

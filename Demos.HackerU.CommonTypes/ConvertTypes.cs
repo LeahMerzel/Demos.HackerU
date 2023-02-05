@@ -26,6 +26,7 @@ namespace Demos.HackerU.CommonTypes
             {
                 Console.WriteLine("Enter Number between 0-1");
                 string number = Console.ReadLine();
+
                 var isOk = float.TryParse(number, out float numConverted);
                 if (isOk)
                 {
@@ -36,7 +37,6 @@ namespace Demos.HackerU.CommonTypes
                 else
                 {
                     Console.WriteLine("Not Format number");
-                  
                 }
             }
         }
