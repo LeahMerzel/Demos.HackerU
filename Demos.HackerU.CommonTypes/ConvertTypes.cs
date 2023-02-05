@@ -18,9 +18,36 @@ namespace Demos.HackerU.CommonTypes
         }
 
 
+        public static void LabPercent()
+        {
+            bool isContinue = true;
+
+            while (isContinue)
+            {
+                Console.WriteLine("Enter Number between 0-1");
+                string number = Console.ReadLine();
+                var isOk = float.TryParse(number, out float numConverted);
+                if (isOk)
+                {
+                    float percent = numConverted * 100f;
+                    Console.WriteLine($"{percent}%");
+                    isContinue = false;
+                }
+                else
+                {
+                    Console.WriteLine("Not Format number");
+                  
+                }
+            }
+        }
+
+
 
         public static void  Run()
         {
+
+
+            LabPercent();
 
             int num =10;
             TestOut(out  num);
@@ -63,11 +90,14 @@ namespace Demos.HackerU.CommonTypes
                 num2 += 10.3f;
             }
 
-            // Read From User  float number between 0-1 
-            // Print Percent
-            //1) Read String 
+            // Lab:Read From User  float number between 0-1 
+            //     Print Percent
+           
+            //Steps TODO:
+            //1) Read float 
             //2) float.tryParse
             //3) Calaculate Percent
+
 
 
 
