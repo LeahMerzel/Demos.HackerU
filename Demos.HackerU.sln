@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassWork", "ClassWork", "{
 		00_DotNetOverview.txt = 00_DotNetOverview.txt
 		01_ClassesAndNamspaces_Projects.txt = 01_ClassesAndNamspaces_Projects.txt
 		02_Strings.txt = 02_Strings.txt
+		03_DataTypes.txt = 03_DataTypes.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{B7CB4032-3EAC-4211-9478-A993E8448A2D}"

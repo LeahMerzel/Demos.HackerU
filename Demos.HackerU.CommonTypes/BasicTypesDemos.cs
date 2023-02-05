@@ -11,11 +11,11 @@ namespace Demos.HackerU.CommonTypes
     {
         public static void Run()
         {
-            //--Basic C# Types
+
             TestTypes();
             
             Console.WriteLine("-----");
-            //--Test Array Type
+
             TestArray();
 
             Console.WriteLine("-----");
@@ -24,7 +24,6 @@ namespace Demos.HackerU.CommonTypes
 
             Console.WriteLine("-----");
 
-            //--Test Dynamic Array Type
             TestDynamicArray();
 
         }
