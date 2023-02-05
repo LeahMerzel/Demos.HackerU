@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.CommonTypes",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.HomeWorks", "Demos.HackerU.HomeWorks\Demos.HackerU.HomeWorks.csproj", "{24549533-2758-4C4D-B424-EF4A3734A709}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.HackerU.Wpf", "Demos.HackerU.Wpf\Demos.HackerU.Wpf.csproj", "{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{24549533-2758-4C4D-B424-EF4A3734A709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24549533-2758-4C4D-B424-EF4A3734A709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24549533-2758-4C4D-B424-EF4A3734A709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

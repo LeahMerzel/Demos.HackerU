@@ -85,7 +85,6 @@ namespace Demos.HackerU.CommonTypes
             }
 
 
-
         }
 
         private static void TestMethod(Employee emp)
