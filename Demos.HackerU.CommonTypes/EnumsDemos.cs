@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Security;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -59,16 +62,53 @@ namespace Demos.HackerU.CommonTypes
             }
 
 
+            //1) Create Generic List of type Employee add items
+            
+            //2) Create method that get employee as parameter 
+            //And for each type print Hello
+            //Hello Developer
+            //Hello QA
 
+            //1)
+            List<Employee> employeesTypes = new List<Employee>();
+            employeesTypes.Add(Employee.QA);
+            employeesTypes.Add(Employee.Developer);
 
-
-
-
+            //2)
+            Employee e1 = Employee.Developer;
+            TestMethod(e1);
 
 
 
         }
 
+        private static void TestMethod(Employee emp)
+        {
+            switch (emp)
+            {
+                case Employee.Developer:
+                {
+                    Console.WriteLine("Hello Developer ");
+                    break;
+                }
+                case Employee.QA:
+                    {
+                        Console.WriteLine("Hello QA ");
+                        break;
+                    }
+                case Employee.Manager:
+                    {
+                        Console.WriteLine("Hello Manager ");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Hello General ");
+                        break;
+                    }
+
+            }
+        }
     }
 
 
