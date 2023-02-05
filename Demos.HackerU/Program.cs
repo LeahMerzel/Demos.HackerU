@@ -5,7 +5,7 @@ using Demos.HackerU.HomeWorks;
 
 namespace Demos.HackerU
 {
-    //--Main Entry Class YYY
+    //Main Application Program (Gadi)
     internal class Program
     {
         static void Main(string[] args)
