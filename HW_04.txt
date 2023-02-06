@@ -37,7 +37,8 @@
    if inputs are not valid number clear the non valid textbox
    and show error msg
 ----------------------------------------------------------------
-3) Write a method name it StudentGradesManager() 
+ StudentGradesManager with Enum
+ Write a method name it StudentGradesManager() 
 
 1) the method will initialize 3 List with 3 items in each one of them
   1.1) List<string> IdsList 
@@ -48,23 +49,32 @@
   
   1.2) List<int>    GradesList
        this list hold students grades
+       
+  1.3) List<int>    TypeList
+       this list hold student type ,
+       use your custom enum inorder to describe a student type
+        Student type can be:
+       - External Student
+       - Inner Student
 
 Content Example:
-  IdList       NamesList:          Grade 
-  1234567      Dani Shovevani      95
-  4345345      Gabi Gabot          100
-  2343434      Uri Buri            88
+  IdList       NamesList:          Grade    TypeList  
+  1234567      Dani Shovevani      95       Inner
+  4345345      Gabi Gabot          100      External
+  2343434      Uri Buri            88       Inner
   
  noticed: 
  IdsList[0] 
  NamesList[0]
  GradesList[0]
+ StudentType[0]
  are all describe a single student
  2) after List Created 
    use switchcase menue that support the following operations :
   1) Add New Student to lists:
     - read student id 
     - read student name
+    - read student type
     - grade will be zero    
   2) Update Grade for user :  
       - read id of student
@@ -73,13 +83,13 @@ Content Example:
      according the index of the Ids found
   3) Show All Grades 
       - print all id names and grades for each student
-      
   4) Remove Student:
      -read id of student
       it will remove from all lists the student info 
-
   5) Print User Grade by Name
     - Read student name
       it will print its id its name and it grade
-
+  6) Print All Users By student Type
+    - Read student Type (external/internal)
+      it will print  only students with this specific type 
 
