@@ -1,4 +1,43 @@
-﻿Write a method name it StudentGradesManager() 
+﻿1) Create new Enum name it CustomerType  with the following entries:
+   - Regular
+   - Subscriber
+   - Gold
+   Create a method name it DiscountCalc that calculate 
+   discount by a customer type 
+   the method will get 2 parameters:
+   1) customerTyp enum 
+   2) productPrice of double type
+   the method will return the discount price  
+   Example:
+   double CustomerType(CustomerType customerType, double productPrice)
+
+   if customerType is Regular return 10% Discount
+   if customerType is Subscriber return 25% Discount
+   if customerType is Subscriber return 35% Discount
+   
+  read CustomerType enum and price from user 
+  then call the DiscountCalc method
+
+2) Create WPF APP , the App will do simple calculator
+   the window should contain
+    - 3 buttons [+] [-] [*] 
+    - 2 textboxes for input numbers
+    - 1 textbox for result
+ 
+ GUI example:
+   
+   ___________ [+] [*] [-] [/] __________ = __________
+
+   the inputs text box can read any float number
+   when user click the + button
+   it should take the numbers from inputs textboxs
+   and put the result of on the result textbox
+   do the same for - * buttons
+   if inputs are not valid number clear the non valid textbox
+   and show error msg
+----------------------------------------------------------------
+
+3) Write a method name it StudentGradesManager() 
 1) the method will initialize 3 List with 3 items in each one of them
   1.1) List<string> IdsList 
         this list hold Ids of Students
@@ -42,13 +81,5 @@ Content Example:
   5) Print User Grade by Name
     - Read student name
       it will print its id its name and it grade
-
-
-
-   
-
-
-
-
 
 
