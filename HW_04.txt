@@ -1,5 +1,4 @@
 ﻿HW 4:
-
 1) Create new Enum name it CustomerType  with the following entries:
    - Regular
    - Subscriber
@@ -7,18 +6,18 @@
    Create a method name it DiscountCalc that calculate 
    discount by a customer type 
    the method will get 2 parameters:
-   1) customerTyp enum 
+   1) customerTyp enum  
    2) productPrice of double type
    the method will return the discount price  
    Example:
    double CustomerType(CustomerType customerType, double productPrice)
 
-   if customerType is Regular return 10% Discount
-   if customerType is Subscriber return 25% Discount
-   if customerType is Subscriber return 35% Discount
-   
-  read CustomerType enum and price from user 
-  then call the DiscountCalc method
+   if customerType is Regular return 10% Discount of the product price
+   if customerType is Subscriber return 25% Discount of the product price
+   if customerType is Subscriber return 35% Discount of the product price
+
+  - read CustomerType enum and price from user 
+    then call the DiscountCalc method
 ---------------------------------------------------------------------
 2) Create WPF APP , the App will do simple calculator
    the window should contain
