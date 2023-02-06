@@ -1,4 +1,6 @@
-﻿1) Create new Enum name it CustomerType  with the following entries:
+﻿HW 4:
+
+1) Create new Enum name it CustomerType  with the following entries:
    - Regular
    - Subscriber
    - Gold
@@ -17,7 +19,7 @@
    
   read CustomerType enum and price from user 
   then call the DiscountCalc method
-
+---------------------------------------------------------------------
 2) Create WPF APP , the App will do simple calculator
    the window should contain
     - 3 buttons [+] [-] [*] 
@@ -26,7 +28,7 @@
  
  GUI example:
    
-   ___________ [+] [*] [-] [/] __________ = __________
+   __________ [+] [*] [-] [/] __________ = __________
 
    the inputs text box can read any float number
    when user click the + button
@@ -36,8 +38,8 @@
    if inputs are not valid number clear the non valid textbox
    and show error msg
 ----------------------------------------------------------------
-
 3) Write a method name it StudentGradesManager() 
+
 1) the method will initialize 3 List with 3 items in each one of them
   1.1) List<string> IdsList 
         this list hold Ids of Students
@@ -59,8 +61,7 @@ Content Example:
  NamesList[0]
  GradesList[0]
  are all describe a single student
-
-2) after List Created 
+ 2) after List Created 
    use switchcase menue that support the following operations :
   1) Add New Student to lists:
     - read student id 
