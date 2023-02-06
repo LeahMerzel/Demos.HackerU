@@ -67,7 +67,7 @@ Content Example:
  IdsList[0] 
  NamesList[0]
  GradesList[0]
- StudentType[0]
+ TypeList[0]
  are all describe a single student
  2) after List Created 
    use switchcase menue that support the following operations :
