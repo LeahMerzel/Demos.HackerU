@@ -50,9 +50,9 @@
   1.2) List<int>    GradesList
        this list hold students grades
        
-  1.3) List<int>    TypeList
-       this list hold student type ,
-       use your custom enum inorder to describe a student type
+  1.3) List<StudentType>    TypeList
+       this list holds list of StudentType Enum
+       create StudentType Enum inorder to describe a student type
         Student type can be:
        - External Student
        - Inner Student
