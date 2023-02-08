@@ -8,9 +8,9 @@
         Title="CalculatorWindow" Height="450" Width="800">
     <Canvas >
         <TextBox Name="txtBox1" FontSize="20" Canvas.Left="94" TextWrapping="Wrap" Text="" Canvas.Top="217" Width="136" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button Name="btnPlus" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="+" Canvas.Left="247" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1" />
-        <Button Name="btnMinuPlus" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="-" Canvas.Left="280" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1" />
-        <Button Name="btnMultiply" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="*" Canvas.Left="313" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1" />
+        <Button Name="btnPlus" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="+" Canvas.Left="247" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1" Click="btnPlus_Click" />
+        <Button Name="btnMinus" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="-" Canvas.Left="280" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1" Click="btnMinus_Click" />
+        <Button Name="btnMultiply" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="*" Canvas.Left="313" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1" Click="btnMultiply_Click"/>
         <Button FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="/" Canvas.Left="346" Canvas.Top="211" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="28" Background="#FFD3D2F1"/>
         <TextBox Name="txtBox2" FontSize="20" Canvas.Left="391" TextWrapping="Wrap" Text="" Canvas.Top="217" Width="136" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Label FontSize="20"  Content="=" Canvas.Left="538" Canvas.Top="211" HorizontalAlignment="Center" VerticalAlignment="Top"/>
