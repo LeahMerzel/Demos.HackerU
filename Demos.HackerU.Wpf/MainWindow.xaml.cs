@@ -26,23 +26,27 @@ namespace Demos.HackerU.Wpf
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //MessageBox.Show("Hello WPF");
-            // Title += "X";
-           string txt1 =  txtBox1.Text;
-           string txt2 = txtBox2.Text;
+   
 
-            bool isOk1 =  int.TryParse(txt1,out int val1);
-            bool isOk2 =  int.TryParse(txt2, out int val2);
-            if (isOk1 && isOk2)
-            {
-                MessageBox.Show($"RESULT IS:{val1 + val2}");
-            }
-            else
-            {
-                MessageBox.Show("Error Input");
-            }
+    
+
+        private void TestClass_Click(object sender, RoutedEventArgs e)
+        {
+             Calculator calculator1 = new Calculator();
+             calculator1.num1 = 10;
+             calculator1.num2 = 20;
+             float res1 = calculator1.Calculate(Operation.Plus);
+
+            Calculator calculator2 = new Calculator();
+            calculator2.num1 = 30;
+            calculator2.num2 = 5;
+            float res2 = calculator2.Calculate(Operation.Plus);
+
+            Calculator calculator3 = new Calculator();
+            calculator3.num1 = 30;
+            calculator3.num2 = 5;
+            float res3 = calculator3.Calculate(Operation.Plus);
+
 
 
 

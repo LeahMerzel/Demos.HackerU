@@ -7,9 +7,7 @@
         mc:Ignorable="d"
         Title="" Height="450" Width="800">
     <Canvas>
-        <Button FontSize="35" Content="Click Me" Canvas.Left="312" Canvas.Top="114" Click="Button_Click"/>
-        <TextBox Name="txtBox1" FontSize="35" Canvas.Left="204" TextWrapping="Wrap" Text="" Canvas.Top="193" Width="352" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Name="txtBox2" FontSize="35" Canvas.Left="204" TextWrapping="Wrap" Text="" Canvas.Top="283" Width="352" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Name="TestClass" FontSize="30" Content="Test Class And Objects" Canvas.Left="219" Canvas.Top="89" Click="TestClass_Click" />
 
     </Canvas>
 

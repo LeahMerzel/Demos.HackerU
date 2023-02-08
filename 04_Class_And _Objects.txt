@@ -13,6 +13,34 @@ ClassA a1 = new ClassA();
 a1.MethodA(....);
 -------------------------------
 
+Class Student
+
+//01 Data
+ - Name
+ - ID
+ - Grade
+ 
+ 
+ //02 Data
+ void DisplayStudent()
+ {
+ 
+ }
+
+ bool IsPassed()
+ {
+   
+ }
+
+
+ //Create 3 Object Of Student Class
+
+
+
+
+
+
+
 
 
 
