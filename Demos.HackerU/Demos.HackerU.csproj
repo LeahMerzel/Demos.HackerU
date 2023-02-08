@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Demos.HackerU.CommonTypes\Demos.HackerU.CommonTypes.csproj" />
     <ProjectReference Include="..\Demos.HackerU.HomeWorks\Demos.HackerU.HomeWorks.csproj" />
+    <ProjectReference Include="..\Demos.HackerU.OOP\Demos.HackerU.OOP.csproj" />
   </ItemGroup>
 
 </Project>

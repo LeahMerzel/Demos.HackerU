@@ -8,9 +8,10 @@ namespace Demos.HackerU.Wpf
 {
     public class Student
     {
-       public string  Name;
-       public string Id;
-       public int Grade;
+        //Property
+        public string Name { get; set; }
+        public string Id { get;  set; }
+        public int Grade { get; set; }
 
         public string ShowStudent()
         {

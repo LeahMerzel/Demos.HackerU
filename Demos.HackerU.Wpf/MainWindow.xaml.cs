@@ -68,8 +68,10 @@ namespace Demos.HackerU.Wpf
             string info2 = s2.ShowStudent();
             bool isNotFail2 =  s2.IsFailed();
 
-
-
+            //Get
+            string x = s3.Id;
+            //Set
+            s3.Id = "1111111";
 
 
 
