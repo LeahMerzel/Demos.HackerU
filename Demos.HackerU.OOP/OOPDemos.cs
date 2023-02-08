@@ -37,6 +37,20 @@ namespace Demos.HackerU.OOP
             p3.Y = 0;
             p3.AddX(5);
             p3.Display();
+
+            //Array Of Objects
+            Point[] points = { p1, p2, p3 };
+            points[0].Reset();
+
+            Point[] points2 = { new Point{X=0,Y=1 }, 
+                                new Point { X = 10, Y = 10 } };
+            points2[0].AddX(5);
+            points2[0].AddY(5);
+            foreach (Point pointObj in points2)
+            {
+                pointObj.Display();
+            }
+
         }
     }
 }
