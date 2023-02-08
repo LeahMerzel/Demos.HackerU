@@ -5,15 +5,15 @@
    - int Height
    - char tav
    
-   3 Methods:
+   4 Methods:
    - void DisplayInfo
       this method should print the rectangle inner properties Data
    - void Draw(bool isFull)
      this method should print a rectangle
      if isFull is true it should draw full rectangle 
      else it should draw only border Rectangle
-   - GetArea()//שטח מלבן
-   - GetPerimeter() //היקף מלבן 
+   -  int GetArea()//שטח מלבן
+   -  int GetPerimeter() //היקף מלבן 
  
    
 1.2) Create 5 Intances(objects) of different Rectangle
