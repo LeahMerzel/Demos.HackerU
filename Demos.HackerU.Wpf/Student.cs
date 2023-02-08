@@ -17,9 +17,9 @@ namespace Demos.HackerU.Wpf
             string displayInfo = $"{Id}|{Name}-{Grade}";
             return displayInfo;
         }
-        public  bool NotFail()
+        public  bool IsFailed()
         {
-            return (Grade > 55);
+            return (Grade <= 55);
         }
 
 

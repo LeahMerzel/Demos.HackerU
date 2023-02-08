@@ -63,8 +63,10 @@ namespace Demos.HackerU.Wpf
             s3.Grade = 100;
 
            string info1 =  s1.ShowStudent();
-           string info2 = s2.ShowStudent();
-
+           bool isNotFail1 =  s1.IsFailed();
+          
+            string info2 = s2.ShowStudent();
+            bool isNotFail2 =  s2.IsFailed();
 
 
 
