@@ -1,6 +1,6 @@
 ﻿1) 
  1.1) Create Rectangle Class
-    2 Data Properties:
+    3 Data Properties:
    - int Width
    - int Height
    - char tav
