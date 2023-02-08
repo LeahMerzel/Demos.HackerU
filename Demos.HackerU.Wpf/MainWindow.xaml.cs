@@ -47,6 +47,29 @@ namespace Demos.HackerU.Wpf
             calculator3.num2 = 5;
             float res3 = calculator3.Calculate(Operation.Plus);
 
+            Student s1 = new Student();
+            s1.Name = "Moshe Ufnik"; 
+            s1.Id = "34534564"; 
+            s1.Grade = 50; 
+
+            Student s2 = new Student();
+            s2.Name = "David Yosec";
+            s2.Id = "78784532";
+            s2.Grade = 70;
+            
+            Student s3 = new Student();
+            s3.Name = "Shlomo Hamelech";
+            s3.Id = "34556767";
+            s3.Grade = 100;
+
+           string info1 =  s1.ShowStudent();
+           string info2 = s2.ShowStudent();
+
+
+
+
+
+
 
 
 
