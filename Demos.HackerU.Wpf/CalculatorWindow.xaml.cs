@@ -23,5 +23,20 @@ namespace Demos.HackerU.Wpf
         {
             InitializeComponent();
         }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMultiply_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
