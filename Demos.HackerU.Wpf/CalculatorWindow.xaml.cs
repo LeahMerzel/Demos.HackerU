@@ -45,16 +45,32 @@ namespace Demos.HackerU.Wpf
 
             if (num1.HasValue && num2.HasValue)
             {
-                float res = Calculate(num1.Value,num2.Value,Operation.Minus);
-                txtBoxResult.Text = res.ToString();
+                // float res = Calculate(num1.Value,num2.Value,Operation.Minus);
+                //  txtBoxResult.Text = res.ToString();
+
+                //Old Way
+               // Calculator.Calculate(num1.Value, num2.Value, Operation.Minus);
+
+                //New Way
+                //01 Create Object Of Class
+                Calculator calc = new Calculator();
+                //Assign Data
+                calc.num1 = num1.Value;
+                calc.num2 = num2.Value;
+                //02.Call Method from the object
+                float res = calc.Calculate(Operation.Minus);
+
                 
-                txtBox1.Text = "";
-                txtBox2.Clear();
+
 
             }
            else
             {
+                txtBox1.Text = "";
+                txtBox2.Clear();
+
                 MessageBox.Show("ERROR NUMBER FORMAT");
+
             }
 
         }
@@ -88,7 +104,7 @@ namespace Demos.HackerU.Wpf
         /// <param name="num2"></param>
         /// <param name="operation"></param>
         /// <returns></returns>
-        private float Calculate(float num1, float num2, Operation operation)
+        private static float Calculate(float num1, float num2, Operation operation)
         {
             float result = 0;
             switch (operation)

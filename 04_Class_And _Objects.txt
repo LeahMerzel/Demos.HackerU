@@ -1,0 +1,22 @@
+ClassA
+  - static void MethodA(...)
+  
+  //Run Static Method
+  ClassA.MethodA(....)
+
+------------------------------
+ClassA
+  - void MethodA(...)
+  
+//Run Non Static Method
+ClassA a1 = new ClassA();
+a1.MethodA(....);
+-------------------------------
+
+
+
+
+
+
+
+

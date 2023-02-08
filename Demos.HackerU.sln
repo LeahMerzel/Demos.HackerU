@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassWork", "ClassWork", "{
 		01_ClassesAndNamspaces_Projects.txt = 01_ClassesAndNamspaces_Projects.txt
 		02_Strings.txt = 02_Strings.txt
 		03_DataTypes.txt = 03_DataTypes.txt
+		04_Class_And _Objects.txt = 04_Class_And _Objects.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{B7CB4032-3EAC-4211-9478-A993E8448A2D}"
@@ -25,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.CommonTypes",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.HomeWorks", "Demos.HackerU.HomeWorks\Demos.HackerU.HomeWorks.csproj", "{24549533-2758-4C4D-B424-EF4A3734A709}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos.HackerU.Wpf", "Demos.HackerU.Wpf\Demos.HackerU.Wpf.csproj", "{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.Wpf", "Demos.HackerU.Wpf\Demos.HackerU.Wpf.csproj", "{DF0DFAF5-7392-43AA-849F-6A7CE5563AFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
