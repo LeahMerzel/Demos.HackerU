@@ -20,6 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{B7
 		HW_02.txt = HW_02.txt
 		HW_03.txt = HW_03.txt
 		HW_04.txt = HW_04.txt
+		HW_05.txt = HW_05.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demos.HackerU.CommonTypes", "Demos.HackerU.CommonTypes\Demos.HackerU.CommonTypes.csproj", "{C16CF0BD-9ADF-458E-80A6-93440052F322}"
