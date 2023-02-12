@@ -5,13 +5,46 @@
 * Loops And List Operations
 * List Arrow Function
 * Parse and convert Types
-- Enums
+* Enums
 - Tupples
 ------------------------------
-OOP 
- - Class
- - Objects
- - Inheritance
+OOP - Object Oriented Programming
+ C# /Java/C++/Python/JS
+
+ Class Vs Object
+ ----------------
+ - Class:
+   - Template
+   - Methods(non static) - Logic
+   - Properties - Data
+ -----  
+ - Objects/Instanse
+   - Type Of Class
+   - new 
+     Class c1 = new Class();
+     c1.Dosomthing();
+   - each instanse is seperated memory/data
+     -----------------------------------------------
+  Class
+    * Fields
+    * Properties
+    * Constractor
+    - Methods
+    * WPF(LAYOUTS)
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+   
+ 
+------------------------------
 
 
 

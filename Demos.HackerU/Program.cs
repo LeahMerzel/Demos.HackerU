@@ -24,9 +24,9 @@ namespace Demos.HackerU
             //HW2.Run();
 
 
-            OOPDemos.Run();
+            //  OOPDemos.Run();
 
-
+            OOPDemos.PropsDemo();
 
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
