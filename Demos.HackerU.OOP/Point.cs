@@ -15,8 +15,29 @@
     /// </summary>
     public class Point
     {
+        //--fields
         private int x;
         private int y;
+
+        public Point()
+        {
+            x = 0;
+            y = 0;
+        }
+        
+        public Point(int xyValue)
+        {
+            X = xyValue;
+            Y = xyValue;
+        }
+
+        public Point(int x , int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+
 
         /// <summary>
         /// X between 0 -10
@@ -29,7 +50,7 @@
                      x = 10;
                 else if (value < 0)
                     x = 0;
-
+                else
                 x = value;
             
             }
@@ -45,7 +66,7 @@
                     y = 10;
                 else if (value < 0)
                     y = 0;
-
+                else
                 y= value;
             }
         

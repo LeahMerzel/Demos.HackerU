@@ -138,7 +138,14 @@ namespace Demos.HackerU.OOP
             Console.WriteLine(p1.X);
 
 
+            Point sp1 = new Point();
+            sp1.Display();
 
+            Point sp2 = new Point(5);
+            sp2.Display();
+
+            Point sp3 = new Point(12,-4);
+            sp3.Display();
 
 
 
