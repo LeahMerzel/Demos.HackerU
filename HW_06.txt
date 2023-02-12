@@ -1,5 +1,5 @@
 HW 6 
-Create class that describe courses 
+Create class that describe a course 
 course properties:
   - Id:int
   - Title:string
