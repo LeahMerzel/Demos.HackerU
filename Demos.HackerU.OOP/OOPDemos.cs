@@ -96,22 +96,18 @@ namespace Demos.HackerU.OOP
             //Validation
             int x = p1.X;
             p1.X = 2;
+            p1.SetX(5);
             p1.X = -5;
+            
+
             Debug.WriteLine(p1.XText);
 
             p1.XText = "12a";
-            
             p1.XText = "13";
             Debug.WriteLine(p1.XText);
+            p1.describeText = "כעראע";
 
-
-
-
-
-
-
-
-
+        
 
         }
 

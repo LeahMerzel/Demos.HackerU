@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,10 +51,17 @@ namespace Demos.HackerU.OOP
         public int Y { get; set; }
         public int Z { get; set; }
 
-
+        /// <summary>
+        /// member method can always access any inner private member
+        /// </summary>
+        /// <returns></returns>
         public string GetInfo()
         {
-            return $"{X},{Y},{Z}";
+            //member method can always access any inner private member
+            //x is private and still can be accessed
+            //why: in the same class
+            
+            return $"{x},{Y},{Z}";
         }
 
 
