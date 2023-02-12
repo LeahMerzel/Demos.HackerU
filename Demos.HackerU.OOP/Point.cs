@@ -2,20 +2,54 @@
 {
 
     /// <summary>
-    /// 1) X,Y must be 0<x<10  0<y<10
-    ///  if bigger 10  Set to 10
-    ///  if smaller 0 set to 0
+    /// 1) X,Y Properties must be 0<x<10  0<y<10
+    ///  if X bigger 10  set to 10
+    ///  if Y smaller 0 set to 0
     /// 2) Constractor 
     ///   - Default Constractor 
     ///   - Full Constaractor
     ///   - one value Constractor
-    /// 3) Test Each Constractor with values
+    /// 3) Test each constractor with values
+    ///    and call the display method
     /// 
     /// </summary>
     public class Point
     {
-        public int X { get; set; }
-        public int Y { get; set; }
+        private int x;
+        private int y;
+
+        /// <summary>
+        /// X between 0 -10
+        /// </summary>
+        public int X
+        {
+            get { return x;  }
+            set {
+                if (value > 10)
+                     x = 10;
+                else if (value < 0)
+                    x = 0;
+
+                x = value;
+            
+            }
+        }
+
+        /// <summary>
+        /// y Between 0-10
+        /// </summary>
+        public int Y {
+            get { return y; }
+            set {
+                if (value > 10)
+                    y = 10;
+                else if (value < 0)
+                    y = 0;
+
+                y= value;
+            }
+        
+        }
 
         public void Display()
         {
