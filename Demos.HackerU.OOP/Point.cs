@@ -1,5 +1,17 @@
 ﻿namespace Demos.HackerU.OOP
 {
+
+    /// <summary>
+    /// 1) X,Y must be 0<x<10  0<y<10
+    ///  if bigger 10  Set to 10
+    ///  if smaller 0 set to 0
+    /// 2) Constractor 
+    ///   - Default Constractor 
+    ///   - Full Constaractor
+    ///   - one value Constractor
+    /// 3) Test Each Constractor with values
+    /// 
+    /// </summary>
     public class Point
     {
         public int X { get; set; }

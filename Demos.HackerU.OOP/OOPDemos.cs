@@ -69,7 +69,7 @@ namespace Demos.HackerU.OOP
 
         public static void PropsDemo()
         {
-           //Object 1
+           //Initilize Object - Way 1
             Point3D p1 = new Point3D();
             p1.X = 2;
             p1.Y = 10;
@@ -78,10 +78,20 @@ namespace Demos.HackerU.OOP
             Console.WriteLine(p1TextInfo);
 
 
-            //Object 2
-            Point3D p2 = new Point3D { X = 2, Y = 10, Z = 15 };
+            // Initilize Object - Way 2
+            Point3D p2 = new Point3D { X = 2, Y = 4, Z = 9 };
             p1TextInfo =  p2.GetInfo();
             Console.WriteLine(p1TextInfo);
+
+            // Initilize Object - Way 3
+            Point3D p4 = new Point3D(2,3,4);
+            p4.GetInfo();
+
+            Point3D p5 = new Point3D();
+            p5.X = 10;
+            p5.GetInfo();
+
+
 
             if (p1 != p2)//Have the Same 
             {
@@ -105,9 +115,31 @@ namespace Demos.HackerU.OOP
             p1.XText = "12a";
             p1.XText = "13";
             Debug.WriteLine(p1.XText);
-            p1.describeText = "כעראע";
+           // p1.describeText = "כעראע";
 
-        
+            //Pulic that calls inner private methods 
+            Console.WriteLine(p2.GetInfo());
+
+
+           
+            Point3D p3 = p1;
+            if (p1 == p3)
+            {
+                Console.WriteLine("p1 AND p3 are Equls");
+
+            }
+
+
+            p1.X = 10;
+            Console.WriteLine(p3.X);
+
+            p3.X = 2;
+            Console.WriteLine(p1.X);
+
+
+
+
+
 
         }
 

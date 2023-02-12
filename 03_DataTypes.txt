@@ -27,7 +27,12 @@ OOP - Object Oriented Programming
      -----------------------------------------------
   Class
     * Fields
+      - private members data
+       example: 
+       private int age; 
     * Properties
+      - full property: wrapper for private member
+      - auto property: int MyProp {get; set;}
     * Constractor
     - Methods
     * WPF(LAYOUTS)
