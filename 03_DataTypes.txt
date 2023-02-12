@@ -73,7 +73,24 @@ Private / Public:
             return $"{val},{Y},{Z}";
         }
 
+-------------------------------------------------
+Constractor
+ - Initialize  usually private members
+ - Initilize Properties
+ - Call Other Methods
+ - Constractor call only once when innitializing instance
 
+
+ //01 Define a constractor method in the class
+        public Point3D(int px, int py, int pz)
+        {
+            x = px;
+            Y = py;
+            Z = pz;
+        }
+
+ //02 Create instance using the Constarctor
+ Point3D p4 = new Point3D(2,3,4);
 
 
 

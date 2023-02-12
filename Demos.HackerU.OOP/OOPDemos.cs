@@ -79,13 +79,14 @@ namespace Demos.HackerU.OOP
 
 
             // Initilize Object - Way 2
-            Point3D p2 = new Point3D { X = 2, Y = 4, Z = 9 };
+            Point3D p2 = new Point3D() { X = 2, Y = 4, Z = 9 };
             p1TextInfo =  p2.GetInfo();
             Console.WriteLine(p1TextInfo);
 
             // Initilize Object - Way 3
             Point3D p4 = new Point3D(2,3,4);
             p4.GetInfo();
+            p4.X = 10;
 
             Point3D p5 = new Point3D();
             p5.X = 10;

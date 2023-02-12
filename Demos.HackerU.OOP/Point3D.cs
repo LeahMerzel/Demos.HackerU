@@ -14,11 +14,14 @@ namespace Demos.HackerU.OOP
         //field Private
         private int x;
         public int text;
- 
 
+        /// <summary>
+        /// Empty Constractor
+        /// Default Constractor
+        /// </summary>
         public Point3D()
         {
-            x = 0;Y = 0;Z = 0;
+            X = 0; Y = 0; Z = 0;
         }
 
         /// <summary>
@@ -29,11 +32,12 @@ namespace Demos.HackerU.OOP
         /// <param name="px"></param>
         /// <param name="py"></param>
         /// <param name="pz"></param>
-        public Point3D(int px, int py, int pz)
+        public Point3D(int X, int Y, int Z)
         {
-            x = px;
-            Y = py;
-            Z = pz;
+            
+            this.X = X;//Set Validation inside Property
+            this.Y = Y;
+            this.Z = Z;
         }
 
         public void SetX(int value)
