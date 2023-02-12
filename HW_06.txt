@@ -1,0 +1,42 @@
+HW 6 
+Create class that describe courses 
+course properties:
+  - Id:int
+  - Title:string
+  - Category:Enum (QA DotNet DevOps Graphics Webmaster)
+  - Description:string
+  - Students:List<string>
+  - StudentsCount:int
+
+ Validation:
+ - Title Will have maximum 10 chrectres 
+ - Description will have maximum 30 charecters
+ - Id must have Get Only and only positive value
+ - StudentsCount will have Get only 
+ - each course must have maximum 10 students
+ 
+ Constractors:
+ -Create default constractor
+ -Create full Constractor 
+ 
+ Methods:
+//Add Student to course
+public void AddStudentName(string student)
+
+//Remove Student from course
+public void RemoveStudent(string student)
+
+//return all course properties including all students
+public string DisplayCourseInfo()
+
+//return only course Title And StudentsCount
+public string ShortCourseInfo()
+
+
+From Main:
+- Create List of 5 courses using constractors
+- Test all methods for each object
+- Calculate numbers of students in all courses
+ 
+
+

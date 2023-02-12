@@ -37,8 +37,6 @@
             Y = y;
         }
 
-
-
         /// <summary>
         /// X between 0 -10
         /// </summary>
