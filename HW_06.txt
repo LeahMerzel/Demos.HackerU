@@ -1,5 +1,5 @@
 HW 6 
-Create class that describe courses 
+Create class that describe a course 
 course properties:
   - Id:int
   - Title:string
@@ -30,7 +30,7 @@ public void RemoveStudent(string student)
 public string DisplayCourseInfo()
 
 //return only course Title And StudentsCount
-public string ShortCourseInfo()
+public string DiplayShortCourseInfo()
 
 
 From Main:
