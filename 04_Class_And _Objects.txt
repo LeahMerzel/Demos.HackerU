@@ -1,5 +1,4 @@
-calling static method:
-
+calling method using class:
 class A
 {
    public static void MethodA(...) 
