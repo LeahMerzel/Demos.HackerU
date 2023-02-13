@@ -13,7 +13,8 @@ Class A
   public void MethodA(...)
 } 
 
-//Run Non Static Method
+//Run Non Static Method 
+//using instance Initialization
 ClassA a1 = new ClassA();
 a1.MethodA(....);
 -------------------------------
