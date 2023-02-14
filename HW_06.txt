@@ -1,5 +1,5 @@
 HW 6 
-Create class that describe a course 
+1) Create class that describe a course 
 course properties:
   - Id:int
   - Title:string
@@ -34,11 +34,35 @@ public string DiplayShortCourseInfo()
 
 
 From Main:
-- Create  5 courses Instances using constractors
+2) Create  5 courses Instances using constractors
    - 4 instances using full Constractor
    - 1 instance using empty constractor and  set properties 
-- Test all methods for each object
-- Calculate numbers of students in all courses
+
+Example for using the constractors:
+
+var students = new List<string>{"David Davidi","Moshe Moshiu"};
+Course c1 = new Course(1,"C#",Category.DotNet,"OOP",students);
+
+var studentsQA = new List<string>{"Roni Roniyahoo","Efrim Efrimi"};
+Course c2 = new Course(2,"Automate QA",Category.QA,"QA Automation",studentsQA) 
+
+3) Test all methods for each object:
+Example for 2 instances:
+//---------------------------------------
+c1.AddStudentName("Karim Abdul JABAR");
+c1.AddStudentName("Jhon Lenon");
+Console.WriteLine(c1.DisplayCourseInfo());
+c1.RemoveStudent("Jhon Lenon");
+Console.WriteLine(DiplayShortCourseInfo());
+//---------------------------------------
+c2.AddStudentName("Shor Gad");
+Console.WriteLine(c2.DisplayCourseInfo());
+c2.RemoveStudent("Shor Gad");
+c2.DisplayCourseInfo();
+Console.WriteLine(c2.DiplayShortCourseInfo());
+//---------------------------------------
+
+4) Calculate numbers of students in all courses
  
 
 
