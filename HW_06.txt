@@ -35,7 +35,7 @@ public string DiplayShortCourseInfo()
 
 From Main:
 - Create  5 courses Instances using constractors
-   - 4 instances using full Constractors
+   - 4 instances using full Constractor
    - 1 instance using empty constractor and  set properties 
 - Test all methods for each object
 - Calculate numbers of students in all courses
