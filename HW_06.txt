@@ -53,12 +53,13 @@ c1.AddStudentName("Karim Abdul JABAR");
 c1.AddStudentName("Jhon Lenon");
 Console.WriteLine(c1.DisplayCourseInfo());
 c1.RemoveStudent("Jhon Lenon");
+Console.WriteLine(c1.DisplayCourseInfo());
 Console.WriteLine(DiplayShortCourseInfo());
 //---------------------------------------
 c2.AddStudentName("Shor Gad");
 Console.WriteLine(c2.DisplayCourseInfo());
 c2.RemoveStudent("Shor Gad");
-c2.DisplayCourseInfo();
+Console.WriteLine(c2.DisplayCourseInfo());
 Console.WriteLine(c2.DiplayShortCourseInfo());
 //---------------------------------------
 
