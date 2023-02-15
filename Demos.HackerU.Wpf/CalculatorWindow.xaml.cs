@@ -30,12 +30,13 @@ namespace Demos.HackerU.Wpf
     /// </summary>
     public partial class CalculatorWindow : Window
     {
-        public CalculatorWindow()
+        public CalculatorWindow(string title)
         {
             InitializeComponent();
+            this.Title = title;
         }
 
-
+   
 
         private void btnMinus_Click(object sender, RoutedEventArgs e)
         {
@@ -59,8 +60,9 @@ namespace Demos.HackerU.Wpf
                 calc.num2 = num2.Value;
                 //02.Call Method from the object
                 float res = calc.Calculate(Operation.Minus);
+                this.txtBoxResult.Text = res.ToString(); 
 
-                
+
 
 
             }

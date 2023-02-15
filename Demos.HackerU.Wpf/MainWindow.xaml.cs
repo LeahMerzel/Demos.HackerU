@@ -23,6 +23,7 @@ namespace Demos.HackerU.Wpf
     {
         public MainWindow()
         {
+            this.Title = "Demos";
             InitializeComponent();
         }
 
@@ -78,6 +79,18 @@ namespace Demos.HackerU.Wpf
 
 
 
+        }
+
+        /// <summary>
+        /// Open Calculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCalc_Click(object sender, RoutedEventArgs e)
+        {
+            CalculatorWindow winCalc = new CalculatorWindow("Calculator Demo");
+            txtBoxLog.Text += "Open New Window\n";
+            winCalc.Show();
         }
     }
 }
