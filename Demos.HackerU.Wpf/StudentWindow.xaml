@@ -13,14 +13,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        
-      
-
+  
         <StackPanel  Orientation="Horizontal" >
             <TextBox Name="txtId"  Width="100" Margin="10"  />
             <TextBox Name="txtName"  Width="100" Margin="10"  />
             <TextBox Name="txtGrade"  Width="100" Margin="10"  />
             <Button Margin="10"  HorizontalAlignment="Left"  Content="Add Student"  Width="80" Click="Button_Click" />
+            <Button Margin="10"  HorizontalAlignment="Left"  Content="Save To File"  Width="80" Click="Button_Click_2"/>
         </StackPanel>
         
         <Button Margin="20" Grid.Row="2" HorizontalAlignment="Left"  Content="Delete"  Width="80" Click="Button_Click_1" />

@@ -92,6 +92,8 @@ namespace Demos.HackerU.Wpf
             txtBoxLog.Text += "Open New Window\n";
             winCalc.ShowDialog();
             txtBoxLog.Text += winCalc.LastOperation + "\n";
+            
+
 
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -57,9 +59,24 @@ namespace Demos.HackerU.Wpf
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-           var indexSelected = listBoxStudents.SelectedIndex;
-            studentList.RemoveAt(indexSelected);
-            UpdateStudentsListBox();
+            
+            var indexSelected = listBoxStudents.SelectedIndex;
+            if (indexSelected >= 0)
+            {
+                studentList.RemoveAt(indexSelected);
+                UpdateStudentsListBox();
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string contentToFile = "";
+            foreach (Student s in studentList)
+            {
+                contentToFile += s.ShowStudent()+Environment.NewLine;
+            }
+
+            System.IO.File.WriteAllText("students.txt",contentToFile);
         }
     }
 }
