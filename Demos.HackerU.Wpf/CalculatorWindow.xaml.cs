@@ -30,6 +30,10 @@ namespace Demos.HackerU.Wpf
     /// </summary>
     public partial class CalculatorWindow : Window
     {
+        private string lastOperation;
+
+        public string LastOperation { get => lastOperation; set => lastOperation = value; }
+
         public CalculatorWindow(string title)
         {
             InitializeComponent();
@@ -60,8 +64,8 @@ namespace Demos.HackerU.Wpf
                 calc.num2 = num2.Value;
                 //02.Call Method from the object
                 float res = calc.Calculate(Operation.Minus);
-                this.txtBoxResult.Text = res.ToString(); 
-
+                txtBoxResult.Text = res.ToString();
+                LastOperation = num1.Value +"-"+ num2.Value +"="+ res;
 
 
 

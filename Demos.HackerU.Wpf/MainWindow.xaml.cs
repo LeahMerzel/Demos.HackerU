@@ -90,7 +90,9 @@ namespace Demos.HackerU.Wpf
         {
             CalculatorWindow winCalc = new CalculatorWindow("Calculator Demo");
             txtBoxLog.Text += "Open New Window\n";
-            winCalc.Show();
+            winCalc.ShowDialog();
+            txtBoxLog.Text += winCalc.LastOperation + "\n";
+
         }
     }
 }
