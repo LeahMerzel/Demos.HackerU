@@ -41,7 +41,7 @@ namespace Demos.HackerU.HomeWorks
             //Defaults Values
             //this because id is also in parameter of constructor
             this.id = id;
-            Category = CategoryEnum.General;
+            Category = category;
             Title = title;
             Description = description;
             //Initialize List With new
