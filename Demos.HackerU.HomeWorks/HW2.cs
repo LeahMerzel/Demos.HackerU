@@ -13,10 +13,6 @@ namespace Demos.HackerU.HomeWorks
         public static void Run()
         {
 
-
-           
-
-
            #region --Question 4-- 
 
             //--1 Inittializing Array of 10 Size
@@ -39,8 +35,6 @@ namespace Demos.HackerU.HomeWorks
             List<int> lNumbers = GetListFromRowText("1_2_3_XXX_100_34535");
 
             #endregion
-
-
 
         }
 

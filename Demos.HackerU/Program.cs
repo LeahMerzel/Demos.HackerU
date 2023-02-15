@@ -13,21 +13,14 @@ namespace Demos.HackerU
         {
 
             //StringsDemos.Run();
-
             //BasicTypesDemos.Run();
-
             //ArraysAndLoops.Run();
-
             //ConvertTypes.Run();
             //EnumsDemos.Run();
-
             //HW2.Run();
-
-
-            //  OOPDemos.Run();
-
-            OOPDemos.PropsDemo();
-
+            //OOPDemos.Run();
+            // OOPDemos.PropsDemo();
+            HW6.Run();
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
         }

@@ -25,16 +25,18 @@
             y = 0;
         }
         
-        public Point(int xyValue)
-        {
-            X = xyValue;
-            Y = xyValue;
-        }
+     
 
         public Point(int x , int y)
         {
             X = x;
             Y = y;
+        }
+
+        public Point(int xy)
+        {
+            X = xy;
+            Y = xy;
         }
 
         /// <summary>
