@@ -3,7 +3,7 @@ HW 6
 course properties:
   - Id:int
   - Title:string
-  - Category:Enum (QA DotNet DevOps Graphics Webmaster)
+  - Category:Enum (QA DotNet DevOps Graphics Webmaster General)
   - Description:string
   - Students:List<string>
   - StudentsCount:int
