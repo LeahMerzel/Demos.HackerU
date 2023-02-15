@@ -41,11 +41,19 @@ namespace Demos.HackerU.HomeWorks
             //Defaults Values
             //this because id is also in parameter of constructor
             this.id = id;
+            id = ValidateId(id);
             Category = category;
             Title = title;
             Description = description;
             //Initialize List With new
             this.students = students;
+        }
+
+        private static int ValidateId(int id)
+        {
+            if (id < 0)
+                id = 0;
+            return id;
         }
 
         /// <summary>
@@ -63,16 +71,20 @@ namespace Demos.HackerU.HomeWorks
         }
 
 
-        /// <summary>
-        /// Id Of Course Property
-        /// </summary>
-        public int Id {
+      /// <summary>
+      /// 
+      /// </summary>
+        public int Id
+        {
             get
             {
                 return id;
             }
-    
+
         }
+
+
+        //public int Id { get => id; set => id = value; }
 
         /// <summary>
         /// Title Of Course Property
@@ -140,6 +152,8 @@ namespace Demos.HackerU.HomeWorks
             get { return students.Count; }
         }
 
+  
+
         /// <summary>
         /// 
         /// </summary>
@@ -150,7 +164,7 @@ namespace Demos.HackerU.HomeWorks
             string courseInfoText = $"id:{id}\ntitle:{title}\ndesc:{description}\ncategory:{category}\n";
             courseInfoText += "Students:\n";
             int index = 0;
-            foreach (string studentName in students)
+            foreach (string studentName in this.students)
             {
                 index++;
                 courseInfoText += " "+index +"."+ studentName + "\n";

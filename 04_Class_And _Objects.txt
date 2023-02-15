@@ -16,7 +16,9 @@ Class A
 //Run Non Static Method 
 //using instance Initialization
 ClassA a1 = new ClassA();
+ClassA a2 = new ClassA(...);
 a1.MethodA(....);
+a2.MethodB();
 -------------------------------
  Class Vs Object:
 ----------------
@@ -38,12 +40,13 @@ Full Property:
  - Wrapper for private members
  - specially for set
  Example:
-         public int X
-        {
-            get
-            {
-                return x;
-            }
+     private int x = 0;
+     public int X
+     {
+         get
+           {
+              return x;
+           }
             set
             {
                 if (value >= 0)
@@ -86,28 +89,8 @@ Constractor:
 
 
 
-Class Student
 
-//01 Data
- - Name
- - ID
- - Grade
  
- 
- //02 Data
- void DisplayStudent()
- {
- 
- }
-
- bool IsPassed()
- {
-   
- }
-
-
- //Create 3 Object Of Student Class
-
 
 
 
