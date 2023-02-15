@@ -94,5 +94,11 @@ namespace Demos.HackerU.Wpf
             txtBoxLog.Text += winCalc.LastOperation + "\n";
 
         }
+
+        private void btnStudentsWindow_Click(object sender, RoutedEventArgs e)
+        {
+            StudentWindow st = new StudentWindow();
+            st.ShowDialog();
+        }
     }
 }
