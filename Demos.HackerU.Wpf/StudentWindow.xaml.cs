@@ -77,6 +77,8 @@ namespace Demos.HackerU.Wpf
             }
 
             System.IO.File.WriteAllText("students.txt",contentToFile);
+            
+        
         }
     }
 }
