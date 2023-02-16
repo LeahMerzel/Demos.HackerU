@@ -11,11 +11,10 @@ Properties:
  - Keywords :List<string> (Get Only) 
  //Keywords  Related to product search for example if product is xbox keywords can be : (gaming,3d games,microsoft)
  
-  
- Constractors:
+Constractors:
  - Full + Empty
  
- methods:
+ Methods:
  - string GetAsText() - Display All inner Data as string + Keywords
  - string GetAsTextShort() -  Display All inner Data without Keywords
  - string GetAllKeywordsAsTextSeperated(char seperatedChar) - exmple if seperatedChar is '|' the return value is "gaming|3d games|microsoft"
@@ -26,6 +25,7 @@ Properties:
  2) Create Category Class:
  
  Create Class name it Category
+ 
  Properties:
  - id: int (Get Only)
  - Title : string
@@ -35,7 +35,7 @@ Properties:
  - Category(int id,string title) //products will be added by methods 
  - Category()
  
- methods:
+ Methods:
  - string GetAsText() - Display All Category info + Inner Products Info by calling  GetAsText() of product
  - string GetAsTextShort() - Display All Category info Only 
  - void AddProduct(Product newProductToAdd) - Adding New Product to category
