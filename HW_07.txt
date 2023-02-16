@@ -18,7 +18,7 @@ Constractors:
  - string GetAsText() - Display All inner Data as string + Keywords
  - string GetAsTextShort() -  Display All inner Data without Keywords
  - string GetAllKeywordsAsTextSeperated(char seperatedChar) - exmple if seperatedChar is '|' the return value is "gaming|3d games|microsoft"
- - void AddKeywords(string[] keywordstoAdd)
+ - void AddKeywords(string[] keywordstoAdd) - Add Keywords to exsisting keywords
  - double Discount(int percentDiscount) - Calculate price discount by Percent 
 
  -----------
