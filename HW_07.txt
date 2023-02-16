@@ -52,9 +52,10 @@ Constractors:
 
   - Create 5 category instances
   - for each instance add 8 products using the AddProducts(..) or AddProduct(..) that you implemented
+--------------------
 
-4) Test All Methods Of Category for each instance with your own data
-
+4)  - Test All Methods Of Category for each instance with your own data
+    - Test All Product Method on a specific product instance (after using GetProductById(...)) 
 ---------------------
 WPF(Advanced Question):
 
