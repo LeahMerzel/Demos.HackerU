@@ -65,7 +65,7 @@ WPF(Advanced Question):
    
    5.2) cahnge the constractor with parameter List<Category>:
         CategoriesProductsWindow(List<Category> categoriesList)
-		and save as field
+        and initialized CategoriesList field
 		
    5.3) Create 2 listBoxes 
        - CategoriesListBox
