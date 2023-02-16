@@ -74,8 +74,10 @@ WPF(Advanced Question):
         - the method will display all Categories in CategoriesListBox (use GetAsTextShort())
         - Run this method when window loaded (use loaded event of window)		
 
-  5.5)  When User Click the Category 
+  5.5)  When User Click a Category item in CategoriesListBox (change selection)
         Display all Its inner Products in ProductListBox
+	- use the event SelectionChanged of the CategoriesListBox 
+	- fill the ProductListBox from the event method
  
   5.6) Create a button that save all Categories and inner Products to file
   
