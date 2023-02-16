@@ -6,7 +6,7 @@ Create Class name It Product
 Properties:
  - id: int (Get Only)
  - Title : string
- - Desc : tring
+ - Desc : string
  - Price: double
  - Keywords :List<string> (Get Only) 
  //Keywords  Related to product search for example if product is xbox keywords can be : (gaming,3d games,microsoft)
