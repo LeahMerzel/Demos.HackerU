@@ -67,9 +67,9 @@ WPF(Advanced Question):
         CategoriesProductsWindow(List<Category> categoriesList)
         and initialized CategoriesList field
 		
-   5.3) Create 2 listBoxes 
-       - CategoriesListBox
-       - ProductListBox
+   5.3) Create 2 listBoxes in a grid using xaml 
+       - CategoriesListBox - ListBox Control to displaying categories items
+       - ProductListBox - ListBox  Control for displaying products items
 	   
    5.4) Create method name it FillCategoriesListBox
         - the method will display all Categories in CategoriesListBox (use GetAsTextShort())
