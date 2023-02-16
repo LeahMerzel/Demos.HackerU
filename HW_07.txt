@@ -83,10 +83,14 @@ WPF(Advanced Question):
   5.6) Create a button that save all Categories and inner Products to file
   
   //Lots of work here (Advanced)  
-  5.7) create your own design to enable add/remove new categories  and products  
-       into the ListBoxes by user interaction
-	   you should add  textboxes and buttons as we did in classWork
-
+  5.7) create your own xaml design using buttons and textboxes to enable add/remove operations for both                  categories  and products  :
+       - adding new Category 
+       - removing category
+       - adding product
+       - removing product
+       
+       you should add layouts textboxes and buttons (as we did in classWork practices)
+       to let user input instance values
  	  
 	  
          
