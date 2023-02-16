@@ -1,6 +1,7 @@
 HW 7:
 -----
-1) Create Product Class
+1) Create Product Class:
+
 Create Class name It Product
 Properties:
  - id: int (Get Only)
@@ -22,7 +23,8 @@ Properties:
  - double Discount(int percentDiscount) - Calculate price discount by Percent 
 
  -----------
- 2) Create Category Class
+ 2) Create Category Class:
+ 
  Create Class name it Category
  Properties:
  - id: int (Get Only)
@@ -86,38 +88,6 @@ WPF(Advanced Question):
 	  
          
    
-   
-   
-   
-
-
-
-
-
-    
- 
- 
- 
- 
-
-
-
-
-
-
-
-
- 
- Constractors:
- - Full + Empty
- 
- ------------
- 3) Create 
- 
- 
- 
- 
- 
  
  
  
