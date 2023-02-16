@@ -8,7 +8,7 @@ Properties:
  - Title : string
  - Desc : string
  - Price: double
- - Keywords :List<string> (Get Only) 
+ - Keywords :List<string> 
  //Keywords  Related to product search for example if product is xbox keywords can be : (gaming,3d games,microsoft)
  
 Constractors:
