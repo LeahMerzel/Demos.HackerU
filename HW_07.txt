@@ -29,7 +29,7 @@ Constractors:
  Properties:
  - id: int (Get Only)
  - Title : string
- - Products : List<Products>
+ - Products : List<Product>
  
  Constractors:
  - Category(int id,string title) //products will be added by methods 
