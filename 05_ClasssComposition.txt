@@ -12,24 +12,10 @@ Car
  - Engine : eng; GETTER /SETTER
  - string : idNum
 
- Car 
- - Wheel[] wheels;  
- - Engine : eng;
+ What iS mater Details:
+ Using GUI to display List Of Item when clicking 1 items 
+ it display all details 
 
- Engine
-  - NumCilnder
-  - Size : int
-
-
-  c2.Engine = new Endine(....)
-
-
-
-  Mater / Details
-   List<Shape>
-   Details:
-     Shape Info
-     Points Info
 --------------------------------
 
 
