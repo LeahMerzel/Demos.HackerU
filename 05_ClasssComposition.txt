@@ -1,0 +1,17 @@
+Category
+  - List<Product> : products
+
+Shape
+  - List<Point> : points
+
+Car 
+ - Wheel :  w1
+ - Whell :  w2
+ - Wheel :  w3
+ - Whell :  w4
+ - Engine : eng;
+ - string : idNum
+
+ Car 
+ - Wheel[] wheels;  
+ - Engine : eng;

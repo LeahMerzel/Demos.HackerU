@@ -9,10 +9,16 @@ namespace Demos.HackerU.OOP.CarModels
 {
     public class Car
     {
+
+     #region --fields--
         private string idNum;
         private string manufactor;
         private Colors color;
         private int model;
+        #endregion
+
+     #region --Constractor--
+
 
         /// <summary>
         /// Default Empty Constructor
@@ -25,15 +31,14 @@ namespace Demos.HackerU.OOP.CarModels
         //    model = 23;
         //}
 
-        
+
         public Car() : 
             this("00-000-00", "", Colors.White, 18)
         {
             
         }
 
-      
-
+       
         /// <summary>
         /// Full Constructor
         /// </summary>
@@ -43,10 +48,21 @@ namespace Demos.HackerU.OOP.CarModels
         /// <param name="model"></param>
         public Car(string idNum, string manufactor, Colors color, int model)
         {
-            this.idNum = idNum;
-            this.manufactor = manufactor;
-            this.color = color;
-            this.model = model;
+            this.IdNum = idNum;
+            this.Manufactor = manufactor;
+            this.Color = color;
+            this.Model = model;
         }
+
+        #endregion
+
+     #region --Props--
+        public string IdNum { get => idNum; set => idNum = value; }
+        public string Manufactor { get => manufactor; set => manufactor = value; }
+        public Colors Color { get => color; set => color = value; }
+        public int Model { get => model; set => model = value; }
+        #endregion
+
+
     }
 }

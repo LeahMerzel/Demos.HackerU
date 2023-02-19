@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.CarModels
 {
-    internal class Enums
+    public enum Colors
     {
+        White = 0,
+        Black = 1,
+        Grey = 2,
+        Metal = 3
     }
+
 }

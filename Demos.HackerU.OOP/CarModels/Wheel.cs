@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.CarModels
 {
-    internal class Wheel
+    public class Wheel
     {
     }
 }
