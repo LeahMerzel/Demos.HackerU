@@ -9,9 +9,19 @@ Car
  - Whell :  w2
  - Wheel :  w3
  - Whell :  w4
- - Engine : eng;
+ - Engine : eng; GETTER /SETTER
  - string : idNum
 
  Car 
  - Wheel[] wheels;  
  - Engine : eng;
+
+ Engine
+  - NumCilnder
+  - Size : int
+
+
+  c2.Engine = new Endine(....)
+
+
+

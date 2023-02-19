@@ -8,5 +8,12 @@ namespace Demos.HackerU.OOP.CarModels
 {
     public class Engine
     {
+        int Size { get; set; }
+
+        public Engine(int size)
+        {
+            Size = size;
+        }
+
     }
 }

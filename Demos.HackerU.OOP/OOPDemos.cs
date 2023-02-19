@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Demos.HackerU.OOP.CarModels;
 namespace Demos.HackerU.OOP
 {
     public class OOPDemos
@@ -151,6 +151,23 @@ namespace Demos.HackerU.OOP
             List<string> list =new List<String> { "", "" };
         }
 
+        public static void RunCarDemo()
+        {
+            Wheel w = new Wheel { Koter = 12.5f, Year = "2020" };
+            Wheel w1 = new Wheel { Koter = w.Koter, Year = w.Year };
+            Wheel w2 = new Wheel { Koter = w.Koter, Year = w.Year };
+            Wheel w3 = new Wheel { Koter = w.Koter, Year = w.Year };
+
+            Car c1 = new Car();
+
+            Car c2 = new Car("000", "China", Colors.White, 21);
+            c2.AddWheel(w);
+            c2.AddWheel(w1);
+            c2.AddWheel(w2);
+            c2.AddWheel(w3);
+
+
+        }
 
     }
 }
