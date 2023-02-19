@@ -25,3 +25,11 @@ Car
 
 
 
+  Mater / Details
+   List<Shape>
+   Details:
+     Shape Info
+     Points Info
+--------------------------------
+
+

@@ -165,6 +165,9 @@ namespace Demos.HackerU.OOP
             c2.AddWheel(w1);
             c2.AddWheel(w2);
             c2.AddWheel(w3);
+            c2.Eng = new Engine(600);
+            c2.DisplayToConsole();
+            c2.SaveToFile("car.txt");
 
 
         }

@@ -17,7 +17,7 @@ namespace Demos.HackerU.OOP.CarModels
         private Colors color;
         private int model;
         private List<Wheel> Wheels;
-
+        private Engine eng;
         #endregion
 
         #region --Constractor--
@@ -65,6 +65,7 @@ namespace Demos.HackerU.OOP.CarModels
         public string Manufactor { get => manufactor; set => manufactor = value; }
         public Colors Color { get => color; set => color = value; }
         public int Model { get => model; set => model = value; }
+        public Engine Eng { get => eng; set => eng = value; }
         #endregion
 
 
@@ -73,6 +74,23 @@ namespace Demos.HackerU.OOP.CarModels
             this.Wheels.Add(newWheel);
         }
 
+        internal void DisplayToConsole()
+        {
+            //TODO WRITE TO CONSOLE
+        }
 
+        internal string GetAsText()
+        {
+            //TODO Return String 
+            //Print To Console From Calller
+            return "";
+        }
+
+
+
+        internal void SaveToFile(string file)
+        {
+           //TODO
+        }
     }
 }

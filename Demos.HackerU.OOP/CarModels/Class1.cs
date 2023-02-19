@@ -17,10 +17,7 @@ namespace Demos.HackerU.OOP.CarModels
                {
                 defaultFormat = idNum;
                };
-
-
             return defaultFormat;
-
         }
     }
 }
