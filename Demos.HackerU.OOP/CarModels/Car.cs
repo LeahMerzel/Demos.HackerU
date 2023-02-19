@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Demos.HackerU.OOP.CarModels.Enums;
 
 namespace Demos.HackerU.OOP.CarModels
 {
@@ -92,5 +93,15 @@ namespace Demos.HackerU.OOP.CarModels
         {
            //TODO
         }
+
+        public override string ToString()
+        {
+
+            return idNum +" "+ Manufactor+" " + " "+color;
+
+        }
+
+
+
     }
 }

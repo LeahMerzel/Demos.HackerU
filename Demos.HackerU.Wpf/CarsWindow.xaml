@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demos.HackerU.Wpf"
         mc:Ignorable="d"
-        Title="CarsWindow" Height="450" Width="800">
+        Title="CarsWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,8 +19,8 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ListBox Grid.Column="1" Grid.Row="1" Background="WhiteSmoke"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Visible"  AcceptsReturn="true" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" />
+        <ListBox Name="lstBoxCars" Grid.Column="1" Grid.Row="1" Background="WhiteSmoke"/>
+        <TextBox Name="txtCarsDetails" Grid.Column="3" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Visible"  AcceptsReturn="true" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" />
 
     </Grid>
 </Window>

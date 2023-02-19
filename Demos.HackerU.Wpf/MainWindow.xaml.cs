@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualBasic;
+﻿using Demos.HackerU.OOP.CarModels;
+using Enums = Demos.HackerU.OOP.CarModels.Enums;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -105,6 +107,30 @@ namespace Demos.HackerU.Wpf
 
         private void btnCars_Click(object sender, RoutedEventArgs e)
         {
+            Wheel w = new Wheel { Koter = 12.5f, Year = "2020" };
+            Wheel w1 = new Wheel { Koter = 23.5f, Year = "2022" };
+            Wheel w2 = new Wheel { Koter = w.Koter, Year = w.Year };
+            Wheel w3 = new Wheel { Koter = w.Koter, Year = w.Year };
+
+         
+
+            Car c2 = new Car("000", "Toyota", Enums.Colors.White, 21);
+            c2.AddWheel(w);
+            c2.AddWheel(w1);
+            c2.AddWheel(w2);
+            c2.AddWheel(w3);
+            c2.Eng = new Engine(600);
+
+
+            Car c3 = new Car("12-345-67", "BMW", Enums.Colors.Black, 20);
+            c2.AddWheel(w);
+            c2.AddWheel(w1);
+            c2.AddWheel(w2);
+            c2.AddWheel(w3);
+            c2.Eng = new Engine(600);
+
+
+
             CarsWindow carwin = new CarsWindow();
             carwin.ShowDialog();
         }
