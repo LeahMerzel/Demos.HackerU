@@ -18,7 +18,7 @@ Constractors:
  - string GetAsText() - Display All inner Data as string + Keywords
  - string GetAsTextShort() -  Display All inner Data without Keywords
  - string GetAllKeywordsAsTextSeperated(char seperatedChar) - exmple if seperatedChar is '|' the return value is "gaming|3d games|microsoft"
- - void AddKeywords(string[] keywordstoAdd)
+ - void AddKeywords(string[] keywordstoAdd) - Add Keywords to exsisting keywords
  - double Discount(int percentDiscount) - Calculate price discount by Percent 
 
  -----------
@@ -29,7 +29,7 @@ Constractors:
  Properties:
  - id: int (Get Only)
  - Title : string
- - Products : List<Products>
+ - Products : List<Product>
  
  Constractors:
  - Category(int id,string title) //products will be added by methods 
@@ -65,11 +65,11 @@ WPF(Advanced Question):
    
    5.2) cahnge the constractor with parameter List<Category>:
         CategoriesProductsWindow(List<Category> categoriesList)
-		and save as field
+        and initialized CategoriesList field
 		
-   5.3) Create 2 listBoxes 
-       - CategoriesListBox
-       - ProductListBox
+   5.3) Create 2 listBoxes in a grid using xaml 
+       - CategoriesListBox - ListBox Control to displaying categories items
+       - ProductListBox - ListBox  Control for displaying products items
 	   
    5.4) Create method name it FillCategoriesListBox
         - the method will display all Categories in CategoriesListBox (use GetAsTextShort())
@@ -83,10 +83,14 @@ WPF(Advanced Question):
   5.6) Create a button that save all Categories and inner Products to file
   
   //Lots of work here (Advanced)  
-  5.7) create your own design to enable add/remove new categories  and products  
-       into the ListBoxes by user interaction
-	   you should add  textboxes and buttons as we did in classWork
-
+  5.7) create your own xaml design using buttons and textboxes to enable add/remove operations for both                  categories  and products  :
+       - adding new Category 
+       - removing category
+       - adding product
+       - removing product
+       
+       you should add layouts textboxes and buttons (as we did in classWork practices)
+       to let user input instance values
  	  
 	  
          
