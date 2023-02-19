@@ -43,6 +43,7 @@ namespace Demos.HackerU.Wpf
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             Student s = new Student(txtName.Text, txtId.Text,int.Parse(txtGrade.Text));
             studentList.Add(s);
             UpdateStudentsListBox();
@@ -70,6 +71,7 @@ namespace Demos.HackerU.Wpf
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+      
             string contentToFile = "";
             foreach (Student s in studentList)
             {
