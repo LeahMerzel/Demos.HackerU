@@ -107,10 +107,10 @@ namespace Demos.HackerU.Wpf
 
         private void btnCars_Click(object sender, RoutedEventArgs e)
         {
-            Wheel w = new Wheel { Koter = 12.5f, Year = "2020" };
-            Wheel w1 = new Wheel { Koter = 23.5f, Year = "2022" };
-            Wheel w2 = new Wheel { Koter = w.Koter, Year = w.Year };
-            Wheel w3 = new Wheel { Koter = w.Koter, Year = w.Year };
+            Wheel w = new Wheel { Koter = 12.1f, Year = "2020" };
+            Wheel w1 = new Wheel { Koter = 23.5f, Year = "2021" };
+            Wheel w2 = new Wheel { Koter = 23.1f, Year = "2022" };
+            Wheel w3 = new Wheel { Koter = 23.2f, Year = "2019" };
 
          
 
@@ -123,15 +123,15 @@ namespace Demos.HackerU.Wpf
 
 
             Car c3 = new Car("12-345-67", "BMW", Enums.Colors.Black, 20);
-            c2.AddWheel(w);
-            c2.AddWheel(w1);
-            c2.AddWheel(w2);
-            c2.AddWheel(w3);
-            c2.Eng = new Engine(600);
+            c3.AddWheel(new Wheel { Koter = 12.1f, Year = "2018" });
+            c3.AddWheel(new Wheel { Koter = 12.1f, Year = "2016" });
+            c3.AddWheel(new Wheel { Koter = 12.1f, Year = "2015" });
+            c3.AddWheel(new Wheel { Koter = 12.1f, Year = "2014" });
+            c3.Eng = new Engine(400);
 
+            List<Car> l = new List<Car>() { c2, c3 };
 
-
-            CarsWindow carwin = new CarsWindow();
+            CarsWindow carwin = new CarsWindow(l,"Cars Demo");
             carwin.ShowDialog();
         }
     }

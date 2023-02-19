@@ -80,11 +80,15 @@ namespace Demos.HackerU.OOP.CarModels
             //TODO WRITE TO CONSOLE
         }
 
-        internal string GetAsText()
+        public string GetAsText()
         {
-            //TODO Return String 
-            //Print To Console From Calller
-            return "";
+            string txt = "";
+            foreach (Wheel item in this.Wheels)
+            {
+                txt += $"Koter:{item.Koter},Year:{item.Year}\n";
+            }
+
+            return txt;
         }
 
 
@@ -96,9 +100,7 @@ namespace Demos.HackerU.OOP.CarModels
 
         public override string ToString()
         {
-
             return idNum +" "+ Manufactor+" " + " "+color;
-
         }
 
 

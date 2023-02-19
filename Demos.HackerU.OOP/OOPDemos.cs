@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Demos.HackerU.OOP.CarModels;
+using Demos.HackerU.OOP.CarModels.Enums;
 namespace Demos.HackerU.OOP
 {
     public class OOPDemos
@@ -160,7 +161,7 @@ namespace Demos.HackerU.OOP
 
             Car c1 = new Car();
 
-            Car c2 = new Car("000", "China", Colors.White, 21);
+            Car c2 = new Car("000", "China",Colors.White, 21);
             c2.AddWheel(w);
             c2.AddWheel(w1);
             c2.AddWheel(w2);

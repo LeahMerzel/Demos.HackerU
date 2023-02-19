@@ -19,7 +19,7 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ListBox Name="lstBoxCars" Grid.Column="1" Grid.Row="1" Background="WhiteSmoke"/>
+        <ListBox SelectionChanged="lstBoxCars_SelectionChanged" Name="lstBoxCars" Grid.Column="1" Grid.Row="1" Background="WhiteSmoke"/>
         <TextBox Name="txtCarsDetails" Grid.Column="3" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Visible"  AcceptsReturn="true" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" />
 
     </Grid>

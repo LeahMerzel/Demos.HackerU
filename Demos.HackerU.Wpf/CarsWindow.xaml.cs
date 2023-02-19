@@ -41,7 +41,11 @@ namespace Demos.HackerU.Wpf
             lstBoxCars.ItemsSource = ListCars;
         }
 
-
-
+        private void lstBoxCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var index =  lstBoxCars.SelectedIndex;
+            Car selectedCar = this.ListCars[index];
+            txtCarsDetails.Text = selectedCar.GetAsText();
+        }
     }
 }
