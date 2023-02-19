@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="CarsWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Column="1" Grid.Row="1" Background="WhiteSmoke"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Visible"  AcceptsReturn="true" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" />
+
     </Grid>
 </Window>

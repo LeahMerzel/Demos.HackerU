@@ -102,5 +102,11 @@ namespace Demos.HackerU.Wpf
             StudentWindow st = new StudentWindow();
             st.ShowDialog();
         }
+
+        private void btnCars_Click(object sender, RoutedEventArgs e)
+        {
+            CarsWindow carwin = new CarsWindow();
+            carwin.ShowDialog();
+        }
     }
 }
