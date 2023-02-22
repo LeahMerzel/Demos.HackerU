@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
+using Inheritance = Demos.HackerU.OOP.Inheritance;
+
 namespace Demos.HackerU.OOP
 {
     public class OOPDemos
@@ -169,6 +171,16 @@ namespace Demos.HackerU.OOP
             c2.Eng = new Engine(600);
             c2.DisplayToConsole();
             c2.SaveToFile("car.txt");
+
+
+        }
+
+        public static void RunInheritanceDemo()
+        {
+           // Inheritance.Point3D p1 = new Inheritance.Point3D();
+
+            Inheritance.Point3D p1 = new Inheritance.Point3D(2,3,5);
+            p1.Display();
 
 
         }

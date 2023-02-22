@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.Inheritance
 {
-    public class Point
+    public class Point 
     {
-        int X { get; set; }
-        int Y { get; set; }
-
+        public  int X { get; set; }
+        public int Y { get; set; }
         public Point(int x, int y)
         {
             X = x;
@@ -57,7 +56,7 @@ namespace Demos.HackerU.OOP.Inheritance
 
         public void Display()
         {
-            Console.WriteLine($"X:{X}Y:{Y}");
+            Console.Write($"X:{X}Y:{Y}");
         }
 
 
