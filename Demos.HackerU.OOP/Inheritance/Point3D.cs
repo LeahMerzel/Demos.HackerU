@@ -13,7 +13,7 @@ namespace Demos.HackerU.OOP.Inheritance
 
     //2)
     //--Use base
-    //Implement constructor 3DPoin("3:5:8")
+    //Implement constructor 3DPoint("3:5:8")
 
 
 
@@ -46,7 +46,17 @@ namespace Demos.HackerU.OOP.Inheritance
         /// <param name="xyz"></param>
         public Point3D(string xyz):base(xyz)
         {
-            //TODO ....
+            int zRes = 0;
+          
+            string[] xyzArr = xyz.Split(":");
+            if (xyz.Length >= 3)
+            {
+                //Parse x From Text
+                string zText = xyzArr[2];
+                int.TryParse(zText, out zRes);     
+            }
+
+            Z = zRes;
         }
 
 
