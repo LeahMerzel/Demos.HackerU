@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
+using Demos.HackerU.OOP.InheritanceAnimal;
 using Inheritance = Demos.HackerU.OOP.Inheritance;
 
 namespace Demos.HackerU.OOP
@@ -198,6 +199,36 @@ namespace Demos.HackerU.OOP
 
 
         }
+
+        public static void RunAnimalDemo()
+        {
+            Fish f1 = new Fish("Nemo");    
+            f1.DoMove();
+            f1.DoEat();
+            f1.DoSwim();             
+            
+
+            Bird b1  = new Bird("BigBird");
+            b1.DoEat();
+            b1.DoMove();
+            b1.DoFly();
+
+            List<BaseAnimal> animalsList = new List<BaseAnimal> { f1, b1 };
+            foreach (BaseAnimal animalObj in animalsList)
+            {
+                animalObj.DoMove();
+                animalObj.DoEat();
+            }
+
+
+
+
+
+
+
+
+        }
+
 
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.InheritanceAnimal
 {
+
     public class Mammal : BaseAnimal
     {
 
