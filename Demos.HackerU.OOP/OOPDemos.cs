@@ -187,10 +187,10 @@ namespace Demos.HackerU.OOP
             Inheritance.Point3D p2 = new Inheritance.Point3D(8);
             p2.Display();
 
+            Console.WriteLine();
 
-
-            //Inheritance.Point3D p3 = new Inheritance.Point3D("2:3:5");
-            //p3.Display();
+            Inheritance.Point3D p3 = new Inheritance.Point3D("2:3:5");
+            p3.Display();
         }
 
     }

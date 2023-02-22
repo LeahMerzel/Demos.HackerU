@@ -60,9 +60,6 @@ namespace Demos.HackerU.OOP.Inheritance
         }
 
 
-
-
-
         public new void Display()
         {
             //--Call Parent Methods ant props
