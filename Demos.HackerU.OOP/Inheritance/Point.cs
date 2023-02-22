@@ -37,8 +37,8 @@ namespace Demos.HackerU.OOP.Inheritance
         {
             int xRes = 0;
             int yRes = 0;
-            string[] xy = xyPoint.Split(":");
-            if (xy.Length == 2)
+            string[] xy = xyPoint.Split(":"); 
+            if (xy.Length >= 2)
             {
                 //Parse x From Text
                 string xText = xy[0];

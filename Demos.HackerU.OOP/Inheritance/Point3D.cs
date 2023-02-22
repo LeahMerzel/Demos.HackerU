@@ -26,8 +26,8 @@ namespace Demos.HackerU.OOP.Inheritance
 
         public new void Display()
         {
-             base.Display();
-             Console.Write($"Z:{Z}");
+             //base.Display();
+             Console.Write($"{X},{Y},{Z}");
         }
 
 
