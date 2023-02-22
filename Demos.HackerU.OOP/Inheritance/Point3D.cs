@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.Inheritance
 {
-    internal class _3DPoint
+    public class Point3D
     {
     }
 }
