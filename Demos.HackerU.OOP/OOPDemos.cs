@@ -216,8 +216,27 @@ namespace Demos.HackerU.OOP
             List<BaseAnimal> animalsList = new List<BaseAnimal> { f1, b1 };
             foreach (BaseAnimal animalObj in animalsList)
             {
-                animalObj.DoMove();
+                animalObj.DoMove();//Move Animal
                 animalObj.DoEat();
+
+                //if (animalObj is  Bird)
+                //{
+                //    ((Bird)animalObj).DoFly();
+                //}
+
+                if  (animalObj is Fish fish)
+                {
+                    fish.DoSwim();
+                    fish.DoMove();//Move Fish
+                }
+
+                if (animalObj is Bird b)
+                {
+                    b.DoFly();
+                    b.DoMove();
+                }
+
+
             }
 
 
