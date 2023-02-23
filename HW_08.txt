@@ -34,8 +34,10 @@ Class Student
 1.10 Iterate all objects and run DisplayInfoToConsole() for each specific type
 
 --------------------------------------------------------------------------------
-2)
-   Create  a Class Name It “Pockimon”	
+
+2 Pockimon Fight:
+-----------------
+2.1)   Create  a Class Name It “Pockimon”	
    
   *Properties:
 	 - ID : string  
@@ -48,10 +50,9 @@ Class Student
 	      //this method hit other pockimon	
 	      //it should substract the  lifepower of otherPockimon 
          
-   =============================================================
-   
- 	Create 3 inherited classes from the Pockimon class 
-    1) WaterPockimon
+
+     Create 3 inherited classes from the Pockimon class 
+    2.2) WaterPockimon
 	   *Constractors: Full + Empty
 	   *Properties:
            ElectricPower: int	(0 means no able to use ElectricAttackHit  any more)    
@@ -59,7 +60,7 @@ Class Student
 	    - ElectricAttackHit(Pockimon otherPockimon)
 	 
      
-	 2) AirPockimon
+	 2.3) AirPockimon
 	    *Constractors: Full + Empty
         *Properties:
            StormPower : int	    (0 means no able to do StormAttackHit  any more)    
@@ -67,41 +68,40 @@ Class Student
 	    - StormAttackHit(Pockimon otherPockimon)
 	    
 	 
-	 3) ForestPockimon
+	 2.4) ForestPockimon
 	   *Constractors: Full + Empty
        *Properties:
            WoodsPower : int	     (0 means no able to do WoodsAttackHit  any more) 
        *Methods:	    
 	    - WoodsAttackHit(Pockimon otherPockimon)
 	    
-		
+	2.5) Logics:	
      - each pockimon start with LifePower = 100  and AmmunitionPower = 50 
 	 - ElectricPower of WaterPockimon start with 20
      - StormPower of AirPockimon start with 25	
-	 - WoodsPower of ForestPockimon start with 30	
-	 
+	 - WoodsPower of ForestPockimon start with 30	 
 	 
 	 - When pockimon hit other pockimon using the Attack method:
 	      * it reduce 5 LifePower from the other pockimon
 		  * it reduce itself the AmmunitionPower according to the ammunitionPower it uses in the Attack method
 	
-	When WaterPockimon uses the ElectricAttackHit method :
+	 - When WaterPockimon uses the ElectricAttackHit method :
 	      * it reduce 20 LifePower from the other pockimon
 		  * it reduce itself the 8 ElectricPower 
 		  * it reduce itself the 4 LifePower  
 	
-	   When AirPockimon use the StormAttackHit method :
+	 - When AirPockimon use the StormAttackHit method :
 	      * it reduce 10 LifePower from the other pockimon
 		  * it reduce itself the 5 StormPower 
 		  * it reduce itself the 3 LifePower 
 	
-	   When ForestPockimon use the WoodsAttackHit method :
+	 - When ForestPockimon use the WoodsAttackHit method :
 	      * it reduce 8 LifePower from the other pockimon
 		  * it reduce itself 3 WoodsPower
 	      * it reduce itself the 2 LifePower
 		  
 
-    From Main:
+    2.6) From Main:
     
 	 Create Fight with WaterPockimon and AirPockimon (do attacks as you wish) till 1 pockimom die
 	 Example:
