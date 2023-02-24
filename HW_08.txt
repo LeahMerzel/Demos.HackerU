@@ -28,7 +28,7 @@ read all and implement:
 1.1 Choose type for each property
 1.2 DisplayInfoToConsole will print all properties data to console
 1.3 Employe and Student and Customer should inherit Person
-1.4 DisplayInfoToConsole of child should call parent DisplayInfoToConsole
+1.4 DisplayInfoToConsole of childs class should call parent DisplayInfoToConsole
 1.5 create full + empty constractor foreach class
 1.6 Use base keyword in derived constractor
 
