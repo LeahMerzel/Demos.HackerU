@@ -44,7 +44,7 @@ From Main:
 -----------------
 
 2.1)   Create  a Class Name It “Pockimon”	
-   
+   Class Pockimon
   *Properties:
 	 - ID : string  
 	 - Name : string    -  the name of the pockimon
@@ -58,71 +58,87 @@ From Main:
 	      //and substract the  lifepower of otherPockimon  : 
               //otherPockimon.LifePower -=  ammunitionPower/2
 	      //AmmunitionPower -= ammunitionPower
-	      
+-------------------	      
      Create 3 inherited classes from the Pockimon class  WaterPockimon,AirPockimon,ForestPockimon:
+     
     2.2) WaterPockimon
 	   *Constractors: Full + Empty
 	   *Properties:
-              - ElectricPower: int	(0 means no able to use ElectricAttackHit  any more)    
+              - ElectricPower: int	   
             *Methods:	    
-	     - ElectricAttackHit(Pockimon otherPockimon)
+	     - ElectricAttackHit(Pockimon otherPockimon) //if ElectricPower <=0  unable to do ElectricAttackHit any more
 	 
-     
 	 2.3) AirPockimon
 	    *Constractors: Full + Empty
-        *Properties:
-           StormPower : int	    (0 means no able to do StormAttackHit  any more)    
-        *Methods:	    
-	    - StormAttackHit(Pockimon otherPockimon)
+            *Properties:
+             - StormPower : int	     
+            *Methods:	    
+	      - StormAttackHit(Pockimon otherPockimon) //If StormPower <=0  unable to do StormAttackHit any more
 	    
 	 
 	 2.4) ForestPockimon
 	   *Constractors: Full + Empty
-       *Properties:
-           WoodsPower : int	     (0 means no able to do WoodsAttackHit  any more) 
-       *Methods:	    
-	    - WoodsAttackHit(Pockimon otherPockimon)
+           *Properties:
+            - WoodsPower : int	     (0 means no able to do WoodsAttackHit  any more) 
+           *Methods:	    
+	    - WoodsAttackHit(Pockimon otherPockimon)//If WoodsPower <=0  unable to do WoodsAttackHit any more
 	    
 	2.5) Logics:	
-     - each pockimon start with LifePower = 100  and AmmunitionPower = 50 
-	 - ElectricPower of WaterPockimon start with 20
-     - StormPower of AirPockimon start with 25	
-	 - WoodsPower of ForestPockimon start with 30	 
+
+         Value Initialization:
+       - Each pockimon start with LifePower = 100  and AmmunitionPower = 50 
+       - ElectricPower of WaterPockimon start with 20
+       - StormPower of AirPockimon start with 25	
+       - WoodsPower of ForestPockimon start with 30	 
 	 
-	 - When pockimon hit other pockimon using the Attack method:
-	      * it reduce 5 LifePower from the other pockimon
-		  * it reduce itself the AmmunitionPower according to the ammunitionPower it uses in the Attack method
+	 - When pockimon hit other pockimon using the Attack method (in Pockimon class):
+	          * it subsract  LifePower from the other pockimon:
+		    otherPockimon.LifePower -=  ammunitionPower/2 
+		  * it reduce itself the AmmunitionPower according to the ammunitionPower it uses in the Attack method:
+		    AmmunitionPower -= ammunitionPower
 	
 	 - When WaterPockimon uses the ElectricAttackHit method :
 	      * it reduce 20 LifePower from the other pockimon
-		  * it reduce itself the 8 ElectricPower 
-		  * it reduce itself the 4 LifePower  
+	        otherPockimon.LifePower -=  20
+              * it reduce itself 8  ElectricPower 
+		     ElectricPower-= 8;
+              * it reduce itself  2 LifePower  
+	             LifePower-=2
 	
 	 - When AirPockimon use the StormAttackHit method :
 	      * it reduce 10 LifePower from the other pockimon
-		  * it reduce itself the 5 StormPower 
-		  * it reduce itself the 3 LifePower 
-	
+	            otherPockimon.LifePower -=  10
+	      * it reduce itself the 5 StormPower 
+		       StormPower-= 5;
+	      * it reduce itself 2 LifePower 
+	               LifePower-= 2;
+		       
 	 - When ForestPockimon use the WoodsAttackHit method :
 	      * it reduce 8 LifePower from the other pockimon
-		  * it reduce itself 3 WoodsPower
-	      * it reduce itself the 2 LifePower
+	          otherPockimon.LifePower -=  10
+	      * it reduce itself 3 WoodsPower
+	          WoodsPower-=3
+	      * it reduce itself 2 LifePower
+	         LifePower-=2;
 		  
 
     2.6) From Main:
     
-	 Create Fight with WaterPockimon and AirPockimon (do attacks as you wish) till 1 pockimom die
+	 Create Fight with WaterPockimon and AirPockimon (do attacks as you wish) till any pockimom dies
 	 Example:
 	 WaterPockimon pockWater = new WaterPockimon(...)
 	 AirPockimon pockAir = new AirPockimon(...)
-	 pockAir.StormAttackHit(pockWater)
-	 pockWater.ElectricAttackHit(pockAir)
+	 
 	 pockAir.Attack(pockWater,5);
 	 pockWater.Attack(pockAir,7);
+	 
+	 pockAir.StormAttackHit(pockWater)
+	 pockWater.ElectricAttackHit(pockAir)
+	
 	 ....
 	 ....
 	 
-    Create Fight with WaterPockimon and ForestPockimon (do attacks as you wish) till a pockimom die
+    Create Fight with WaterPockimon and ForestPockimon (do attacks as you wish) till any pockimom dies
 	
 
 	
