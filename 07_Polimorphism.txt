@@ -86,16 +86,20 @@ Abstract Class:
    - Must doing ovveride
  ----------------------------------------------------------------------------
  Account
-   - ID
+   - AcountNum: int
    - FullName
+   - CurrentBlance
    - abstract  Deposit(int amount) //הפקדה
    - abstract  Withdraw(int amount)//משיכה
 
 BussinessAccount : Account
+   - CompanyName
 PrivateAccount : Account
-
+   - IDNumber
 Create List of Account and Do Deposit and Withdraw operation
 -------------------------
+
+
 
 
 

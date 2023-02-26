@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Demos.HackerU.OOP.Accounts;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
 using Demos.HackerU.OOP.InheritanceAnimal;
@@ -274,7 +275,24 @@ namespace Demos.HackerU.OOP
             //--Polimorphism (Tostring of QA Not Object due to Polimorphism)
             QA q1 = new QA(10); 
             Console.WriteLine(q1);//
-            
+
+
+            ManagerAccount c1 = new ManagerAccount("MR Cohen", 23234, 10000, "BEZEQ");
+            ManagerAccount c2= new ManagerAccount("MR Levi", 567567, 3000, "HOT");
+            List<Account> accounts = new List<Account>()
+            {
+                c1,c2
+            };
+
+            accounts[0].Deposit(1000);
+            accounts[1].Withdraw(550);
+            Account foundAccount = accounts.Find(a => a.AccountNum == 567567);
+            if (foundAccount!=null)
+            {
+               double balance =  foundAccount.Withdraw(100);
+            }
+
+
         }
 
     }
