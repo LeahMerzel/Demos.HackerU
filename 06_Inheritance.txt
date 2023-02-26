@@ -24,7 +24,7 @@ Point
 
 3DPoint : Point
  - Z
- - Display()
+ - new Display()
 -----------------
 3DPoint p1 = new 3DPoint();
 p1.X = 10;
