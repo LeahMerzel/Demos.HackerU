@@ -278,7 +278,7 @@ namespace Demos.HackerU.OOP
 
 
             ManagerAccount c1 = new ManagerAccount("MR Cohen", 23234, 10000, "BEZEQ");
-            ManagerAccount c2= new ManagerAccount("MR Levi", 567567, 3000, "HOT");
+            ManagerAccount c2=  new ManagerAccount("MR Levi", 567567, 3000, "HOT");
             List<Account> accounts = new List<Account>()
             {
                 c1,c2
@@ -291,6 +291,10 @@ namespace Demos.HackerU.OOP
             {
                double balance =  foundAccount.Withdraw(100);
             }
+
+            //SIMPLE WAY
+            Account c3 = new ManagerAccount("MR MOSHE", 1111, 10000, "BEZEQ");
+            double currentBalance = c3.Withdraw(100);
 
 
         }
