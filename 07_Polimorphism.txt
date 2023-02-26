@@ -1,4 +1,4 @@
- Polimorphism
+﻿ Polimorphism
  - Run Derived Class(Child) From Base Class(Parent)
 
  Point p1 = new Point3D(10,5,4);
@@ -85,9 +85,17 @@ Abstract Class:
    - Has no Implementation
    - Must doing ovveride
  ----------------------------------------------------------------------------
+ Account
+   - ID
+   - FullName
+   - abstract  Deposit(int amount) //הפקדה
+   - abstract  Withdraw(int amount)//משיכה
 
+BussinessAccount : Account
+PrivateAccount : Account
 
-
+Create List of Account and Do Deposit and Withdraw operation
+-------------------------
 
 
 

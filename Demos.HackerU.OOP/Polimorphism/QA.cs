@@ -26,6 +26,9 @@ namespace Demos.HackerU.OOP.Polimorphism
             Console.WriteLine("BugFixes:" + BugFixCount);
         }
 
-   
+        public override string ToString()
+        {
+            return "QA INFO...";
+        }
     }
 }

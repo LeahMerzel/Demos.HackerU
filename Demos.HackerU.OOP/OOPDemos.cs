@@ -272,7 +272,7 @@ namespace Demos.HackerU.OOP
             Console.WriteLine(sum);
 
             //--Polimorphism (Tostring of QA Not Object due to Polimorphism)
-            QA q1 = new QA(10);
+            QA q1 = new QA(10); 
             Console.WriteLine(q1);//
             
         }
