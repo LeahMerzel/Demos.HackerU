@@ -1,0 +1,64 @@
+ Polimorphism
+ - Run Derived Class(Child) From Base Class(Parent)
+
+ Point p1 = new Point3D(10,5,4);
+ p1.
+
+ ----------
+ Func(Point p)//p = Point3D;
+ {
+    p.Z +=10;//Not Allowed
+    p.Display();//Display Of Point
+
+     if  (p is Point3D x)
+     {
+        x.Display();
+     }
+
+
+ }
+ Point3D my3DPoint = new Point3D(10,5,4);
+ Func(my3DPoint)
+
+ ----------------------------------------------------
+ class Point
+ {
+    virtual Display()
+    {
+      ....
+    }
+ }
+ class Point3D : Point
+ {
+    ...
+    override Display()
+    {
+      base.Display();
+      
+    }
+ }
+
+ Point p1 = new Point3D();
+ p1.Display();
+
+ ------------------------------------------
+ Employee
+   - BaseSalary
+   - CalculateSalary();
+ 
+ Developer : Employee
+    - FeaturesImplementdCount : int
+ QA : Employee
+    - BugsFixCount : int
+ Manager : Employe
+    - LidsCount : int
+ ExternalEmployee : Employe
+    - FixSalary
+    - CalculateSalary();
+
+---------------------------------------------
+
+
+
+
+

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
 using Demos.HackerU.OOP.InheritanceAnimal;
+using Demos.HackerU.OOP.Polimorphism;
 using Inheritance = Demos.HackerU.OOP.Inheritance;
 
 namespace Demos.HackerU.OOP
@@ -248,7 +249,11 @@ namespace Demos.HackerU.OOP
 
         }
 
-       
+        public static void RunPolimorphismDemo()
+        {
+            Employee emp1 = new Developer(7);
+           int sum =  emp1.CalculateSalary();//7000
+        }
 
     }
 }

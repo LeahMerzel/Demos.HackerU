@@ -10,13 +10,15 @@ namespace Demos.HackerU.OOP.Polimorphism
     {
        public int BaseSalary { get; set; }
 
-      
-
-        public Employee(int baseSalary)
+        public Employee()
         {
-            BaseSalary = baseSalary;
+            BaseSalary = 7000;
         }
 
+        public int CalculateSalary()
+        {
+            return BaseSalary;
+        }
 
     }
 }

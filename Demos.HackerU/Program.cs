@@ -22,8 +22,9 @@ namespace Demos.HackerU
             //OOPDemos.PropsDemo();
             //OOPDemos.RunCarDemo();
             // OOPDemos.RunInheritanceDemo();
-            OOPDemos.RunAnimalDemo();
-            HW6.Run();
+            // OOPDemos.RunAnimalDemo();
+            OOPDemos.RunPolimorphismDemo();
+           //  HW6.Run();
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
         }
