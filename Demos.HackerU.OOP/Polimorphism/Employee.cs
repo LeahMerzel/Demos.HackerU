@@ -15,7 +15,7 @@ namespace Demos.HackerU.OOP.Polimorphism
             BaseSalary = 7000;
         }
 
-        public int CalculateSalary()
+        public virtual int CalculateSalary()
         {
             return BaseSalary;
         }

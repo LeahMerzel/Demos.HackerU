@@ -252,7 +252,7 @@ namespace Demos.HackerU.OOP
         public static void RunPolimorphismDemo()
         {
             Employee emp1 = new Developer(7);
-           int sum =  emp1.CalculateSalary();//7000
+            int sum =  emp1.CalculateSalary();//7000
         }
 
     }
