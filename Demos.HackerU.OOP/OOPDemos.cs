@@ -262,7 +262,7 @@ namespace Demos.HackerU.OOP
             foreach (Employee employeeObj in employees)
             {
                 sum += employeeObj.CalculateSalary();
-                Console.Write(employeeObj.GetType());
+                Console.Write(employeeObj.GetType().Name);
                 Console.Write(employeeObj.CalculateSalary());
                 Console.WriteLine();
             }
