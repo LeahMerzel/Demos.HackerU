@@ -1,5 +1,5 @@
 ﻿ Polimorphism
- - Run Derived Class(Child) From Base Class(Parent)
+ - Run Derived Class(Child) methods From Base Class(Parent)
  
  Example:
  class Point
