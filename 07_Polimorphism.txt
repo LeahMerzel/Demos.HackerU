@@ -1,26 +1,7 @@
 ﻿ Polimorphism
  - Run Derived Class(Child) From Base Class(Parent)
-
- Point p1 = new Point3D(10,5,4);
- p1.
-
- ----------
- Func(Point p)//p = Point3D;
- {
-    p.Z +=10;//Not Allowed
-    p.Display();//Display Of Point
-
-     if  (p is Point3D x)
-     {
-        x.Display();
-     }
-
-
- }
- Point3D my3DPoint = new Point3D(10,5,4);
- Func(my3DPoint)
-
- ----------------------------------------------------
+ 
+ Example:
  class Point
  {
     virtual Display()
@@ -42,7 +23,8 @@
  p1.Display();
 
  ------------------------------------------
- Employee
+ Practice Example:
+ Employee 
    - BaseSalary
    - virtual CalculateSalary();
  
@@ -71,13 +53,14 @@ Abstract Class:
  2) All Methods + Constractor are available only from child class
  3) we can create instance only of derived class which is not abstract
  4) Class is not for use its too primitive/Skelton
- 
+------------------------------------------------ 
  Abstract Method:
  1) No Implementation no {} only ; at the end of method
  2) All Child class must implement using override the mehods 
  3) Polimorphism is active in Abstract-Override relashiship
  4) Once we have at least obe abstract method  its class must also be abstract
  -----------------------------------------------------------------------------
+ virtual-override vs abstract-override: 
  if method is virtual 
    - Has Implementation
    - May doing ovveride
@@ -85,7 +68,7 @@ Abstract Class:
    - Has no Implementation
    - Must doing ovveride
  ----------------------------------------------------------------------------
- Account
+ Account Class Demo
    - AcountNum: int
    - FullName
    - CurrentBlance
