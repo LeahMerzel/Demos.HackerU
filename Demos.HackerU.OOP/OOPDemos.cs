@@ -294,7 +294,7 @@ namespace Demos.HackerU.OOP
 
             //SIMPLE WAY
             Account c3 = new ManagerAccount("MR MOSHE", 1111, 10000, "BEZEQ");
-            double currentBalance = c3.Withdraw(100);
+            double currentBalance = c3.Withdraw(100);//Polimorphic behavior on absract-override
 
 
         }
