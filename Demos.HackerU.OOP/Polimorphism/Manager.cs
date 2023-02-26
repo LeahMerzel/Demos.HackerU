@@ -18,6 +18,11 @@ namespace Demos.HackerU.OOP.Polimorphism
         {
             return base.CalculateSalary() + (LidsCount*5000);
         }
+
+        public override void DisplayInfo()
+        {
+            Console.WriteLine("Lids:"+LidsCount);
+        }
     }
 }
 

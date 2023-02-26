@@ -255,20 +255,26 @@ namespace Demos.HackerU.OOP
             employees.Add(new QA(10));
             employees.Add(new QA(4));
             employees.Add(new Developer(1));
-            employees.Add(new Employee());
+            //employees.Add(new Employee());
             employees.Add(new Manager(2));
 
             int sum = 0;
             foreach (Employee employeeObj in employees)
             {
-                sum += employeeObj.CalculateSalary();
+                sum += employeeObj.CalculateSalary();//POLIMORPHIC BEHAVIOR ON VIRTUAL-OVERRIDE
                 Console.Write(employeeObj.GetType().Name);
                 Console.Write(employeeObj.CalculateSalary());
+                employeeObj.DisplayInfo();//POLIMORPHIC BEHAVIOR ON ABSTRACT-OVERRIDE
                 Console.WriteLine();
             }
 
             Console.WriteLine("----------------------");
             Console.WriteLine(sum);
+
+            //--Polimorphism (Tostring of QA Not Object due to Polimorphism)
+            QA q1 = new QA(10);
+            Console.WriteLine(q1);//
+            
         }
 
     }

@@ -20,5 +20,12 @@ namespace Demos.HackerU.OOP.Polimorphism
             return base.CalculateSalary() + (BugFixCount * 1000);
         }
 
+        public override void DisplayInfo()
+        {
+            
+            Console.WriteLine("BugFixes:" + BugFixCount);
+        }
+
+   
     }
 }

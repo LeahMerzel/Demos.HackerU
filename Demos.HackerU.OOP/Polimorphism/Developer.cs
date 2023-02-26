@@ -18,7 +18,11 @@ namespace Demos.HackerU.OOP.Polimorphism
         public override int CalculateSalary()
         {
            return BaseSalary + (FeaturesImplementdCount*1000) ;
-        } 
+        }
 
+        public override void DisplayInfo()
+        {
+            Console.WriteLine("FeaturesImplementdCount:" + FeaturesImplementdCount);
+        }
     }
 }
