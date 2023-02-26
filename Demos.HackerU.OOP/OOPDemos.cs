@@ -251,8 +251,22 @@ namespace Demos.HackerU.OOP
 
         public static void RunPolimorphismDemo()
         {
-            Employee emp1 = new Developer(7);
-            int sum =  emp1.CalculateSalary();//7000
+            List<Employee> employees = new List<Employee>();
+            employees.Add(new QA(10));
+            employees.Add(new QA(4));
+            employees.Add(new Developer(1));
+            employees.Add(new Employee());
+            employees.Add(new Manager(2));
+
+            int sum = 0;
+            foreach (Employee employeeObj in employees)
+            {
+                sum += employeeObj.CalculateSalary();
+               Console.WriteLine(employeeObj.CalculateSalary());
+            }
+
+            Console.WriteLine("----------------------");
+            Console.WriteLine(sum);
         }
 
     }

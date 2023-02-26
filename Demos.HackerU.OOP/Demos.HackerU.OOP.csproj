@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Polimorphism\Developer.cs~RF17d5db3.TMP" />
+  </ItemGroup>
+
 </Project>
