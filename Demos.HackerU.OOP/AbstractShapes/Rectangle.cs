@@ -20,13 +20,13 @@ namespace Demos.HackerU.OOP.AbstractShapes
         /// <param name="height"></param>
         /// <param name="width"></param>
         /// <param name="color"></param>
-        public Rectangle(int height, int width, Colors color) : base(color)
+        public Rectangle(int height, int width, ShapeColor color) : base(color)
         {
             _height = height;
             _width = width;
         }
 
-        public Rectangle(int size, Colors color) : base(color)
+        public Rectangle(int size, ShapeColor color) : base(color)
         {
             _height = size;
             _width = size;

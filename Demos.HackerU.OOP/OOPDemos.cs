@@ -167,7 +167,7 @@ namespace Demos.HackerU.OOP
 
             Car c1 = new Car();
 
-            Car c2 = new Car("000", "China",Colors.White, 21);
+            Car c2 = new Car("000", "China", Colors.White, 21);
             c2.AddWheel(w);
             c2.AddWheel(w1);
             c2.AddWheel(w2);
@@ -303,8 +303,8 @@ namespace Demos.HackerU.OOP
         public static void ShapesDemo()
         {
             //--Polimorpism
-            Shape s1 = new Circle(10, AbstractShapes.Colors.White);
-            Shape s2 = new Rectangle(10,15,AbstractShapes.Colors.White);
+            Shape s1 = new Circle(10, ShapeColor.White);
+            Shape s2 = new Rectangle(10,15, ShapeColor.White);
             Shape[] shapes = new Shape[] { s1, s2 };
             Shape s = shapes[0];
             //--Run Derived(Child) method from Base(Parent) Class 
@@ -312,7 +312,7 @@ namespace Demos.HackerU.OOP
              double resPerimeter = s.CalculatePerimeter();
 
             //-Directly not polimorphism
-            Circle s3 = new Circle(20, AbstractShapes.Colors.White);
+            Circle s3 = new Circle(20, ShapeColor.White);
 
 
 

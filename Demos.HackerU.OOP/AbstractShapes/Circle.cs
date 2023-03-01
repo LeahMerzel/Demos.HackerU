@@ -20,7 +20,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
         /// </summary>
         /// <param name="radius"></param>
         /// <param name="color"></param>
-        public Circle(int radius, Colors color) : base(color)
+        public Circle(int radius, ShapeColor color) : base(color)
         {
             _radius = radius;
         }

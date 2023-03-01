@@ -11,16 +11,15 @@ namespace Demos.HackerU.OOP.AbstractShapes
         //--fields
         private double _area; //--claculate
         private double _perimeter; //--calculate
-        private Colors _color; //--data
+        private ShapeColor _color; //--data
 
         /// <summary>
         /// Empty Ctor
         /// </summary>
-        public Shape()
+        public Shape():this(ShapeColor.White)
         {
             _area = 0;
-            Color = Colors.White;
-            Perimeter = 0;
+            _perimeter = 0;
 
         }
 
@@ -28,7 +27,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
         /// Full Ctor
         /// </summary>
         /// <param name="color"></param>
-        public Shape(Colors color)
+        public Shape(ShapeColor color)
         {
             _color = color;
         }
@@ -36,7 +35,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
         /// <summary>
         /// Color Emum
         /// </summary>
-        public Colors Color { get => _color; set => _color = value; }
+        public ShapeColor Color { get => _color; set => _color = value; }
 
         //public double Area
         //{
@@ -59,7 +58,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
         }
     }
 
-    public enum Colors
+    public enum ShapeColor
     {
         Black,
         White,
