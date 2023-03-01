@@ -9,6 +9,7 @@ using Demos.HackerU.OOP.Accounts;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
 using Demos.HackerU.OOP.InheritanceAnimal;
+using Demos.HackerU.OOP.Interfaces;
 using Demos.HackerU.OOP.Polimorphism;
 using Inheritance = Demos.HackerU.OOP.Inheritance;
 
@@ -315,7 +316,22 @@ namespace Demos.HackerU.OOP
 
              var areaOfCircle =  s1.Area;
              Console.WriteLine(s1);
+
+            ILogger recLogger = new Rectangle(10, 8, ShapeColor.Red);
+            recLogger.Log("Instance Rectangle Created", 0,"rect.txt");
+          
+            ManagerInfo(recLogger);
+            ManagerInfo(new Rectangle(5, 12, ShapeColor.White));
+
         }
+
+
+        public static void ManagerInfo(ILogger logger)
+        {
+            //...
+            logger.Log("log Demo", 5);
+        }
+
   
 
     }
