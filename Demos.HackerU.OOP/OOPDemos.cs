@@ -323,6 +323,13 @@ namespace Demos.HackerU.OOP
             ManagerInfo(recLogger);
             ManagerInfo(new Rectangle(5, 12, ShapeColor.White));
 
+
+
+            IPoint p = new PointXY(2, 3);
+            PrintPoint(p);
+
+
+
         }
 
 
@@ -332,7 +339,10 @@ namespace Demos.HackerU.OOP
             logger.Log("log Demo", 5);
         }
 
-  
+        static void PrintPoint(IPoint p)
+        {
+            Console.WriteLine("x={0}, y={1}", p.XLoc, p.YLoc);
+        }
 
     }
 }
