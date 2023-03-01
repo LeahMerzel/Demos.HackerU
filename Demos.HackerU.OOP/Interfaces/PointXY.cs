@@ -19,7 +19,7 @@ namespace Demos.HackerU.OOP.Interfaces
         }
 
         public int XLoc { get => _xPoint; set => _xPoint = value; }
-         public int YLoc { get; set; }
+        public int YLoc { get; set; }
 
         public double Distance()
         {
