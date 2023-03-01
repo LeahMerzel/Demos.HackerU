@@ -9,9 +9,9 @@ namespace Demos.HackerU.OOP.AbstractShapes
     public abstract class Shape
     {
         //--fields
-        private double _area; //--claculate
-        private double _perimeter; //--calculate
-        private ShapeColor _color; //--data
+        private double _area; //--claculate data
+        private double _perimeter; //--calculate data
+        private ShapeColor _color; //-- info data
 
         /// <summary>
         /// Empty Ctor
@@ -36,8 +36,6 @@ namespace Demos.HackerU.OOP.AbstractShapes
         /// Color Emum
         /// </summary>
         public ShapeColor Color { get => _color; set => _color = value; }
-
-
 
 
         public double Area

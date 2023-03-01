@@ -1,3 +1,8 @@
+Internal vs public:
+ - Internal - Access only in the scope of the project
+ - public - from evrywhere also external project
+
+
 Interface :
 
  - Abstract Class that all its properties and methods are also abstract
@@ -6,10 +11,10 @@ Interface :
  - No Constractors
  - No Fields
  - No Implemetation
- - Declared without permmision (always public/internal)
+ - Declared without permmision (most of the time public)
  - Child class Must Implement all signitures
+ - Class Can Implement Many Interfaces But Derived only 1 Class
  -----------------------------------------------
-
 
 Example:
 
@@ -17,13 +22,24 @@ interface IAnimal
 {
   void animalSound(); // interface method (does not have a body)
 }
+interface ILog 
+{
+  void Log();
+}
 
-class Dog : IAnimal
+class Dog : Animal IAnimal,ILog
 {
 
   public void animalSound()
   {
     Console.Writline("HAV HAV...");
   }
+
+   public void Log()
+  {
+    Console.Writline("Logging...");
+  }
 }
+
+
 

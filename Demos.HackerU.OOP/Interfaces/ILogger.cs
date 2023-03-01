@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.Interfaces
 {
-    internal interface ILog
+    public interface ILogger
     {
+        void Log(string text, int level);
+        void Log(string text, int level,string fileName);
     }
 }

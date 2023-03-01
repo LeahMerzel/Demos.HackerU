@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Demos.HackerU.OOP.AbstractShapes
 {
     /// <summary>
-    /// - Implemet ILogger for both Rectangle And Shape
+    /// - Implement ILogger for both Rectangle And Shape
     ///  public interface ILogger   
         //-void Log(string text, int level);
         // -void Log(string text, int level, string fileName);
