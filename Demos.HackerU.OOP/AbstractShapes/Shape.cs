@@ -55,7 +55,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
 
         public override string ToString()
         {
-            var area =  string.Format("{0:0.00}", Area);
+            var area =  string.Format("{0:0.000}", Area);
             return $" Color:{_color}  | Area={area}";
         }
     }

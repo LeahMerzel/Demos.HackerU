@@ -7,7 +7,13 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.AbstractShapes
 {
-    public class Rectangle : Shape
+    /// <summary>
+    /// - Implemet ILogger for both Rectangle And Shape
+    ///  public interface ILogger   
+        //-void Log(string text, int level);
+        // -void Log(string text, int level, string fileName);
+/// </summary>
+public class Rectangle : Shape
     {
         private int _height;
         private int _width;

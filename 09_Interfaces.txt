@@ -1,0 +1,29 @@
+Interface :
+
+ - Abstract Class that all its properties and methods are also abstract
+ - pure abstract
+ - Only Signitures
+ - No Constractors
+ - No Fields
+ - No Implemetation
+ - Declared without permmision (always public/internal)
+ - Child class Must Implement all signitures
+ -----------------------------------------------
+
+
+Example:
+
+interface IAnimal 
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+class Dog : IAnimal
+{
+
+  public void animalSound()
+  {
+    Console.Writline("HAV HAV...");
+  }
+}
+
