@@ -50,7 +50,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
         public override string ToString()
         {
             //Color + Radius
-            return base.ToString() + $"Radius:{_radius}";
+            return  $" Radius:{_radius}"+ base.ToString();
         }
 
 

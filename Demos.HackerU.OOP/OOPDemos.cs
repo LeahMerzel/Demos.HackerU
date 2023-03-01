@@ -310,13 +310,11 @@ namespace Demos.HackerU.OOP
             //--Run Derived(Child) method from Base(Parent) Class 
              double resArea =  s.CalculateArea();
              double resPerimeter = s.CalculatePerimeter();
+             var areaRectangle =  s2.Area;
+             var perimeterRectangle = s2.Perimeter;
 
-            //-Directly not polimorphism
-            Circle s3 = new Circle(20, ShapeColor.White);
-
-
-
-
+             var areaOfCircle =  s1.Area;
+             Console.WriteLine(s1);
         }
   
 

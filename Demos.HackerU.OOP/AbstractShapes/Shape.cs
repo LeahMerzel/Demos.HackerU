@@ -37,24 +37,26 @@ namespace Demos.HackerU.OOP.AbstractShapes
         /// </summary>
         public ShapeColor Color { get => _color; set => _color = value; }
 
-        //public double Area
-        //{
-        //    get { return _area; }
-        //    set { _area = value; CalculateArea(); }
-        //}
 
-        //public double Perimeter
-        //{
-        //    get { return _perimeter; }
-        //    set { _perimeter = value; CalculatePerimeter(); }
-        //}
+
+
+        public double Area
+        {
+            get { return CalculateArea(); }
+        }
+
+        public double Perimeter
+        {
+            get { return CalculatePerimeter(); }
+        }
 
         public abstract double CalculateArea();
         public abstract double CalculatePerimeter();
 
         public override string ToString()
         {
-            return $"Color:{_color}";
+            var area =  string.Format("{0:0.00}", Area);
+            return $" Color:{_color}  | Area={area}";
         }
     }
 

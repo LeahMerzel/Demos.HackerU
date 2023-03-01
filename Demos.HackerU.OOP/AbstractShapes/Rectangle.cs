@@ -49,7 +49,7 @@ namespace Demos.HackerU.OOP.AbstractShapes
 
         public override string ToString()
         {
-            return base.ToString()+ $"Width:{Width} Height:{Height}";
+            return  $" Width:{Width} Height:{Height}" + base.ToString();
         }
     }
 }
