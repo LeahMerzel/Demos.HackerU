@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.Interfaces
 {
-    internal interface IPoint
+    public interface IPoint
     {
+        int XLoc { get; set; }
+        int YLoc { get; set; }
+
+        double Distance();
+
     }
 }

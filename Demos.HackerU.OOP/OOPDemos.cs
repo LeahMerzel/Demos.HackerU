@@ -324,7 +324,7 @@ namespace Demos.HackerU.OOP
             ManagerInfo(new Rectangle(5, 12, ShapeColor.White));
 
 
-
+            //Use Interface 
             IPoint p = new PointXY(2, 3);
             PrintPoint(p);
 
@@ -341,6 +341,8 @@ namespace Demos.HackerU.OOP
 
         static void PrintPoint(IPoint p)
         {
+            
+            I
             Console.WriteLine("x={0}, y={1}", p.XLoc, p.YLoc);
         }
 
