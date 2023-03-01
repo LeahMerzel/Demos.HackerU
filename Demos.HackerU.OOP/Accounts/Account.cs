@@ -11,7 +11,7 @@ namespace Demos.HackerU.OOP.Accounts
         public string FullName { get; set; }
         public int AccountNum { get; set; }
         public double CurrentBalance { get; set; }
-
+        
         public abstract double Deposit(double amount);
         public abstract double Withdraw(double amount);
 

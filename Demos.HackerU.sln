@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassWork", "ClassWork", "{
 		05_ClasssComposition.txt = 05_ClasssComposition.txt
 		06_Inheritance.txt = 06_Inheritance.txt
 		07_Polimorphism.txt = 07_Polimorphism.txt
+		08_Abstract.txt = 08_Abstract.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{B7CB4032-3EAC-4211-9478-A993E8448A2D}"
