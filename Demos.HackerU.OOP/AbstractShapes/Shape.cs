@@ -50,12 +50,12 @@ namespace Demos.HackerU.OOP.AbstractShapes
         //    set { _perimeter = value; CalculatePerimeter(); }
         //}
 
-        public abstract void CalculateArea();
-        public abstract void CalculatePerimeter();
+        public abstract double CalculateArea();
+        public abstract double CalculatePerimeter();
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"Color:{_color}";
         }
     }
 

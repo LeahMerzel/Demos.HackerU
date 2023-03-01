@@ -14,11 +14,11 @@ class DerivedClass : BaseClass
 {
     public override MethodA()
     {
-      base.My
+       // base.MyMethod();
     }
 }
 
-
+---------------------------------------------------------------
 
 Abstract Class: 
  1) Cant create instance of this Class (cant use new from NOWhere)

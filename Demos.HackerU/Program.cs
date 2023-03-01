@@ -23,7 +23,9 @@ namespace Demos.HackerU
             //OOPDemos.RunCarDemo();
             // OOPDemos.RunInheritanceDemo();
             // OOPDemos.RunAnimalDemo();
-            OOPDemos.RunPolimorphismDemo();
+            //OOPDemos.RunPolim();orphismDemo();
+            OOPDemos.ShapesDemo();
+
            //  HW6.Run();
             //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();

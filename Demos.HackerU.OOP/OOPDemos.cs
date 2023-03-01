@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Demos.HackerU.OOP.AbstractShapes;
 using Demos.HackerU.OOP.Accounts;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
@@ -298,6 +299,26 @@ namespace Demos.HackerU.OOP
 
 
         }
+
+        public static void ShapesDemo()
+        {
+            //--Polimorpism
+            Shape s1 = new Circle(10, AbstractShapes.Colors.White);
+            Shape s2 = new Rectangle(10,15,AbstractShapes.Colors.White);
+            Shape[] shapes = new Shape[] { s1, s2 };
+            Shape s = shapes[0];
+            //--Run Derived(Child) method from Base(Parent) Class 
+             double resArea =  s.CalculateArea();
+             double resPerimeter = s.CalculatePerimeter();
+
+            //-Directly not polimorphism
+            Circle s3 = new Circle(20, AbstractShapes.Colors.White);
+
+
+
+
+        }
+  
 
     }
 }
