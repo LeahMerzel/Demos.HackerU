@@ -11,20 +11,19 @@ namespace Demos.HackerU
     {
         static void Main(string[] args)
         {
-
             //StringsDemos.Run();
             //BasicTypesDemos.Run();
             //ArraysAndLoops.Run();
             //ConvertTypes.Run();
             //EnumsDemos.Run();
             //HW2.Run();
-            //OOPDemos.Run();
-            //OOPDemos.PropsDemo();
-            //OOPDemos.RunCarDemo();
-            // OOPDemos.RunInheritanceDemo();
-            // OOPDemos.RunAnimalDemo();
-            //OOPDemos.RunPolim();orphismDemo();
-            OOPDemos.ShapesDemo();
+            //OOPRunDemos.Run();
+            //OOPRunDemos.PropsDemo();
+            //OOPRunDemos.RunCarDemo();
+            //OOPRunDemos.RunInheritanceDemo();
+            //OOPRunDemos.RunAnimalDemo();
+            //OOPRunDemos.RunPolim();orphismDemo();
+             OOPRunDemos.ShapesDemo();
 
            //  HW6.Run();
             //--WAIT FOR USER PRESS ANY KEY--
