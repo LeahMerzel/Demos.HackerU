@@ -167,8 +167,7 @@ The name of the Destructor is the same as class and prefixed with a tilde (~).
 A Destructor is used to free the dynamic allocated memory and release the resources.
 
 19. What is Namespaces?
- 
-Namespace allow creating a system to organize the code.
+ Namespace allow creating a system to organize the code.
  
 20. What are Virtual, Override, and New keywords in C#?
 Virtual is used to modify a method, property, indexer, or event declared in the base class and allows it to be overridden in the derived class.
