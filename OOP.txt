@@ -98,18 +98,17 @@ Protected Internal: can be visible inside the assembly through objects and in de
 Inheritance is a process of deriving the new class from an already existing class.
  
 6. How can you implement multiple inheritance in C#? 
-Using Interfaces, you can implement multiple inheritance in C#.
+multiple inheritance are not allowed in c#
+you can implement multiple interfacesbut derive single class only
  
 7. Are private class members inherited to the derived class?
 Yes, the private members are also inherited in the derived class but we will not be able to access them.
 Trying to access a private base class member in the derived class will report a compile time error.
 
 8. What is Polymorphism?
-When a message can be processed in different ways it is called polymorphism.
-Polymorphism means many forms.
-There are 2 types of polymorphism:
-Compile time polymorphism also know as Overloading
-Run time polymorphism also know as Overriding
+   When Overriding amethod using virtual-override 
+   a derived class method can be called by base class 
+   same method call can run differnt implementations
 
 9. What is method Overloading? 
 Creating multiple methods in a class with the same name but with different parameters and different types is called method overloading.
@@ -345,9 +344,6 @@ You can clone the object of Singleton but, you cannot clone the static class obj
 Singleton object stores in heap but, static object stores in stack.
 A singleton can be initialized lazily or asynchronously while a static class is generally initialized when it is first loaded.
 
-52. Can you serialize Hashtable?
-No, you can not serialize Hashtable.
-Because, the .NET Framework does not allow serialization of any object that implements the IDictionary interface.
 
 53. Why is Singleton pattern considered an Anti-pattern?
 Singletons are not easy to handle with unit tests. You cannot control their instantiation and they may retain state across invocations.
