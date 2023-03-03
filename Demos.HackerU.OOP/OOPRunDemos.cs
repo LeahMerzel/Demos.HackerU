@@ -15,7 +15,7 @@ using Inheritance = Demos.HackerU.OOP.Inheritance;
 
 namespace Demos.HackerU.OOP
 {
-    public class OOPDemos
+    public class OOPRunDemos
     {
         public static void Run()
         {
