@@ -9,8 +9,4 @@
     <None Remove="Polimorphism\Developer.cs~RF17d5db3.TMP" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="StaticDemos\" />
-  </ItemGroup>
-
 </Project>

@@ -11,6 +11,7 @@ using Demos.HackerU.OOP.CarModels.Enums;
 using Demos.HackerU.OOP.InheritanceAnimal;
 using Demos.HackerU.OOP.Interfaces;
 using Demos.HackerU.OOP.Polimorphism;
+using Demos.HackerU.OOP.StaticDemos;
 using Inheritance = Demos.HackerU.OOP.Inheritance;
 
 namespace Demos.HackerU.OOP
@@ -337,6 +338,26 @@ namespace Demos.HackerU.OOP
         static void PrintPoint(IPoint p)//Any Class the Implement IPoint
         {
             Console.WriteLine("x={0}, y={1}", p.XLoc, p.YLoc);
+        }
+
+
+        public static void StaticDemo()
+        {
+            MyClass m1 = new MyClass();
+            m1.MyProperty += 10;
+            
+            MyClass m2 = new MyClass();
+            m2.MyProperty += 100;
+
+
+            for (int i = 0; i < 100; i++)
+            {
+                MyClass m = new MyClass();
+                m.MyProperty = i;
+            }
+
+            int x = m2.CountObjects;//102
+
         }
 
     }

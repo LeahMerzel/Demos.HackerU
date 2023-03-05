@@ -23,10 +23,11 @@ namespace Demos.HackerU
             //OOPRunDemos.RunInheritanceDemo();
             //OOPRunDemos.RunAnimalDemo();
             //OOPRunDemos.RunPolim();orphismDemo();
-             OOPRunDemos.ShapesDemo();
+            // OOPRunDemos.ShapesDemo();
+            OOPRunDemos.StaticDemo();
 
            //  HW6.Run();
-            //--WAIT FOR USER PRESS ANY KEY--
+           //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
         }
 

@@ -12,11 +12,12 @@
    MyClass.FuncA(); //FuncA() is static method
    MyClass.PropA = 5; //PropA is static Property
    MyClass.fieldA = 10;
+
  Non Static: 
   MyClass m = new MyClass();
   m.FuncA()//FunA() method is non static
 
-
+Example: 
   Class Demo
   {
       public static int num1;
