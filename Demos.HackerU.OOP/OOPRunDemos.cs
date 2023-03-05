@@ -358,6 +358,16 @@ namespace Demos.HackerU.OOP
 
             int x = m2.CountObjects;//102
 
+
+            //----------------------------------
+            //Counter Demo
+            ModelClass mc1 = new ModelClass();
+            ModelClass mc2 = new ModelClass();
+            ModelClass mc3 = new ModelClass();
+            
+            
+
+
         }
 
     }
