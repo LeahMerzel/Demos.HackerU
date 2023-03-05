@@ -1,11 +1,13 @@
 
-- Static Vs Non Static
+1) Static Vs Non Static
+2) readonly / const
 - Accesability Modifier (public/private)
 - seald
-- readonly / const
+
 - Singelton Pattern
 - Other Pattern
 ----------------------------------
+ 1)
  Static: 
   - Call Method/Property using the Class
   static Example:
@@ -50,6 +52,61 @@ Example:
 -------------------------------------------
 Static field/Property
  - the field/Property is common to all objects(new)
+
+ ---------------------------------------------------------------------
+
+ 2) readonly:
+   - fields that are constant 
+   - cant be changed/Write after intitilized
+   
+   const:
+   - not allowed to changed . only when declared
+   - static
+
+
+   Class A
+   {
+      public readonly int fieldA = 0;
+      public const int fieldB = 0;//Not allowd to be changed from anywhere      
+      public static readonly int fieldB = 0;
+      
+      //Static Constractor
+      static A()
+      {
+          fieldB = 10;//Allowed
+          //Initialized Static 
+          //Initilizing static readonly
+          //call other static methods();
+      }
+
+      public A()
+      {
+          fieldA = 10;//Allowed
+      }
+
+            
+      public A(int x)
+      {
+          fieldA = x+10;
+          //
+      }
+
+      public void MethodA()
+      {
+        fieldA = 10;//Not Allowed
+      }
+
+   }
+-----------------------------------------
+   //const
+   int x = A.fieldB;
+   
+   //readonly
+   A a = new A();
+   int y =a.fieldA;
+-----------------------------------------
+
+
 
 
 

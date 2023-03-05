@@ -358,6 +358,11 @@ namespace Demos.HackerU.OOP
 
             int x = m2.CountObjects;//102
 
+            MyClass.StaticMethodA();
+           
+            //MyClass m3 = new MyClass();
+            //m3.StaticMethodA()//Not Allowed
+
 
             //----------------------------------
             //Counter Demo

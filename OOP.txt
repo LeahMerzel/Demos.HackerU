@@ -45,10 +45,10 @@ Is it possible to restrict object creation in C#?
 Can you inherit Enum in C#?
 Is it possible to achieve Method extension using Interface?
 Is it possible that a Method can return multiple values at a time?
-What is Constant?
-What is Readonly?
-What is Static?
-What is Static ReadOnly?
+*What is Constant?
+*What is Readonly?
+*What is Static?
+*What is Static ReadOnly?
 Can “this” be used within a Static Method?
 What is Design Patterns in .Net?
 Which are the Types of Design Pattern?
