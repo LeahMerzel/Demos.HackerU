@@ -131,7 +131,6 @@ namespace Demos.HackerU.OOP
             //Pulic that calls inner private methods 
             Console.WriteLine(p2.GetInfo());
 
-
            
             Point3D p3 = p1;
             if (p1 == p3)
@@ -139,7 +138,6 @@ namespace Demos.HackerU.OOP
                 Console.WriteLine("p1 AND p3 are Equls");
 
             }
-
 
             p1.X = 10;
             Console.WriteLine(p3.X);
