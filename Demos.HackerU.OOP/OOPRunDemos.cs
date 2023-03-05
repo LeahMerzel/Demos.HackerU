@@ -373,10 +373,10 @@ namespace Demos.HackerU.OOP
 
             //Singelton Pattern
             // MyManager m = new MyManager(); //Not Allowed
-            MyManager manager1 = MyManager.CreateInstance();
+            MyManager manager1 = MyManager.GetInstance();
             manager1.MyProperty = "ABCD";
 
-            MyManager manager2 = MyManager.CreateInstance();
+            MyManager manager2 = MyManager.GetInstance();
             Console.WriteLine(manager2.MyProperty);
 
             // MyManager.CreateInstance().MyProperty = "XXX";
