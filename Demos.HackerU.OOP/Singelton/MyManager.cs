@@ -34,7 +34,7 @@ namespace Demos.HackerU.OOP.Singelton
         /// 
         /// </summary>
         /// <returns></returns>
-        public static MyManager CreateInstance()
+        public static MyManager GetInstance()
         {
             if (instanceObj == null)
             {

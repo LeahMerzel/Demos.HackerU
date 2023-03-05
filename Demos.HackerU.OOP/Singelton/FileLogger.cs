@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Demos.HackerU.OOP.Singelton
 {
-    internal class FileLogger
+    public  class FileLogger
     {
+        public void Log(string text,string path)
+        {
+            File.WriteAllText(text,path);
+        }
+
+
     }
 }
