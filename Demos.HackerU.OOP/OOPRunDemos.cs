@@ -382,7 +382,9 @@ namespace Demos.HackerU.OOP
             // MyManager.CreateInstance().MyProperty = "XXX";
 
             //class work
-            FileLogger.GetInstance().Log("Test","test.txt");
+            FileLogger.GetInstance("test.txt").Log("Test 123");
+            FileLogger.GetInstance("test.txt").Log("Test 124");
+
 
         }
 
