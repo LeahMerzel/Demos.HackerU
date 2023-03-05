@@ -11,6 +11,7 @@ using Demos.HackerU.OOP.CarModels.Enums;
 using Demos.HackerU.OOP.InheritanceAnimal;
 using Demos.HackerU.OOP.Interfaces;
 using Demos.HackerU.OOP.Polimorphism;
+using Demos.HackerU.OOP.Singelton;
 using Demos.HackerU.OOP.StaticDemos;
 using Inheritance = Demos.HackerU.OOP.Inheritance;
 
@@ -369,11 +370,24 @@ namespace Demos.HackerU.OOP
             ModelClass mc1 = new ModelClass();
             ModelClass mc2 = new ModelClass();
             ModelClass mc3 = new ModelClass();
-            
-            
+
+            //Singelton Pattern
+            // MyManager m = new MyManager(); //Not Allowed
+            MyManager manager1 = MyManager.CreateInstance();
+            manager1.MyProperty = "ABCD";
+
+            MyManager manager2 = MyManager.CreateInstance();
+            Console.WriteLine(manager2.MyProperty);
+
+            // MyManager.CreateInstance().MyProperty = "XXX";
+
+
 
 
         }
+
+
+
 
     }
 }
