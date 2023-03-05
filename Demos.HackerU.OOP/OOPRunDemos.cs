@@ -245,12 +245,7 @@ namespace Demos.HackerU.OOP
 
 
 
-
-
-
-
-
-        }
+    }
 
         public static void RunPolimorphismDemo()
         {
@@ -339,10 +334,8 @@ namespace Demos.HackerU.OOP
             logger.Log("log Demo", 5);
         }
 
-        static void PrintPoint(IPoint p)
+        static void PrintPoint(IPoint p)//Any Class the Implement IPoint
         {
-            
-            
             Console.WriteLine("x={0}, y={1}", p.XLoc, p.YLoc);
         }
 

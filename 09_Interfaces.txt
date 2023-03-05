@@ -88,3 +88,44 @@ class MainClass
 // Output: My Point: x=2, y=3
 
 --------------------------------------------------------------------------------------------
+interface ILogger
+{
+   void Log(string text);
+}
+
+class LoggerFile : ILogger
+{
+   void Log(string text)
+   {
+     File.WriteAllText(text)
+   }
+}
+class LoggerCloud : ILogger
+{
+   //...
+   void Log(string text)
+   {
+     //ConnectTo GOOGLE Cloud
+     //Send Text
+   }
+    //...
+}
+-------------------------
+Class Window : BaseWindow , ILogger
+{
+  //field
+   private ILogger logger;
+   //Property
+   public ILogger Logger {get=>logger; set=> legger = value } 
+
+}
+
+----------------------
+Window w1 = new Window();
+//w1.Logger = new LoggerFile();
+w1.Logger = new LoggerCloud();
+w1.Logger = //Future Develpment Class
+----------------------------------------------
+BaseClass b = new DerivedClass();
+Interface i = new InterfaceImplementation();
+

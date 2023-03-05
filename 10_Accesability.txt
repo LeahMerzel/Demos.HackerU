@@ -1,0 +1,57 @@
+
+- Static Vs Non Static
+- Accesability Modifier (public/private)
+- seald
+- readonly / const
+- Singelton Pattern
+- Other Pattern
+----------------------------------
+ Static: 
+  - Call Method/Property using the Class
+  static Example:
+   MyClass.FuncA(); //FuncA() is static method
+   MyClass.PropA = 5; //PropA is static Property
+   MyClass.fieldA = 10;
+ Non Static: 
+  MyClass m = new MyClass();
+  m.FuncA()//FunA() method is non static
+
+
+  Class Demo
+  {
+      public static int num1;
+      public int num2;
+      public funcA()//Non Static
+      {
+        Console.Writeline(num1) //static field access
+      }
+    
+  }
+  //1) Access:
+  //acces using Class name
+  Demo.num1 = 10;//static
+  
+  //access using object after constractor call
+  c1 = new Demo();
+  c1.num2 = 10;//non static
+ 
+ //2) Sharing:
+  Demo.num1 = 100;
+  c1.FuncA(); //100
+  c1.num2 = 1;
+
+  Demo.num1++;
+ 
+  Demo c2 = new Demo();
+  c2.FuncA();//101
+  c2.num2 = 5;
+
+-------------------------------------------
+Static field/Property
+ - the field/Property is common to all objects(new)
+
+
+
+
+
+
