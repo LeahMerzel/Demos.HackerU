@@ -1,8 +1,11 @@
 
 1) Static Vs Non Static
+  - Static Data(Fields/Properties)
+  - static constractor
+  - Static Methods
 2) readonly / const
-- Accesability Modifier (public/private)
-- seald
+3) Singelton
+
 
 - Singelton Pattern
 - Other Pattern
@@ -105,11 +108,38 @@ Static field/Property
    A a = new A();
    int y =a.fieldA;
 -----------------------------------------
+ -  Static Methods(regular) can never call Non-Static
+ 
+ public static void DoSomthing()
+ {
+      this. //Not Allowed
 
+    //--This is not allowed
+      this.MethodA();
+   
+    //--This is not allowed
+     MethodA();
 
+    //--This is not allowed
+     PropertyA = "XXXX";
 
+     //--Allowed
+     MethodB();
+   
+ }
 
+  string PropertyA {get; set;}
 
+  public  MethodA()
+  {
+     
+  }
 
+  public static  MethodB()
+  {
+     
+  }
+
+---------------------------------------------------------
 
 

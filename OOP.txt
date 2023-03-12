@@ -88,11 +88,11 @@ Abstraction is a process of hiding the implementation details and displaying the
  
 4. What are Access Specifiers?
 There are 5 access specifiers,
-Public: can be accessible outside the class through object reference.
+Public: can be accessible outside the class (any class) through object reference.
 Private: can be accessible inside the class only through member functions.
-Protected: can be just like private but accessible in derived classes also through member functions.
-Internal: can be visible inside the assembly. Accessible through objects.
-Protected Internal: can be visible inside the assembly through objects and in derived classes outside the assembly through member functions.
+Protected: Access to all members in derived classes
+Internal: can be visible inside the assembly(DLL/EXE) inside project. Accessible through objects.
+Protected Internal: can be visible inside the assembly through objects and in derived classes outside the assembly
 
 5. What is Inheritance?
 Inheritance is a process of deriving the new class from an already existing class.

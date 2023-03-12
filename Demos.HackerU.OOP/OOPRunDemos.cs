@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Demos.HackerU.OOP.AbstractShapes;
 using Demos.HackerU.OOP.Accounts;
 using Demos.HackerU.OOP.CarModels;
 using Demos.HackerU.OOP.CarModels.Enums;
+using Demos.HackerU.OOP.ExtentionMethod;
 using Demos.HackerU.OOP.InheritanceAnimal;
 using Demos.HackerU.OOP.Interfaces;
 using Demos.HackerU.OOP.Polimorphism;
@@ -17,7 +19,7 @@ using Inheritance = Demos.HackerU.OOP.Inheritance;
 
 namespace Demos.HackerU.OOP
 {
-    public class OOPRunDemos
+    public static class OOPRunDemos
     {
         public static void Run()
         {
@@ -51,7 +53,7 @@ namespace Demos.HackerU.OOP
 
             //Array Of Objects
             Point[] points = { p1, p2, p3 };
-           
+
             foreach (Point pointObj in points)
             {
                 pointObj.Display();
@@ -66,7 +68,7 @@ namespace Demos.HackerU.OOP
                 pointObj.Display();
             }
 
-            Point[] points2 = { new Point{X=0,Y=1 }, 
+            Point[] points2 = { new Point{X=0,Y=1 },
                                 new Point { X = 10, Y = 10 } };
             points2[0].AddX(5);
             points2[0].AddY(5);
@@ -79,7 +81,7 @@ namespace Demos.HackerU.OOP
 
         public static void PropsDemo()
         {
-           //Initilize Object - Way 1
+            //Initilize Object - Way 1
             Point3D p1 = new Point3D();
             p1.X = 2;
             p1.Y = 10;
@@ -90,11 +92,11 @@ namespace Demos.HackerU.OOP
 
             // Initilize Object - Way 2
             Point3D p2 = new Point3D() { X = 2, Y = 4, Z = 9 };
-            p1TextInfo =  p2.GetInfo();
+            p1TextInfo = p2.GetInfo();
             Console.WriteLine(p1TextInfo);
 
             // Initilize Object - Way 3
-            Point3D p4 = new Point3D(2,3,4);
+            Point3D p4 = new Point3D(2, 3, 4);
             p4.GetInfo();
             p4.X = 10;
 
@@ -107,7 +109,8 @@ namespace Demos.HackerU.OOP
             if (p1 != p2)//Have the Same 
             {
                 Console.WriteLine("NoT Equals")
-  ;         }
+  ;
+            }
             if (p1.X == p2.X)
             {
                 Console.WriteLine(" X Part is Equal");
@@ -119,19 +122,19 @@ namespace Demos.HackerU.OOP
             p1.X = 2;
             p1.SetX(5);
             p1.X = -5;
-            
+
 
             Debug.WriteLine(p1.XText);
 
             p1.XText = "12a";
             p1.XText = "13";
             Debug.WriteLine(p1.XText);
-           // p1.describeText = "כעראע";
+            // p1.describeText = "כעראע";
 
             //Pulic that calls inner private methods 
             Console.WriteLine(p2.GetInfo());
 
-           
+
             Point3D p3 = p1;
             if (p1 == p3)
             {
@@ -152,11 +155,11 @@ namespace Demos.HackerU.OOP
             Point sp2 = new Point(5);
             sp2.Display();
 
-            Point sp3 = new Point(12,-4);
+            Point sp3 = new Point(12, -4);
             sp3.Display();
 
 
-            List<string> list =new List<String> { "", "" };
+            List<string> list = new List<String> { "", "" };
         }
 
         public static void RunCarDemo()
@@ -182,14 +185,14 @@ namespace Demos.HackerU.OOP
 
         public static void RunInheritanceDemo()
         {
-           // Inheritance.Point3D p1 = new Inheritance.Point3D();
+            // Inheritance.Point3D p1 = new Inheritance.Point3D();
 
-            Inheritance.Point3D p1 = new Inheritance.Point3D(2,3,5);
+            Inheritance.Point3D p1 = new Inheritance.Point3D(2, 3, 5);
             p1.Display();
 
             Console.WriteLine();
 
-            
+
             Inheritance.Point3D p2 = new Inheritance.Point3D();
             p2.Display();
 
@@ -206,13 +209,13 @@ namespace Demos.HackerU.OOP
 
         public static void RunAnimalDemo()
         {
-            Fish f1 = new Fish("Nemo");    
+            Fish f1 = new Fish("Nemo");
             f1.DoMove();
             f1.DoEat();
-            f1.DoSwim();             
-            
+            f1.DoSwim();
 
-            Bird b1  = new Bird("BigBird");
+
+            Bird b1 = new Bird("BigBird");
             b1.DoEat();
             b1.DoMove();
             b1.DoFly();
@@ -228,7 +231,7 @@ namespace Demos.HackerU.OOP
                 //    ((Bird)animalObj).DoFly();
                 //}
 
-                if  (animalObj is Fish fish)
+                if (animalObj is Fish fish)
                 {
                     fish.DoSwim();
                     fish.DoMove();//Move Fish
@@ -245,7 +248,7 @@ namespace Demos.HackerU.OOP
 
 
 
-    }
+        }
 
         public static void RunPolimorphismDemo()
         {
@@ -270,12 +273,12 @@ namespace Demos.HackerU.OOP
             Console.WriteLine(sum);
 
             //--Polimorphism (Tostring of QA Not Object due to Polimorphism)
-            QA q1 = new QA(10); 
+            QA q1 = new QA(10);
             Console.WriteLine(q1);//
 
 
             ManagerAccount c1 = new ManagerAccount("MR Cohen", 23234, 10000, "BEZEQ");
-            ManagerAccount c2=  new ManagerAccount("MR Levi", 567567, 3000, "HOT");
+            ManagerAccount c2 = new ManagerAccount("MR Levi", 567567, 3000, "HOT");
             List<Account> accounts = new List<Account>()
             {
                 c1,c2
@@ -284,9 +287,9 @@ namespace Demos.HackerU.OOP
             accounts[0].Deposit(1000);
             accounts[1].Withdraw(550);
             Account foundAccount = accounts.Find(a => a.AccountNum == 567567);
-            if (foundAccount!=null)
+            if (foundAccount != null)
             {
-               double balance =  foundAccount.Withdraw(100);
+                double balance = foundAccount.Withdraw(100);
             }
 
             //SIMPLE WAY
@@ -300,21 +303,21 @@ namespace Demos.HackerU.OOP
         {
             //--Polimorpism
             Shape s1 = new Circle(10, ShapeColor.White);
-            Shape s2 = new Rectangle(10,15, ShapeColor.White);
+            Shape s2 = new Rectangle(10, 15, ShapeColor.White);
             Shape[] shapes = new Shape[] { s1, s2 };
             Shape s = shapes[0];
             //--Run Derived(Child) method from Base(Parent) Class 
-             double resArea =  s.CalculateArea();
-             double resPerimeter = s.CalculatePerimeter();
-             var areaRectangle =  s2.Area;
-             var perimeterRectangle = s2.Perimeter;
+            double resArea = s.CalculateArea();
+            double resPerimeter = s.CalculatePerimeter();
+            var areaRectangle = s2.Area;
+            var perimeterRectangle = s2.Perimeter;
 
-             var areaOfCircle =  s1.Area;
-             Console.WriteLine(s1);
+            var areaOfCircle = s1.Area;
+            Console.WriteLine(s1);
 
             ILogger recLogger = new Rectangle(10, 8, ShapeColor.Red);
-            recLogger.Log("Instance Rectangle Created", 0,"rect.txt");
-          
+            recLogger.Log("Instance Rectangle Created", 0, "rect.txt");
+
             ManagerInfo(recLogger);
             ManagerInfo(new Rectangle(5, 12, ShapeColor.White));
 
@@ -344,7 +347,7 @@ namespace Demos.HackerU.OOP
         {
             MyClass m1 = new MyClass();
             m1.MyProperty += 10;
-            
+
             MyClass m2 = new MyClass();
             m2.MyProperty += 100;
 
@@ -358,7 +361,7 @@ namespace Demos.HackerU.OOP
             int x = m2.CountObjects;//102
 
             MyClass.StaticMethodA();
-           
+
             //MyClass m3 = new MyClass();
             //m3.StaticMethodA()//Not Allowed
 
@@ -387,6 +390,57 @@ namespace Demos.HackerU.OOP
         }
 
 
+        public static void TestProtectedDemo()
+        {
+            //In Protected Folder (Namspace)
+            Protected.Point3D p3d = new Protected.Point3D();
+            //Not Allowed
+            // p3d.ID = "XXX";
+            Console.WriteLine(p3d.ID + ":");
+            Console.WriteLine(p3d.GetInfoShort());
+
+            p3d._testFieldC = "CCC"; //public
+            //p3d._testFieldA = "AAA"; //Not Allowed
+            //p3d._testFieldB = "BBB"; //Not Allowed 
+
+            Protected.Point p1 = new Protected.Point();
+            p1.AddX(10);
+            p1._testFieldX = "XXXX"; //Internal 
+        }
+
+        /// <summary>
+        /// Extension Method
+        /// </summary>
+        public static void TestExtensionDemo()
+        {
+            ExtentionMethod.DemoClassA dA = new ExtentionMethod.DemoClassA();
+            dA.MethodA();
+            dA.MethodB();
+            dA.MethodC("XXXX");
+
+            ILogger a = new LoggerA();
+            a.LogWithTime("TEST", 5);
+
+            string s = "ABC?DEF.GHI.123 456";
+            int x =  s.WordCount();//5
+
+
+        }
+
+        //--Extension Method
+        public static void MethodB(this ExtentionMethod.DemoClassA obj)
+        {
+            Console.WriteLine("MethodB");
+            obj.MethodA();
+           
+        }
+
+        //--Extension Method
+        public static void MethodC(this ExtentionMethod.DemoClassA obj,string data)
+        {
+            Console.WriteLine("MethodB");
+            obj.MethodA();
+        }
 
 
     }

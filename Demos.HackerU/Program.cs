@@ -3,6 +3,7 @@ using System.Xml.Linq;
 using Demos.HackerU.CommonTypes;
 using Demos.HackerU.HomeWorks;
 using Demos.HackerU.OOP;
+using Demos.HackerU.OOP.ExtentionMethod;
 
 namespace Demos.HackerU
 {
@@ -25,6 +26,11 @@ namespace Demos.HackerU
             //OOPRunDemos.RunPolim();orphismDemo();
             // OOPRunDemos.ShapesDemo();
             OOPRunDemos.StaticDemo();
+            OOPRunDemos.TestProtectedDemo();
+            OOPRunDemos.TestExtensionDemo();
+            string s = "xx.yy";
+            s.WordCount();
+
 
            //  HW6.Run();
            //--WAIT FOR USER PRESS ANY KEY--

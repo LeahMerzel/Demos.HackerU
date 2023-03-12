@@ -1,0 +1,113 @@
+﻿namespace Demos.HackerU.OOP.Protected
+{
+    /// <summary>
+    /// 1) X,Y Properties must be 0<x<10  0<y<10
+    ///  if X bigger 10  set to 10
+    ///  if Y smaller 0 set to 0
+    /// 2) Constractor 
+    ///   - Default Constractor 
+    ///   - Full Constaractor
+    ///   - one value Constractor
+    /// 3) Test each constractor with values
+    ///    and call the display method
+    /// 
+    /// </summary>
+    public class Point
+    {
+        internal string _testFieldX;//access from any class in project
+        private string _testFieldA;
+        protected string _testFieldB;
+        public string _testFieldC;
+
+        //--fields
+        private int x;
+        private int y;
+
+        public Point()
+        {
+            x = 0;
+            y = 0;
+        }
+
+
+
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public Point(int xy)
+        {
+            X = xy;
+            Y = xy;
+        }
+
+        /// <summary>
+        /// X between 0 -10
+        /// </summary>
+        public int X
+        {
+            get { return x; }
+            set {
+                if (value > 10)
+                    x = 10;
+                else if (value < 0)
+                    x = 0;
+                else
+                    x = value;
+
+            }
+        }
+
+        /// <summary>
+        /// y Between 0-10
+        /// </summary>
+        public int Y {
+            get { return y; }
+            set {
+                if (value > 10)
+                    y = 10;
+                else if (value < 0)
+                    y = 0;
+                else
+                    y = value;
+            }
+
+        }
+
+        public string ID
+        {
+            get; protected set;
+        }
+
+        //protected string ID
+        //{
+        //    get; private set;
+        //}
+
+
+        public void Display()
+        {
+            Console.WriteLine($"X:{X},Y:{Y}");
+        }
+
+        public void AddX(int value)
+        {
+            X += value;
+        }
+
+        public void AddY(int value)
+        {
+            Y += value;
+        }
+
+        public void Reset()
+        {
+            X = 0;
+            Y = 0;
+        }
+
+    }
+
+}

@@ -18,7 +18,7 @@ namespace Demos.HackerU.OOP.StaticDemos
         }
         public Test(int test)
         {
-            //-readonly can be set in constructor
+            //read-only can be set in constructor
             this.test = Test.DATANUM + test;
         }
 
