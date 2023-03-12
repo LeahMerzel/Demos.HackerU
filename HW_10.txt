@@ -2,7 +2,6 @@
 ----------------------------------
 * Create new folder Name it "Store"  and add all created classes and interfaces to it 
 
-
 1) Add class name it "Category"
   -Properties:
     Id:int
