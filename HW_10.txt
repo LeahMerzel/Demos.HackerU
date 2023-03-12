@@ -66,38 +66,34 @@ IProductsService:
 
   - AddNewCategory(sting categoryName,int categoryParentId);
   - AddNewProduct(string name,decimal price,bool isinstock,int categoryId);
-	- AddNewProducts(Product[] products,int categoryId);
-	- RemoveProduct(string productId);
-	- UpdateProduct(string productId,Product newProductInfo);
-	- List<Category> GetAllTopLevelCategories();
-	- List<Category> GetSubCategories(int parentCategoryID);
-    - List<Product>  GetProductsCategory(int categoryId);
-	- List<Product>  GetAllProductsByPrice(int lowPrice,int highPrice);
-	- List<Product>  GetAllProductsByPrice(int inCategoryId,int lowPrice,int highPrice);
-	- List<Product>  GetAllProducts();
-	  Product FindProductByName(string productname);
-	- RemoveAllProductsOfCategory(int categoryId);
-  - SaveAllProductsByCategory(int categoryId); //file name will be the according to the value of of the Category Name property 
-	
+  - AddNewProducts(Product[] products,int categoryId);
+  - RemoveProduct(string productId);
+  - UpdateProduct(string productId,Product newProductInfo);
+  - List<Category> GetAllTopLevelCategories();
+  - List<Category> GetSubCategories(int parentCategoryID);
+  - List<Product>  GetProductsCategory(int categoryId);
+  - List<Product>  GetAllProductsByPrice(int lowPrice,int highPrice);
+  - List<Product>  GetAllProductsByPrice(int inCategoryId,int lowPrice,int highPrice);
+  - List<Product>  GetAllProducts();
+  - Product FindProductByName(string productname);
+  - RemoveAllProductsOfCategory(int categoryId);
+  - SaveAllProductsByCategory(int categoryId); //file name will be the according to the value of of the Category Name property 	
 ------------------------------------------------------------------
  
 4) create Implementation class of IProductsService name it "ProductsService":   
 
-- make this class as singelton
-  Define the GetInstace of the singelton as followed:
-  
+- Make this class as singelton
+   Define the GetInstace of the singelton as followed:
    IProductsService GetInstance()
    {
       ...
    }
-   
 - Keep Inner List of Category and Product as readonly private fields:
-- private readonly  List<Category> _categories
-- private readonly  List<Product>  _products		
+private readonly  List<Category> _categories
+private readonly  List<Product>  _products		
 -----------------------------------------------------------------------------
 
-5)
-Testing from main:
+5) Testing all from main:
 
 Create static method that create ProductsService by calling the singelton GetInstance() 
 And Test all its methods:
