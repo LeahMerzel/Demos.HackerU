@@ -10,7 +10,7 @@
 -------------------	
   -Constractors:
     Category(string name,string parentcategoryId)
-    Category(string name) // set parentcategoryId = 0 which its toplevel category
+    Category(string name) // set parentcategoryId = 0 
     Category()	//Default Ctor	
 -------------------		
   -Methods:
