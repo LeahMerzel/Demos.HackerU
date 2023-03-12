@@ -14,8 +14,8 @@
     Category(string name) // set parentcategoryId = 0 which its toplevel category
     Category()	//Default Ctor	
 -------------------		
-	-Methods:
-   	Override ToString()//return Category properties Data
+  -Methods:
+     Override ToString()//return Category properties Data
 ---------------------
 
 Explain:
@@ -36,12 +36,12 @@ Explain:
       Isinstock:bool
       CategoryId:string
 -----------
-     Constractors:
+  - Constractors:
        Product(string prefixId,int categoryId,string name,decimal price,bool isInStock)
        Product(int categoryId,string name,decimal price,bool isInStock)
        Product() //Empty Ctor
 --------------	 
-     Methods:
+   - Methods:
         static Product CopyProductWithNewId(Product exsistingProduct) 
   	Override ToString()//return object info properties data
 ----------------
