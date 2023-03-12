@@ -20,7 +20,7 @@
 Explain:
 
   - Id should be generated automatically and sequentially inside constructor with the help of using private static int field 
-  - parentcategoryId means that this category is aub category of other category (reference to parent category id)
+  - parentcategoryId means that this category is sub category of other category (reference to parent category id)
   - if its root(top-level) category, ParentCatogoryId should be 0 else it should have id number of other category  
   - Default ctor will put default/Empty values
 
