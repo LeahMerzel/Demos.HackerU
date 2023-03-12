@@ -1,71 +1,66 @@
- HW 10 
-
-Store Service
+ HW 10  - Store Service
 ----------------------------------
-Create new folder Name it "Store" 
+* Create new folder Name it "Store"  and add all created classes and interfaces to it 
 
-1)
-Add classes to it:
+
+1) Add class name it "Category"
   -Properties:
     Id:int
-	  Name: string
-	  ParentCatogoryId:int
+    Name: string
+    ParentCatogoryId:int
 -------------------	
   -Constractors:
     Category(string name,string parentcategoryId)
     Category(string name) // set parentcategoryId = 0 which its toplevel category
-    Category()	//Default Ctor
-	
+    Category()	//Default Ctor	
 -------------------		
 	-Methods:
    	Override ToString()//return Category properties Data
 ---------------------
+
 Explain:
+
   - Id should be generated automatically and sequentially inside constructor with the help of using private static int field 
   - parentcategoryId means that this category is aub category of other category (reference to parent category id)
   - if its root(top-level) category, ParentCatogoryId should be 0 else it should have id number of other category  
   - Default ctor will put default/Empty values
- -------------------------------------------------------------
-2) 
-Create new  class name it "Product"  
+
+-------------------------------------------------------------
+2) Create new  class name it "Product"  
 
  - fields and Properties
       readonly prefixId:string//private field
       Id:string
-	    Name:string
-	    Price:decimal
-	    Isinstock:bool
-	    CategoryId:string
+      Name:string
+      Price:decimal
+      Isinstock:bool
+      CategoryId:string
 -----------
      Constractors:
        Product(string prefixId,int categoryId,string name,decimal price,bool isInStock)
-	     Product(int categoryId,string name,decimal price,bool isInStock)
+       Product(int categoryId,string name,decimal price,bool isInStock)
        Product() //Empty Ctor
 --------------	 
-	    Methods:
-	     static Product CopyProductWithNewId(Product exsistingProduct) 
-  	   Override ToString()//return object info properties data
+     Methods:
+        static Product CopyProductWithNewId(Product exsistingProduct) 
+  	Override ToString()//return object info properties data
 ----------------
   Explain:
 
   - Id should be generated automatically inside constructor with the help of using private static int field 
-  - if constractor has prefixId value (as incoming ctor parameter) 
-    then the productId will be in a format :  {prefixId}#{Id}  
-	example: 
-	
+  - if constractor has prefixId value (as incoming ctor parameter)  then the productId will be in a format :  {prefixId}#{Id}  
+    example: 	
 	if prefixId is "A10X" then id will be "A10X#1"
 	if prefixId is "B10Z" then id will be "B10Z#2"
-    ....
+         ....
 
     if constractor dont have prefixId then the Id will be in a format:  categoryId#Id
-	example
-	
+	example:	
 	if CategoryId is 3 then Id will be 3#3
 	if CategoryId is 100 Id will be 100#4
 	...
 ---------------------------------------------------------------
-3) 
-create Interface IProductsService with the following signitures: 
+3) create Interface IProductsService with the following signitures: 
     
 IProductsService:
 
