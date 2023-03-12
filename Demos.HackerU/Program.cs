@@ -28,8 +28,7 @@ namespace Demos.HackerU
             OOPRunDemos.StaticDemo();
             OOPRunDemos.TestProtectedDemo();
             OOPRunDemos.TestExtensionDemo();
-            string s = "xx.yy";
-            s.WordCount();
+            
 
 
            //  HW6.Run();
