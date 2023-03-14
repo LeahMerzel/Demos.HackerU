@@ -26,6 +26,7 @@ namespace Demos.HackerU.OOP.Sorting
                     return 1;
                 else if (X + Y < otherPoint.X + otherPoint.Y)
                     return -1;
+
             }
             return 1;
         }

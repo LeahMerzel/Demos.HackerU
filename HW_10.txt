@@ -9,7 +9,7 @@
     ParentCatogoryId:int
 -------------------	
   -Constractors:
-    Category(string name,string parentcategoryId)
+    Category(string name,int parentcategoryId)
     Category(string name) // set parentcategoryId = 0 
     Category()	//Default Ctor	
 -------------------		
