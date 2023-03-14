@@ -74,10 +74,11 @@ IProductsService:
   - List<Product>  GetProductsCategory(int categoryId);
   - List<Product>  GetAllProductsByPrice(int lowPrice,int highPrice);
   - List<Product>  GetAllProductsByPrice(int inCategoryId,int lowPrice,int highPrice);
-  - List<Product>  GetAllProducts();
+  - List<Product>  GetAllProducts(); //Sort By Price
   - Product FindProductByName(string productname);
   - RemoveAllProductsOfCategory(int categoryId);
   - SaveAllProductsByCategory(int categoryId); //file name will be the according to the value of of the Category Name property 	
+ 
 ------------------------------------------------------------------
  
 4) create Implementation class of IProductsService name it "ProductsService":   
