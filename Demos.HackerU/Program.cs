@@ -26,9 +26,9 @@ namespace Demos.HackerU
             //OOPRunDemos.RunPolim();orphismDemo();
             // OOPRunDemos.ShapesDemo();
             OOPRunDemos.StaticDemo();
-            OOPRunDemos.TestProtectedDemo();
-            OOPRunDemos.TestExtensionDemo();
-            
+           // OOPRunDemos.TestProtectedDemo();
+          //  OOPRunDemos.TestExtensionDemo();
+            OOPRunDemos.Sort();
 
 
            //  HW6.Run();

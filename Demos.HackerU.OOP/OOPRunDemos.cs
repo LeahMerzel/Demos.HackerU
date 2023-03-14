@@ -443,5 +443,35 @@ namespace Demos.HackerU.OOP
         }
 
 
+        public static void Sort()
+        {
+            var p1 = new Sorting.Point { Id = 1, Title = "P1", X = 1, Y = 3 };
+            var p2 = new Sorting.Point { Id = 2, Title = "P2", X = 5, Y = 6 };
+            var p3 = new Sorting.Point { Id = 3, Title = "P3", X = 2, Y = 3 };
+            var p4 = new Sorting.Point { Id = 4, Title = "P4", X = 4, Y = 7 };
+            var p5 = new Sorting.Point { Id = 5, Title = "P5", X = 7, Y =8 };
+
+            List<Sorting.Point> points = new List<Sorting.Point>();
+            points.Add(p4);
+            points.Add(p2);
+            points.Add(p1);
+            points.Add(p5);
+            points.Add(p3);
+
+            //Before Sort
+            points.ForEach(p => Console.WriteLine(p.Id + ":" + p.Title));
+          
+            points.Sort();
+            
+            //After Sort
+            points.ForEach(p => Console.WriteLine(p.Id + ":" + p.Title));
+
+
+
+
+
+        }
+
+
     }
 }
