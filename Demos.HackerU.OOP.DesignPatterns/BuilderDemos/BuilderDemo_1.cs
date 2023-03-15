@@ -4,23 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demos.HackerU.OOP.DesignPatterns.BuilderDemos
+namespace DesignPatterns.BuilderDemos
 {
         /// <summary>
         /// MainApp startup class for Structural
         /// Builder Design Pattern.
         /// </summary>
 
-        public class MainApp
-        {
+        public class BuilderDemo_1
+    {
             /// <summary>
             /// Entry point into console application.
             /// </summary>
 
-            public static void Main()
+            public static void RunDemo()
             {
                 // Create director and builders
-
                 Director director = new Director();
 
                 Builder b1 = new ConcreteBuilder1();
@@ -48,20 +47,43 @@ namespace Demos.HackerU.OOP.DesignPatterns.BuilderDemos
 
         class Director
         {
-            // Builder uses a complex series of steps
+        // Builder uses a complex series of steps
 
-            public void Construct(Builder builder)
-            {
+   
+
+        public void Construct(Builder builder)
+          {
                 builder.BuildPartA();
                 builder.BuildPartB();
-            }
+          }
+
+        private void ConstructFull(Builder builder)
+        {
+            builder.BuildPartA();
+            builder.BuildPartB();
+        }
+        private void ConstructMinimum(Builder builder)
+        {
+            builder.BuildPartA();
+            
         }
 
-        /// <summary>
-        /// The 'Builder' abstract class
-        /// </summary>
+        private void ConstructTimesA(Builder builder,int numtimes)
+        {
+            for (int i = 0; i < numtimes; i++)
+            {
+                builder.BuildPartA();
+            }
 
-        abstract class Builder
+        }
+
+    }
+
+    /// <summary>
+    /// The 'Builder' abstract class
+    /// </summary>
+
+    abstract class Builder
         {
             public abstract void BuildPartA();
             public abstract void BuildPartB();

@@ -454,7 +454,7 @@ Cant Set (Is Declared)            Set Value to Property
 Implement Many Interfaces         Inherit Single Class  
                                   If On at least 1 member is abstract  
                                    -> all class abstract
-                                   -> Cant Create Instance  
+                                   -> Cant Create Instance   
 ------------------------------------------------------------------
 Virtual method :
   - Usually is in base class
@@ -466,5 +466,20 @@ Abstract Method:
  -  Not Implemented, Only Declaration
  -  Must Implement
 ------------------------------------------------------------------
+BaseClass b = new DerivedClas(...);
+Interface im = new ClassImplementedInterface(...);
 
+Class A
+{
+    BaseClass b;
 
+     A(BaseClass b)
+    {
+        this.b = b;
+
+    }
+}
+
+A a = new A(new DerivedClasss());
+
+---------------------------------------------------

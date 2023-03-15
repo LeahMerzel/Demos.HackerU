@@ -4,7 +4,7 @@ using Demos.HackerU.CommonTypes;
 using Demos.HackerU.HomeWorks;
 using Demos.HackerU.OOP;
 using Demos.HackerU.OOP.ExtentionMethod;
-
+using Demos.HackerU.OOP.DesignPatterns.BuilderDemos;
 namespace Demos.HackerU
 {
     //Main Application Program (Gadi)
@@ -25,11 +25,11 @@ namespace Demos.HackerU
             //OOPRunDemos.RunAnimalDemo();
             //OOPRunDemos.RunPolim();orphismDemo();
             // OOPRunDemos.ShapesDemo();
-            OOPRunDemos.StaticDemo();
-           // OOPRunDemos.TestProtectedDemo();
-          //  OOPRunDemos.TestExtensionDemo();
-            OOPRunDemos.Sort();
-
+            //OOPRunDemos.StaticDemo();
+            // OOPRunDemos.TestProtectedDemo();
+            //  OOPRunDemos.TestExtensionDemo();
+            // OOPRunDemos.Sort();
+            BuilderDemo_1.RunDemo();
 
            //  HW6.Run();
            //--WAIT FOR USER PRESS ANY KEY--
