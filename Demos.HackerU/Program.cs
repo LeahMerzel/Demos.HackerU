@@ -17,6 +17,7 @@ namespace Demos.HackerU
             //BasicTypesDemos.Run();
             //ArraysAndLoops.Run();
             //ConvertTypes.Run();
+            DictionaryDemos.Run();
             //EnumsDemos.Run();
             //HW2.Run();
             //OOPRunDemos.Run();
@@ -32,8 +33,10 @@ namespace Demos.HackerU
             // OOPRunDemos.Sort();
             //BuilderDemo_1.RunDemo();
             //CompositePatternDemo.Run();
-           //  HW6.Run();
-           //--WAIT FOR USER PRESS ANY KEY--
+
+
+            //  HW6.Run();
+            //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();
         }
 

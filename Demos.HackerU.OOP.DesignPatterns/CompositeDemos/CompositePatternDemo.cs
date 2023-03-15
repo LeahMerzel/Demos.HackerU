@@ -18,9 +18,16 @@ namespace Demos.HackerU.OOP.DesignPatterns.CompositeDemos
             Composite comp = new Composite("Composite X");
             comp.Add(new Leaf("Leaf XA"));
             comp.Add(new Leaf("Leaf XB"));
-             
+
             root.Add(comp);
-           
+
+            Composite compY = new Composite("Composite Y");
+            compY.Add(new Leaf("Leaf YA"));
+            compY.Add(new Leaf("Leaf YB"));
+            root.Add(compY);
+
+
+
             root.Add(new Leaf("Leaf C"));
             // Add and remove a leaf
             Leaf leaf = new Leaf("Leaf D");
