@@ -442,3 +442,29 @@ It can only be used in a non-static method.
 It is usually used in a virtual method override, but actually can be used to call any method in the base type.
 It is very different from normal method invocation because it circumvents the normal virtual-method dispatch.
 It calls the base method directly even if it is virtual.
+-------------------------------------------------------------------------------------------------------
+Interface (Pure Abstract)         Abstract Class
+Only Signiture                    Signitures (abstract members) + Implementation (Any Other Code)  
+No Constractor                    Can have Constractor
+No Fields Data                    Any Data Members
+All is public                     Any Access
+Must Implement                    Must Implement
+cant create Object                Cant Create Object
+Cant Set (Is Declared)            Set Value to Property 
+Implement Many Interfaces         Inherit Single Class  
+                                  If On at least 1 member is abstract  
+                                   -> all class abstract
+                                   -> Cant Create Instance  
+------------------------------------------------------------------
+Virtual method :
+  - Usually is in base class
+  - Implemented Itself (Code In Method)
+  - Not Must Implement By Inherit Class 
+
+Abstract Method:
+ -  Usually is in base 
+ -  Not Implemented, Only Declaration
+ -  Must Implement
+------------------------------------------------------------------
+
+
