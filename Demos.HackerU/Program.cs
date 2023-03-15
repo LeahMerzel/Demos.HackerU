@@ -28,10 +28,10 @@ namespace Demos.HackerU
             // OOPRunDemos.ShapesDemo();
             //OOPRunDemos.StaticDemo();
             // OOPRunDemos.TestProtectedDemo();
-            //  OOPRunDemos.TestExtensionDemo();
+            // OOPRunDemos.TestExtensionDemo();
             // OOPRunDemos.Sort();
-            // BuilderDemo_1.RunDemo();
-            CompositePatternDemo.Run();
+            //BuilderDemo_1.RunDemo();
+            //CompositePatternDemo.Run();
            //  HW6.Run();
            //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();

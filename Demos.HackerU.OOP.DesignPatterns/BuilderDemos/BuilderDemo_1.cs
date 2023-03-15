@@ -146,14 +146,7 @@ namespace Demos.HackerU.OOP.DesignPatterns.BuilderDemos
         {
             private List<string> _parts = new List<string>();
 
-        public int PropA
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
+   
         public void Add(string part)
             {
                 _parts.Add(part);
