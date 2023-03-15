@@ -5,6 +5,7 @@ using Demos.HackerU.HomeWorks;
 using Demos.HackerU.OOP;
 using Demos.HackerU.OOP.ExtentionMethod;
 using Demos.HackerU.OOP.DesignPatterns.BuilderDemos;
+using Demos.HackerU.OOP.DesignPatterns.CompositeDemos;
 namespace Demos.HackerU
 {
     //Main Application Program (Gadi)
@@ -29,8 +30,8 @@ namespace Demos.HackerU
             // OOPRunDemos.TestProtectedDemo();
             //  OOPRunDemos.TestExtensionDemo();
             // OOPRunDemos.Sort();
-            BuilderDemo_1.RunDemo();
-
+            // BuilderDemo_1.RunDemo();
+            CompositePatternDemo.Run();
            //  HW6.Run();
            //--WAIT FOR USER PRESS ANY KEY--
             Console.ReadKey();

@@ -146,7 +146,15 @@ namespace Demos.HackerU.OOP.DesignPatterns.BuilderDemos
         {
             private List<string> _parts = new List<string>();
 
-            public void Add(string part)
+        public int PropA
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public void Add(string part)
             {
                 _parts.Add(part);
             }
@@ -157,6 +165,8 @@ namespace Demos.HackerU.OOP.DesignPatterns.BuilderDemos
                 foreach (string part in _parts)
                     Console.WriteLine(part);
             }
-        }
+
+      
+    }
    
 }
