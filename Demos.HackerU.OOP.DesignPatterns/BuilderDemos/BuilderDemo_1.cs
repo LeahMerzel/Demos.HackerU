@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.BuilderDemos
+namespace Demos.HackerU.OOP.DesignPatterns.BuilderDemos
 {
         /// <summary>
         /// MainApp startup class for Structural
