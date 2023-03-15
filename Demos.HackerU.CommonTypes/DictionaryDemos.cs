@@ -10,6 +10,8 @@ namespace Demos.HackerU.CommonTypes
     /// <summary>
     /// List of pairs
     /// each item Key:Value
+    /// ID UNIQE
+    /// GET VALUE BY KEY is Very Quick O(1)  
     /// </summary>
     public class DictionaryDemos
     {
@@ -22,9 +24,9 @@ namespace Demos.HackerU.CommonTypes
         //Do Foreach In Order to Print All Points
 
 
-       // Dictionary<string, Point> mapPoints = new Dictionary<string, Point>();
-      //  Point p1 = new Point(1,2);
-       // mapPoints.Add(p1.X+":"+p1.Y, p1);
+        // Dictionary<string, Point> mapPoints = new Dictionary<string, Point>();
+        //  Point p1 = new Point(1,2);
+        // mapPoints.Add(p1.X+":"+p1.Y, p1);
 
 
 
@@ -36,16 +38,16 @@ namespace Demos.HackerU.CommonTypes
         /// </summary>
         public static void Run()
         {
-            var d1 = new Dictionary<string,string>();
+            var d1 = new Dictionary<string, string>();
             d1.Add("1", "One");
             d1.Add("2", "Two");
 
-          
-            
-          //  d1.Add("2", "XXXXXX");
 
-            string val =  d1["1"];//One
-            bool isExsist =  d1.TryGetValue("2", out string valData);
+
+            //  d1.Add("2", "XXXXXX");
+
+            string val = d1["1"];//One
+            bool isExsist = d1.TryGetValue("2", out string valData);
 
             if (isExsist)
             {
@@ -72,7 +74,7 @@ namespace Demos.HackerU.CommonTypes
 
             foreach (var item in d1)
             {
-             
+
                 Console.WriteLine($"{counter}:{item.Key},{item.Value}");
                 counter++;
 
@@ -80,7 +82,7 @@ namespace Demos.HackerU.CommonTypes
 
 
 
-            
+
 
         }
 
@@ -90,8 +92,34 @@ namespace Demos.HackerU.CommonTypes
         /// </summary>
         public static void RunClassDemo()
         {
-             
+            //Dictionary<string, Point> mapPoints = new Dictionary<string, Point>();
+            //Point p1 = new Point(1, 2);
+            //mapPoints.Add("x", p1);
+            //mapPoints.Add("y", p1);
+            //mapPoints.Add(p1.X + ":" + p1.Y, p1);
+
+
+            //foreach (var item in mapPoints)
+            //{
+            //    Console.WriteLine(item);
+
+            //}
+
+            Dictionary<string, List<int>> students = new Dictionary<string, List<int>>();
+            students.Add("23453245", new List<int> { 100, 99, 93, 97, 100 });
+            students.Add("4544564", new List<int> { 100, 99, 93, 97, 100 });
+            
+            students["23453245"].Add(100);
+            students["23453245"].RemoveAll(a => a == 100);
+            List<int> values =  students["23453245"];
+
+
         }
+
+
+
+
+
 
 
     }
