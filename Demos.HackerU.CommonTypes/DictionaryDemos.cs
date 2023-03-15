@@ -84,5 +84,12 @@ namespace Demos.HackerU.CommonTypes
 
         }
 
+
+        public static void RunClassDemo()
+        {
+
+        }
+
+
     }
 }
