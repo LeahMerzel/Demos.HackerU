@@ -85,9 +85,12 @@ namespace Demos.HackerU.CommonTypes
         }
 
 
+        /// <summary>
+        /// Create Dictionary of Points
+        /// </summary>
         public static void RunClassDemo()
         {
-
+             
         }
 
 
